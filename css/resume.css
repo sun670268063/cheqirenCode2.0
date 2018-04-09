@@ -1,0 +1,134 @@
+/**
+*
+*个人简历样式resueme
+*
+**/
+.res_left{margin-top: 30px;margin-bottom:23px;width: 202px; float: left; position:absolute;}
+.res_leftmenu{background-color: #fff; width: 202px; float: left; margin-top: 24px; padding-bottom: 37px;}
+.res_leftmenu_list{ float:left;margin:50px 18px 0 18px; border-top: 1px dotted #7e7e7c; padding-top: 15px;}
+.res_leftmenu_list ul {margin:0;padding: 0;border-bottom: 1px dotted #7e7e7c;}
+.res_leftmenu_list ul li{width: 166px; height:40px;}
+.res_leftmenu_list ul li a{font-size: 14px;color:#000;float: left;margin: 12px 0 0 20px;}
+.res_leftmenu_list ul li:hover{background-color: #f3e0c6;border-left:4px solid #997249; }
+.res_leftmenu_fun{ float: left; margin:20px 18px 0 18px;padding-top: 15px;}
+.res_left_bottom_menu{background-color: #fff; width: 202px; float: left; margin-top: 20px;}
+.res_leftmenu_view{float: left; margin:15px 18px;}
+.rightView{float: left;width: 768px; margin-left:202px;}
+.addInfoView{float: left; width: 738px; margin:95px 0 0 30px;}
+
+.basic_barlinePanl,
+.edu_barlinePanl,
+.prject_barlinePanl,
+.jobWanted_barlinePanl,
+.train_barlinePanl,
+.xiaoneiJob_barlinePanl,
+.handsOn_barlinePanl,
+.reward_barlinePanl,
+.language_barlinePanl
+{height: 2px; position: absolute;}
+.basic_barline,
+.edu_barline,
+.project_barline,
+.jobWanted_barline,
+.train_barline,
+.xiaoneiJob_barline,
+.handsOn_barline,
+.reward_barline,
+.language_barline
+{position: absolute; float:left;width:738px;background:#ebebeb;height:2px;display:inline-block;border-radius:5px;}
+.basic_barline #basic_percent,
+.edu_barline #edu_percent,
+.project_barline #project_percent,
+.jobWanted_barline #jobWanted_percent,
+.train_barline #train_percent,
+.xiaoneiJob_barline #xiaoneiJob_percent,
+.handsOn_barline #handsOn_percent,
+.reward_barline #reward_percent,
+.language_barline #language_percent
+{background:url(../images/msg.png) no-repeat;top:-35px; position: absolute;width: 79px;height: 29px; font-size:14px;padding: 1px 0 0 7px; display:inline-block; color: #fff;}
+.basic_barline #basic_line,
+.edu_barline #edu_line,
+.project_barline #project_line,
+.jobWanted_barline #jobWanted_line,
+.train_barline #train_line,
+.xiaoneiJob_barline #xiaoneiJob_line,
+.handsOn_barline #handsOn_line,
+.reward_barline #reward_line,
+.language_barline #language_line
+{float:left;height:2px;overflow:hidden;background:#7bc142;border-radius:8px;}
+
+.myRpading_t32{padding:32px 55px 5px 28px;}
+.head_pho{position: absolute;width: 130px;height:160px; border: 1px dashed #cdcdcd;margin-left:30px; }
+.short{width:30px;height:3px;background:#ccc; position: absolute; left:50%;top:50%;margin-left:-17px;margin-top:-5px;}
+.long{width:3px;height:30px;background:#ccc; position: absolute;left:50%;top:50%;margin-left:-3px;margin-top:-18px;}
+.head_pho span{position: absolute;margin: 100px 0 0 33px;}
+.eduList {background-color: #fafafa; width:738px;}
+.eduList ul{width: 628px; margin:0 55px; padding: 0px; border-top: 1px  dashed #cdcdcd;}
+.eduList ul li{width: 100%;border-bottom: 1px  dashed #cdcdcd;padding: 18px 0 18px;}
+.eduList ul li span{float: left;}
+.graduate_pho{position: absolute;width: 58px;height:58px; border: 1px dashed #cdcdcd;}
+.graduate_pho span{ margin-top:20px; position: absolute;  width: 90px; left:80px;}
+
+/**简历预览*/
+.resumeViewHead{height: 95px; margin: 0;}
+.resumeViewHead span{float: left; position: relative; margin-top: 50px;}
+.resumeInfohead{border-top: solid 2px #c0a88e; background-color: #FFFFFF;}
+.person_pho{margin: 35px; background-color: #f7f7f7; float: left;}
+.person_info{width: 650px; margin-top: 35px;}
+.person_info_table td{width: 100px;}
+.renzheng_bar{float: left; width: 850px; background-color: #f5efe8;padding: 5px 0 10px;}
+.renzheng_bar ul {float: left; margin:14px 0 0 24px; padding: 0px;}
+.renzheng_bar ul li{float: left;}
+.renzheng_bar ul li.lablib span{float: left;height:30px;margin:3px;padding:2px 10px; color: #9c4f48;}
+.viewInfo1{background-color: #FFFFFF; margin-top: 20px; float: left;}
+.info_tile{ width: 750px; height: 65px; border-bottom: 2px #efebe7 solid;}
+.info_tile span.fs20{border-bottom: 4px #e73936 solid;float: left;margin-top: 32px;}
+.info_table{margin: 35px 50px 60px;}
+.info_table table{border-bottom: dotted 1px #d2d2d2;margin-bottom: 25px;}
+.title_td{text-align: right;color: #999999;}
+.languageTable{float:left;border: dashed #efebe7 1px; margin-right: 30px;}
+.languageHeadTr{float: left; width:100px;border-bottom: dashed #efebe7 1px; margin: 0 10px;padding-bottom: 10px;}
+
+/*下拉选择控件*/
+
+._dates {overflow: hidden; height: 167px;background-color: #FFFFFF; width: 322px; display: inline-block; border: 2px solid #cdcdcd; border-width: thin; padding: 5px; position: relative;} 
+.year_list_panel {margin: 12px 10px 0;width:251px;height: 148px; overflow: hidden; }
+._dates_month {overflow: hidden; height: 110px;background-color: #FFFFFF; width: 140px; display: inline-block; border: 2px solid #cdcdcd; border-width: thin; padding: 5px; position: relative;} 
+.month_list_panel {margin:  6px 4px 0;;width:129px;height: 99px; overflow: hidden; }
+._dates_day {overflow: hidden; height: 210px;background-color: #FFFFFF; width: 220px; display: inline-block; border: 2px solid #cdcdcd; border-width: thin; padding: 5px; position: relative;} 
+.day_list_panel {margin:  6px 4px 0;;width:201px;height: 190px; overflow: hidden; }
+
+._dates_area {overflow: hidden; height: 174px;background-color: #FFFFFF; width:331px; display: inline-block; border: 2px solid #cdcdcd; border-width: thin; padding: 5px; position: relative;} 
+.area_list_panel {margin:  6px 4px 0;;width:321px;height: 190px; overflow: hidden; }
+
+.ele_list{padding: 0; position: relative;top:0;}
+.year_list_panel>.ele_list li{padding: 5px 8px;}
+.month_list_panel>.ele_list li{padding: 6px 8px; width:30px;white-space:nowrap;}
+.day_list_panel>.ele_list li{padding: 6px 12px; width:30px;white-space:nowrap;}
+.area_list_panel>.ele_list li{padding: 6px 12px; width:80px;white-space:nowrap; text-align: center;}
+
+.ele_list li:hover{background-color: #7C7C7C; cursor: pointer;}
+.icon_chevron_left{background-image: url(../images/leftarrows.png); background-repeat: no-repeat; width: 13px; height: 29px;}
+.icon_chevron_right{background-image: url(../images/rightarrows.png); background-repeat: no-repeat; width: 13px; height: 29px;}
+
+
+/**弹出框*/
+.popup{width:532px; height:auto;background-color:#fff;position:absolute;z-index:100;
+	border:5px solid #999999;border-radius:5px;left:400px;top:96px;display:block;}
+.popup .top_nav{width:522px;height:46px;background-color: #e73533;position:relative;cursor:move;}
+.popup .top_nav a.guanbi {color:#FFFFFF;width:35px; height: 35px; display: block; position:absolute;top:8px;right:10px;cursor:pointer;}
+.popup .top_nav a.guanbi:hover {color:#F9C071;}
+.popup .min{width:522px;height:auto;padding:10px;}
+.rzView{margin-top: 75px; border-top: 4px solid #e73936; position: relative; background-color: #FFFFFF;}
+.rzFag{background: url(../images/rzTag.png) no-repeat; width: 67px; height: 65px; position: absolute; right: 30px; top: -4px;}
+
+.rzViewBody{text-align: center; margin-top: 32px;}
+.rzviewInfo{width: 640px; margin: 0px 55px 0 155px;}
+.mpb{ position: relative; border-bottom:1px dashed #cdcdcd;border-top:1px dashed #cdcdcd; margin:22px 0 22px 0; padding: 22px 0 22px 0;}
+.mpt{ position: relative;  border-bottom:1px dashed #cdcdcd; margin:22px 0 0 0; padding: 0 0 22px 0;}
+.column{ position: relative;  border-bottom:1px dashed #cdcdcd; margin: 0 0 22px 0; padding: 0 0 22px 0;}
+.columnback{background-color: #f6f6f6; position: relative; padding: 15px 0 15px 0;}
+.backWork{position: absolute;left: -80px;top:-20px;font-size: 32px; font-weight: bold;font-style: italic; color:#eeeeee;
+-moz-user-select: none;
+-khtml-user-select: none;
+user-select: none; cursor:default;}

@@ -1,0 +1,205 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0 auto;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	font: 12px/1.5 "微软雅黑"
+}
+
+body {
+	background-color: #F6F6F6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+}
+
+address,
+cite,
+dfn,
+em,
+var {
+	font-style: normal;
+}
+
+input[type="text"],
+input[type="password"] {
+	border: 1px solid #AAAAAA;
+	outline: none;
+	font: 16px/32px "微软雅黑", "宋体", Arial;
+	transition: border 0.2s ease-in 0s;
+}
+
+input[type="text"],
+input[type="email"] {
+	border: 1px solid #AAAAAA;
+	outline: none;
+	font: 16px/32px "微软雅黑", "宋体", Arial;
+	transition: border 0.2s ease-in 0s;
+}
+
+input[type="button"],
+input[type="submit"] {
+	font-family: "微软雅黑", "宋体", Arial;
+	outline: none;
+	cursor: pointer;
+	border: none;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+	border: 1px solid #888888;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+	border: 1px solid #888888;
+}
+
+textarea {
+	border: 1px solid #f1f1f1;
+	width: 498px;
+	height: 260px;
+	outline: none;
+	resize: none;
+	font: 20px/32px "微软雅黑", "宋体", Arial;
+	padding: 6px 10px;
+	margin-top: 20px;
+	transition: border 0.2s ease-in 0s;
+}
+
+textarea:focus {
+	border: 1px solid #888888;
+}
+
+:focus {
+	outline: 0;
+}
+
+.placeholder {
+	color: #777;
+}
+
+img {
+	border: none;
+}
+
+code,
+kbd,
+pre,
+smap {
+	font-family: "Courier New", Courier, monospace;
+}
+
+small {
+	font-size: 12px;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #997249;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+sup {
+	vertical-align: text-top;
+}
+
+sub {
+	vertical-align: text-bottom;
+}
+
+legend {
+	color: #000;
+}
+
+fieldset,
+img {
+	border: 0;
+}
+
+button,
+input,
+select,
+textarea {
+	font-size: 100%;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.clear {
+	clear: both;
+	float: none;
+	height: 0;
+	overflow: hidden;
+}
+
+html .hide {
+	display: none;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}

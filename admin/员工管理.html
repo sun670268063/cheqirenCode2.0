@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/common.css">
+		<link rel="stylesheet" type="text/css" href="css/staff.css">
+		<link rel="stylesheet" href="css/ion.calendar.css" />
+		<link rel="stylesheet" href="css/jquery-ui.min.css" />
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<title>员工管理</title>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="left_con">
+				<ul>
+					<li class="li libg" style="margin-top:15px;" onclick="tab('iframe_s','iframe_f')">有效账号</li>
+					<li class="li s" style="margin-bottom:15px;" onclick="tab('iframe_f','iframe_s')">账号回收站</li>
+				</ul>
+				<div></div>
+			</div>
+			<div class="right_con">
+				<div class="iframe_s">
+					<div class="change">
+						<h1 class="fz_30">有效账号</h1>
+					</div>
+					<div class="iframe_mid">
+						<div>
+							<label>工号</label><input type="text" />
+							<label>姓名</label><input type="text" />
+							<label>开户时间</label><input type="text" class="date" />&nbsp;&nbsp;至<input type="text" class="date" />
+							<input type="button" class="search_btn" value="搜索" />
+							<button class="add_btn" id="add_user">添加新员工</button>
+						</div>
+
+						<table class="valid_id" cellspacing="0">
+							<thead>
+								<td>序号</td>
+								<td>工号</td>
+								<td>姓名</td>
+								<td>系统角色</td>
+								<td>性别</td>
+								<td>手机号</td>
+								<td>访问次数</td>
+								<td>开户时间</td>
+								<td>最后登录时间</td>
+								<td class="miw140">操作</td>
+
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>0251</td>
+									<td>王潇潇</td>
+									<td>审核号</td>
+									<td>男</td>
+									<td>13978784545</td>
+									<td>12</td>
+									<td>2015-10-20&nbsp;12:20</td>
+									<td>2015-10-20&nbsp;12:20</td>
+									<td class="miw140"><a href="#" class="edit">编辑</a><a href="#" class="re_pwd">重置密码</a></td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>0251</td>
+									<td>王潇潇</td>
+									<td>审核号</td>
+									<td>男</td>
+									<td>13978784545</td>
+									<td>12</td>
+									<td>2015-10-20&nbsp;12:20</td>
+									<td>2015-10-20&nbsp;12:20</td>
+									<td class="miw140"><a href="#" class="edit">编辑</a><a href="#" class="re_pwd">重置密码</a></td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>0251</td>
+									<td>王潇潇</td>
+									<td>审核号</td>
+									<td>男</td>
+									<td>13978784545</td>
+									<td>12</td>
+									<td>2015-10-20&nbsp;12:20</td>
+									<td>2015-10-20&nbsp;12:20</td>
+									<td class="miw140"><a href="#" class="edit">编辑</a><a href="#" class="re_pwd">重置密码</a></td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>0251</td>
+									<td>王潇潇</td>
+									<td>审核号</td>
+									<td>男</td>
+									<td>13978784545</td>
+									<td>12</td>
+									<td>2015-10-20&nbsp;12:20</td>
+									<td>2015-10-20&nbsp;12:20</td>
+									<td class="miw140"><a href="#" class="edit">编辑</a><a href="#" class="re_pwd">重置密码</a></td>
+								</tr>
+							</tbody>
+
+						</table>
+						<div class="page">
+							<p>
+								共<span>1125</span>条记录</p>&nbsp;&nbsp;
+							<p>每页
+								<select>
+                        			<option>10</option>
+                        			<option>30</option>
+                        			<option>50</option>
+                        		</select> 条
+							</p>&nbsp;&nbsp;
+							<a class="pagea" href="#">上一页</a>
+							<a class="pagea" href="#">1</a>
+							<a class="pagea" href="#">2</a>
+							<a class="pagea" href="#">3</a>
+							<a class="pagea" href="#">4</a>
+							<a class="pagea" href="#">5</a>
+							<a class="pagea" href="#">6</a>
+							<a class="pagea" href="#">7</a>
+							<a class="pagea" href="#">8</a>
+							<a class="pagea" href="#">...10</a>
+							<a class="pagea" href="#">下一页</a>
+						</div>
+
+					</div>
+				</div>
+				<div class="iframe_f">
+					<div class="change">
+						<h1 class="fz_30">账号回收</h1>
+					</div>
+					<div class="iframe_mid">
+						<div>
+							<label>工号</label><input type="text" />
+							<label>姓名</label><input type="text" />
+							<label>开户时间</label><input type="text" class="date" />&nbsp;&nbsp;至<input type="text" class="date" />
+							<input type="button" class="search_btn" value="搜索" />
+							<!--<input type="button" class="add_btn" value="添加新员工" />-->
+							<button class="add_btn">添加新员工</button>
+						</div>
+
+						<table class="valid_id" cellspacing="0">
+							<thead>
+								<td>序号</td>
+								<td>工号</td>
+								<td>姓名</td>
+								<td>系统角色</td>
+								<td>性别</td>
+								<td>手机号</td>
+								<td>访问次数</td>
+								<td>开户时间</td>
+								<td>删除时间</td>
+								<td class="miw140">操作</td>
+
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>0251</td>
+									<td>王潇潇</td>
+									<td>审核号</td>
+									<td>男</td>
+									<td>13978784545</td>
+									<td>12</td>
+									<td>2015-10-20&nbsp;12:20</td>
+									<td>2015-10-20&nbsp;12:20</td>
+									<td class="miw140"><a href="#" class="recover">恢复</a></td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>0251</td>
+									<td>王潇潇</td>
+									<td>审核号</td>
+									<td>男</td>
+									<td>13978784545</td>
+									<td>12</td>
+									<td>2015-10-20&nbsp;12:20</td>
+									<td>2015-10-20&nbsp;12:20</td>
+									<td><a href="#" class="recover">恢复</a></td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>0251</td>
+									<td>王潇潇</td>
+									<td>审核号</td>
+									<td>男</td>
+									<td>13978784545</td>
+									<td>12</td>
+									<td>2015-10-20&nbsp;12:20</td>
+									<td>2015-10-20&nbsp;12:20</td>
+									<td><a href="#" class="recover">恢复</a></td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>0251</td>
+									<td>王潇潇</td>
+									<td>审核号</td>
+									<td>男</td>
+									<td>13978784545</td>
+									<td>12</td>
+									<td>2015-10-20&nbsp;12:20</td>
+									<td>2015-10-20&nbsp;12:20</td>
+									<td><a href="#" class="recover">恢复</a></td>
+								</tr>
+							</tbody>
+
+						</table>
+						<div class="page">
+							<p>
+								共<span>1125</span>条记录</p>&nbsp;&nbsp;
+							<p>每页
+								<select>
+                        			<option>10</option>
+                        			<option>30</option>
+                        			<option>50</option>
+                        		</select> 条
+							</p>&nbsp;&nbsp;
+							<a class="pagea" href="#">上一页</a>
+							<a class="pagea" href="#">1</a>
+							<a class="pagea" href="#">2</a>
+							<a class="pagea" href="#">3</a>
+							<a class="pagea" href="#">4</a>
+							<a class="pagea" href="#">5</a>
+							<a class="pagea" href="#">6</a>
+							<a class="pagea" href="#">7</a>
+							<a class="pagea" href="#">8</a>
+							<a class="pagea" href="#">...10</a>
+							<a class="pagea" href="#">下一页</a>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+         <!--弹出框-->
+		<div class="add_window hide" id="dialog" title="新增员工">
+			<!--<div class="title">新增员工</div>-->
+			<form class="add_staff">
+				<table>
+					<tr>
+						<td class="text_a"><em>*</em>&nbsp;工号:</td>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<td class="text_a"><em>*</em>&nbsp;密码:</td>
+						<td><input type="password"></td>
+					</tr>
+					<tr>
+						<td class="text_a"><em>*</em>&nbsp;系统角色:</td>
+						<td class="role">
+							<select>
+								<option>请选择角色</option>
+								<option>管理员</option>
+								<option>审核员</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="text_a"><em>*</em>&nbsp;姓名:</td>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<td class="text_a">性别:</td>
+						<td class="gender">
+							<select>
+								<option>男</option>
+								<option>女</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="text_a"><em>*</em>&nbsp;手机号:</td>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<td class="text_a">备注:</td>
+						<td><textarea></textarea></td>
+					</tr>
+					<tr class="center">
+						<td colspan="2">
+							<input type="button" value="确定" class="confirm" />
+						</td>
+					</tr>
+
+				</table>
+			</form>
+		</div>
+		
+		<div class="add_window hide" id="reUser" title="恢复工号">
+			<form class="add_staff">
+				<p class="center">正在恢复工号00251 王小二 审核员</p>
+				<table>
+					<tr>
+						<td class="text_a">密码:</td>
+						<td ><input type="text" placeholder="请输入密码"></td>
+					</tr>
+					<tr>
+						<td class="text_a"></td>
+						<td><input type="text" placeholder="请重新输入密码"></td>
+					</tr>
+					<tr class="center">
+						<td colspan="2">
+						<input type="button" value="确定" class="confirm"/>
+						</td>
+					</tr>
+					
+				</table>
+			</form>
+		</div>
+		
+		<div class="add_window hide" id="rePwd" title="重置密码">
+			<form class="add_staff">
+				<p class="center">你正在重置XXX的密码</p>
+				<table>
+					<tr>
+						<td class="text_a">新密码:</td>
+						<td ><input type="password" placeholder="输入新密码"></td>
+					</tr>
+					<tr>
+						<td class="text_a"></td>
+						<td><input type="password" placeholder="再次输入新密码"></td>
+					</tr>
+					<tr class="center">
+						<td colspan="2">
+						<input type="button" value="确定" class="confirm"/>
+						</td>
+					</tr>
+					
+				</table>
+			</form>
+		</div>
+		
+		<div class="add_window hide" id="editMsg" title="基本信息">
+			<form class="add_staff">
+				<table>
+					<tr>
+						<td class="text_a">系统角色:</td>
+						<td><span>管理员</span></td>
+					</tr>
+					<tr>
+						<td class="text_a">工号:</td>
+						<td><span>0001</span></td>
+					</tr>
+					<tr>
+						<td class="text_a">姓名:</td>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<td class="text_a">性别:</td>
+						<td><span>
+							<input type="radio" name="sex" value="male" checked="checked">男
+                            <input type="radio" name="sex" value="female">女
+                            </span>
+						</td>
+					</tr>
+					<tr>
+						<td class="text_a">手机号:</td>
+						<td><input type="text" placeholder="请输入手机号"></td>
+					</tr>
+					<tr>
+						<td class="text_a"><span>备注:</span></td>
+						<td><textarea></textarea></td>
+					</tr>
+					<tr class="center">
+						<td colspan="2">
+						<input type="button" value="确定" class="confirm"/>
+						</td>
+					</tr>
+					
+				</table>
+			</form>
+		</div>
+		
+
+		<script type="text/javascript" src="js/date/moment.min.js"></script>
+		<script type="text/javascript" src="js/date/moment.zh-cn.js"></script>
+		<script type="text/javascript" src="js/date/ion.calendar.min.js"></script>
+		<script type="text/javascript" src="js/jq-ui/jquery-ui.min.js"></script>
+		<script>
+			$(".add_btn").click(function() {
+				$("#dialog").dialog({
+					height: 500,
+					width: 420,
+					modal: true
+				});
+			});
+			$(".recover").click(function() {
+				$("#reUser").dialog({
+					height: 300,
+					width: 420,
+					modal: true
+				});
+			});
+			$(".re_pwd").click(function() {
+				$("#rePwd").dialog({
+					height: 300,
+					width: 420,
+					modal: true
+				});
+			});
+			$(".edit").click(function() {
+				$("#editMsg").dialog({
+					height:500,
+					width: 420,
+					modal: true
+				});
+			});
+		</script>
+		<script type="text/javascript">
+			$(".left_con li").click(function() {
+				$(this).addClass("libg").siblings().removeClass("libg");
+			});
+			$(".list li").click(function() {
+				$(this).addClass("lisbg").siblings().removeClass("lisbg");
+			});
+			$(function() {
+				$(".iframe_f").hide();
+			});
+			$(".new").blur(function() {
+				var checkNum = /[0-9a-zA-Z]{6,18}/;
+				if (!checkNum.test($(this).val())) {
+					$(".st").show();
+				} else {
+					$(".st").hide();
+				}
+			});
+			//li切换
+			$(".c").click(function() {
+				$(".left_con li").last().addClass("libg").siblings().removeClass("libg");
+			});
+			//tab切换
+			function tab(cla, not) {
+				var cla = cla;
+				$("." + cla).show();
+				$("." + not).hide();
+			}
+			$(function() {
+				$(".valid_id tbody>tr:odd").addClass("odd")
+				$(".valid_id tbody>tr:even").addClass("even")
+				$(".add_staff table tr td>em").css("color","red");
+					/*时间控件*/
+				$('.date').each(function() {
+					$(this).ionDatePicker({
+						lang: 'zh-cn',
+						format: 'YYYY-MM-DD'
+					});
+				});
+			});
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/manage.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/credit.css">
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<title>认证申请</title>
+</head>
+<body>
+<div class="right_con">
+	<div class="right_con_chil" >
+                <div class="apply_top o">
+                    <h1>认证申请</h1>
+                </div>
+                <div class="apply">
+                    <div class="apply_con o">
+                        <table style="border-collapse:collapse;width:100%;">
+                            <tr class="table_top">
+                                <td align="center" width="100px">时间</td>
+                                <td align="center" width="150px">订单编号</td>
+                                <td align="center" width="180px">详情</td>
+                                <td align="center" width="100px">操作</td>
+                            </tr>
+                            <tr>
+                                <td align="center" class="time">2015-10-20 12:20</td>
+                                <td align="center">2016103324121</td>
+                                <td><span class="time">授权认证：</span>基础信息 教育经历 工作经历</td>
+                                <td align="center">
+                                    <input type="button" class="app" value="申领">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" class="time">2015-10-20 12:20</td>
+                                <td align="center">2016103324121</td>
+                                <td><span class="time">授权认证：</span>基础信息 教育经历 工作经历</td>
+                                <td align="center">
+                                    <input type="button" class="app" value="申领">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" class="time">2015-10-20 12:20</td>
+                                <td align="center">2016103324121</td>
+                                <td><span class="time">授权认证：</span>基础信息 教育经历 工作经历</td>
+                                <td align="center">
+                                    <input type="button" class="app" value="申领">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" class="time">2015-10-20 12:20</td>
+                                <td align="center">2016103324121</td>
+                                <td><span class="time">授权认证：</span>基础信息 教育经历 工作经历</td>
+                                <td align="center">
+                                    <input type="button" class="app" value="申领">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" class="time">2015-10-20 12:20</td>
+                                <td align="center">2016103324121</td>
+                                <td><span class="time">授权认证：</span>基础信息 教育经历 工作经历</td>
+                                <td align="center">
+                                    <input type="button" class="app" value="申领">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" class="time">2015-10-20 12:20</td>
+                                <td align="center">2016103324121</td>
+                                <td><span class="time">授权认证：</span>基础信息 教育经历 工作经历</td>
+                                <td align="center">
+                                    <input type="button" class="app" value="申领">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" class="time">2015-10-20 12:20</td>
+                                <td align="center">2016103324121</td>
+                                <td><span class="time">授权认证：</span>基础信息 教育经历 工作经历</td>
+                                <td align="center">
+                                    <input type="button" class="app" value="申领">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" class="time">2015-10-20 12:20</td>
+                                <td align="center">2016103324121</td>
+                                <td><span class="time">授权认证：</span>基础信息 教育经历 工作经历</td>
+                                <td align="center">
+                                    <input type="button" class="app" value="申领">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" class="time">2015-10-20 12:20</td>
+                                <td align="center">2016103324121</td>
+                                <td><span class="time">授权认证：</span>基础信息 教育经历 工作经历</td>
+                                <td align="center">
+                                    <input type="button" class="app" value="申领">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+    //顶部列表样式
+    $(".left_con li").click(function() {
+        $(this).addClass("libg").siblings().removeClass("libg");
+    });
+    //左侧列表样式
+    $(".list li").click(function() {
+        $(this).addClass("lisbg").siblings().removeClass("lisbg");
+    });
+    //隔行变色
+    $(document).ready(function() {
+
+	    $(".reson").click(function(){
+	    	var a = $(this).attr("class");
+	    	$(".tr33").slideToggle("fast");
+	    	if (a =="reson") {
+	    		$(this).css({"background-color":"rgb(197,63,63)","color":"white","border-color":"rgb(197,63,63)"});
+	    		$(this).addClass("1");
+	    	}else{
+	    		$(this).css({"background-color":"white","color":"rgb(102,102,102)","border-color":"rgb(201,197,197)"});
+	    		$(this).removeClass("1");
+	    	}
+	    });
+    });
+    //table标签移除
+    $(".app").click(function(){
+        $(this).parent().parent().remove();
+        alert("申领成功");
+    });
+    //顶部导航切换
+    function tab(classname) {
+        var classname = classname;
+        $("." + classname).show().siblings().not(".tr").hide();
+        $(".right").show();
+        /*$(".tr").show();*/
+    }
+    //右侧列表切换
+    function tab_change(classname){
+        var classname = classname;
+        $("." + classname).show().siblings().hide();
+    }
+    //红线
+    $(".ll").click(function() {
+        $(this).addClass("state").siblings().removeClass("state");
+    });
+    //白背景
+    $(".my").click(function(){
+        $(this).addClass("me").siblings().removeClass("me");
+    });
+    //layer
+    $('.recall').on('click', function(){
+	    layer.open({
+	        type: 1,
+	        area: ['600px', '320px'],
+	        shadeClose: true, //点击遮罩关闭
+	        title:"请填写重新认证原因",
+	        offset: '200px',
+	        content: '<div style="text-align:center;margin-top:20px" ><textarea class="la_input" placeholder="请简短说明重新认证原因。" maxlength="500"/></div><div style="text-align:center"><input type="button" value="确认提交"/ class="save"></div>' //这里content是一个普通的String
+	    });
+	});
+	$(".page a").click(function(){
+		$(this).addClass("pagechecked").siblings().removeClass("pagechecked");
+	});
+        </script>
+</body>
+</html>

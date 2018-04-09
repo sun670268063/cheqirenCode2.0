@@ -1,0 +1,68 @@
+.title{
+	width: 100%;
+	height: 80px;
+	border-bottom: 2px solid rgba(231,60,57,1);
+}
+.logo{
+	margin-left: 16.7%;
+	padding-top: 20px;
+}
+.login{
+	width: 100%;
+	height: 555px;
+	text-align: center;
+	background-image: url(../img/images/a.png);
+	background-position: 50% 50%;
+}
+.login_container{
+	padding-top: 130px;
+}
+.login h2{
+	letter-spacing: 2px;
+	color: rgba(50,50,50,1);
+	padding-bottom: 20px;
+}
+.login_form{
+	background-color: rgba(0,0,0,.2);
+	width: 355px;
+	height: 250px;
+	border-radius: 10px;
+	margin: 0 auto;
+}
+
+input{
+	margin-top: 20px;
+}
+input[type="text"],input[type="password"]{
+	height: 40px;
+	width: 310px;
+	background-color: white;
+	text-indent: 25px;
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	border:1px solid white;
+}
+
+input[type="text"]:nth-of-type(1)
+{
+	background-image: url(../img/images/icon_1.png);
+}
+input[type="text"]:nth-of-type(2)
+{
+	background-image: url(../img/images/icon_2.png);
+}
+input[type="button"]{
+	color: white;
+	background-color: rgb(247,59,56);
+	height: 40px;
+	width: 310px;
+	border:1px solid rgb(247,59,56);
+	font-size: 17px;
+	letter-spacing: 5px;
+}
+.right{
+	margin: 30px auto 0px auto;
+	color: rgb(148,148,148);
+	text-align: center;
+	font-size: 14px;
+}

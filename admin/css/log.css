@@ -1,0 +1,62 @@
+.mg_t_50{margin-top: 50px;}
+/**日志*/
+.mg_t_20{margin-top: 20px;}
+.mg_l_60{margin-left: 60px;}
+.mg_l_85{margin-left: 85px;}
+.mg_l_140{margin-left: 140px;}
+.mg_l_28{margin-left: 28px;}
+.mg_l_35{margin-left: 35px;}
+.mg_l_48{margin-left: 48px;}
+.mg_l_10{margin-left: 10px;}
+.bd_b{border-bottom: 1px dashed #dcdcdc;}
+.pd{padding: 12px 0 12px 0;}
+.gray{color:#999999;}
+.fz_16{font-size: 16px;}
+.fz_30{font-size: 30px;}
+
+.even{background: #ffffff;}
+.odd{background: #f7f7f7;}
+table{border-collapse: collapse;}
+thead{background: #f6ede7;color: #766560;}
+.log_tb table tbody tr td{border-right: 1px solid #dddddd;}
+#content{background: #F6F6F6;width: 100%;min-width: 1300px;}
+.log{position: relative; padding: 10px 0 35px 0;}
+ul li{float: left;}
+.log select{width: 80px;color: #766560;text-indent: 10px;}
+.allrecord li{margin-right: 35px;padding-bottom: 11px;}
+.allrecord  li:hover{border-bottom: 4px solid #e73936;}
+
+.selected{border-bottom: 4px solid #e73936;}
+body{background: #F6F6F6;}
+.tb_log{width: 100%; text-align: center;border: 1px solid #dcdcdc;min-width: 810px;}
+.tb_log td{height: 50px;}
+.calendar{width: 250px;position:relative;margin-left: 120px;}
+.log_content{width: 65%;min-width:810px;}
+.log_tb{background: #FFFFFF;width:100%;padding: 35px 35px 100px 35px;min-width: 820px;}
+.Visible_user{ margin-left: 550px;}
+.Visible_user li{margin-left: 35px;padding: 2px;}
+.Visible_user li:hover{background: #e1d9d0;border: 1px #ada59f solid;}
+.float_left{float: left;}
+.float_right{float: right}
+.clear{clear: both;display: none;}
+
+/*分页*/
+.page{
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	color: #999;
+ 	margin-top: 20px;
+}
+.pagea{
+	vertical-align: middle;
+	padding: 5px 10px;
+	border:1px solid #999;
+	color: #999;
+}
+/*选中颜色*/
+.pagechecked{
+	background-color: #3699ff;
+	color: white;
+	border:1px solid #3699ff;
+}

@@ -1,0 +1,15 @@
+/**footer*/ 
+#footer{ background:#e1e1e1 ;height: 176px;}
+/*.foot_to_bottom{bottom: 0px; left: 0;right: 0;position: fixed;}*/
+.con{width: 1000px; min-width: 1000px; margin: 0 auto;}
+#footer .con .left{width: 400px; height: 140px;float: left;margin-top: 36px;}
+#footer a{padding:0 15px; font-size: 14px;color: #393939;text-decoration: none;}
+#footer .p1{padding: 10px 0 0 0;color: #838383;}
+#footer .p2{color: #838383;}
+#footer .con .center{width: 275px; height: 100px;margin-top: 36px;float: left; border-left:1px solid #999999;border-right:1px solid #999999;margin-left: 150px;}
+#footer .con .center .p3{padding-left: 37px;font-size: 14px;color: #212121;}
+#footer .con .center .p3 span{padding-left: 10px;color: #838383;font-style: oblique;}
+#footer .con .center .h1{ font-family: "微软雅黑" ! important;font-size: 30px; padding-left: 20px;font-weight: bold;}
+#footer .con .right{ margin:36px 0 0 45px; float:left;}
+#footer .con .right p{margin: 10px 0;text-align: center;}
+/**food end*/

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>添加新员工</title>
+		<style>
+		*{margin: 0;
+		padding: 0;
+		font-family: "微软雅黑";}
+			.add_window{
+				width: 410px;
+				height: 550px;
+				background: #FFFFFF;
+				border: 4px solid #7c7c7c;
+				border-radius: 5px;
+			}
+			.title{background: #e0e0e0;padding: 15px 0 15px 10px; color: #333333;}
+			table{width: 330px;margin: 0 auto;}
+			.text_a{text-align: right;}
+			input[type="text"]{width: 230px;height: 37px;margin-left: 10px;text-indent: 10px;}
+			.role select{width: 234px;height: 30px;margin-left: 10px;}
+			.gender select{width: 234px;height: 30px;margin-left: 10px;}
+			.add_staff{position: relative;top: 30px;}
+			.add_staff table tr td{padding: 5px 0;position: relative;}
+			.center{text-align: center;}
+			.confirm{background: #c53f3d;width: 100px;height: 35px;color: #FFFFFF;border: 0;}
+			textarea{margin-left: 10px;width: 232px;height: 45px;text-indent: 10px;}
+		</style>
+	</head>
+	<body>
+		<div class="add_window" id="newUser">
+			<div class="title">新增员工</div>
+			<div class="add_staff">
+				<table>
+					<tr>
+						<td class="text_a">*工号:</td>
+						<td ><input type="text"></td>
+					</tr>
+					<tr>
+						<td class="text_a">*密码:</td>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<td class="text_a">*系统角色:</td>
+						<td class="role">
+							<select>
+								<option>请选择角色</option>
+								<option>管理员</option>
+								<option>审核员</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="text_a">*姓名:</td>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<td class="text_a">性别:</td>
+						<td class="gender">
+							<select>
+								<option>男</option>
+								<option>女</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="text_a">*手机号:</td>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<td class="text_a">备注:</td>
+						<td><textarea></textarea></td>
+					</tr>
+					<tr class="center">
+						<td colspan="2">
+						<input type="button" value="确定" class="confirm"/>
+						</td>
+					</tr>
+					
+				</table>
+			</div>
+		</div>
+		
+		<div class="add_window" id="reUser">
+			<div class="title">恢复工号</div>
+			
+			<form class="add_staff">
+				<p class="center">正在恢复工号00251 王小二 审核员</p>
+				<table>
+					<tr>
+						<td class="text_a">密码:</td>
+						<td ><input type="text" placeholder="请输入密码"></td>
+					</tr>
+					<tr>
+						<td class="text_a"></td>
+						<td><input type="text" placeholder="请重新输入密码"></td>
+					</tr>
+					<tr class="center">
+						<td colspan="2">
+						<input type="button" value="确定" class="confirm"/>
+						</td>
+					</tr>
+					
+				</table>
+			</form>
+		</div>
+		
+		
+	</body>
+</html>

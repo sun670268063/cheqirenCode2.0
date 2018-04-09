@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>审核订单</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/manage.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/credit.css">
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+<div class="right_con">
+	<div class="right_con_ch" >
+            	<div class="apply_top">
+                    <h1>审核订单</h1>
+                    <ul class="ul">
+                        <li>认证员<select>
+                            <option>&nbsp;&nbsp;1</option>
+                            <option>&nbsp;&nbsp;2</option>
+                            <option>&nbsp;&nbsp;3</option>
+                        </select></li>
+                        <li class="ll state" onclick="tab_change('tr3_1')">未审核</li>
+                        <li class="ll" onclick="tab_change('tr3_2')">已审核</li>
+                        <li class="ll" onclick="tab_change('tr3_3')">重新认证</li>
+                    </ul>
+                    <p>共&nbsp;<span>68条</span></p>
+                </div>
+                <div class="apply_con">
+                    <table class="tr3_1" style="border-collapse:collapse;width:100%;">
+                        <tr class="table_top">
+                            <td align="center" width="60px">时间</td>
+                            <td align="center" width="80px">订单编号</td>
+                            <td align="center" width="180px">详情</td>
+                            <td align="center" width="28%">操作</td>
+                        </tr>
+                        <tr>
+                                <td align="center" class="time" style="padding-top:20px">2015-10-20 12:20</td>
+                                <td align="center" style="padding-top:20px">2016103324123</td>
+                                <td>
+                                   <div class="wrap"><span class="time">授权认证：</span>基础信息 教育经历 工作经历 项目经历 证书</div>
+                                    <div class="wrap"><span class="time">认证人：</span>刘美&nbsp;&nbsp;&nbsp;
+                                    <span class="time">认证时间：</span>2016-33-22 12:00
+                                    </div>
+                                </td>
+                                <td align="center">
+                                    <input type="button" value="查看简历">
+                                    <input type="button" value="认证结果">
+                                    <input type="button" value="重新认证" class="recall">
+                                    <input type="button" value="审核通过">
+                                </td>
+                        </tr>
+                        <tr>
+                                <td align="center" class="time" style="padding-top:20px">2015-10-20 12:20</td>
+                                <td align="center" style="padding-top:20px">2016103324123</td>
+                                <td>
+                                   <div class="wrap"><span class="time">授权认证：</span>基础信息 教育经历 工作经历 项目经历 证书</div>
+                                    <div class="wrap"><span class="time">认证人：</span>刘美&nbsp;&nbsp;&nbsp;
+                                    <span class="time">认证时间：</span>2016-33-22 12:00
+                                    </div>
+                                </td>
+                                <td align="center">
+                                    <input type="button" value="查看简历">
+                                    <input type="button" value="认证结果">
+                                    <input type="button" value="重新认证">
+                                    <input type="button" value="审核通过">
+                                </td>
+                        </tr>
+                        <tr>
+                                <td align="center" class="time" style="padding-top:20px">2015-10-20 12:20</td>
+                                <td align="center" style="padding-top:20px">2016103324123</td>
+                                <td>
+                                   <div class="wrap"><span class="time">授权认证：</span>基础信息 教育经历 工作经历 项目经历 证书</div>
+                                    <div class="wrap"><span class="time">认证人：</span>刘美&nbsp;&nbsp;&nbsp;
+                                    <span class="time">认证时间：</span>2016-33-22 12:00
+                                    </div>
+                                </td>
+                                <td align="center">
+                                    <input type="button" value="查看简历">
+                                    <input type="button" value="认证结果">
+                                    <input type="button" value="重新认证">
+                                    <input type="button" value="审核通过">
+                                </td>
+                        </tr>
+                    </table>
+                    <table class="tr3_2" style="display:none;border-collapse:collapse;width:100%;">
+                            <tr class="table_top">
+                            <td align="center" width="60px">时间</td>
+                            <td align="center" width="80px">订单编号</td>
+                            <td align="center" width="180px">详情</td>
+                            <td align="center" width="80px">状态</td>
+                            </tr>
+                            <tr>
+                                <td align="center" class="time" style="padding-top:20px;">2015-10-20 12:20</td>
+                                <td align="center" style="padding-top:20px;">2016103324123</td>
+                                <td>
+                                   <div class="wrap"><span class="time">授权认证：</span>基础信息 教育经历 工作经历 项目经历 证书</div>
+                                    <div class="wrap"><span class="chi_time">转</span>刘美&nbsp;&nbsp;&nbsp;
+                                    <span class="time">2016-33-22 12:00</span>
+                                    </div>
+                                </td>
+                                <td align="center" style="padding-top:20px;">
+                                    已审核
+                                </td>
+                            </tr>
+                    </table>
+                    <table class="tr3_3" style="display:none;border-collapse:collapse;width:100%;">
+                        <tr class="table_top">
+                            <td align="center" width="60px">时间</td>
+                            <td align="center" width="80px">订单编号</td>
+                            <td align="center" width="180px">详情</td>
+                            <td align="center" width="80px">状态</td>
+                        </tr>
+                        <tr>
+                                <td align="center" class="time" style="padding-top:20px;">2015-10-20 12:20</td>
+                                <td align="center" style="padding-top:20px;">2016103324123</td>
+                                <td>
+                                   <div class="wrap"><span class="time">授权认证：</span>基础信息 教育经历 工作经历 项目经历 证书</div>
+                                    <div class="wrap"><span class="chi_time">转</span>刘美&nbsp;&nbsp;&nbsp;
+                                    <span class="time">2016-33-22 12:00</span>
+                                    </div>
+                                </td>
+                                <td align="center" style="padding-top:20px;">
+                                    已退回
+                                </td>
+                            </tr>
+                    </table>
+                </div>
+            </div>
+</div>
+<script type="text/javascript">
+    //顶部列表样式
+    $(".left_con li").click(function() {
+        $(this).addClass("libg").siblings().removeClass("libg");
+    });
+    //左侧列表样式
+    $(".list li").click(function() {
+        $(this).addClass("lisbg").siblings().removeClass("lisbg");
+    });
+    //隔行变色
+    $(document).ready(function() {
+
+	    $(".reson").click(function(){
+	    	var a = $(this).attr("class");
+	    	$(".tr33").slideToggle("fast");
+	    	if (a =="reson") {
+	    		$(this).css({"background-color":"rgb(197,63,63)","color":"white","border-color":"rgb(197,63,63)"});
+	    		$(this).addClass("1");
+	    	}else{
+	    		$(this).css({"background-color":"white","color":"rgb(102,102,102)","border-color":"rgb(201,197,197)"});
+	    		$(this).removeClass("1");
+	    	}
+	    });
+    });
+    //table标签移除
+    $(".app").click(function(){
+        $(this).parent().parent().remove();
+        alert("申领成功");
+    });
+    //顶部导航切换
+    function tab(classname) {
+        var classname = classname;
+        $("." + classname).show().siblings().not(".tr").hide();
+        $(".right").show();
+        /*$(".tr").show();*/
+    }
+    //右侧列表切换
+    function tab_change(classname){
+        var classname = classname;
+        $("." + classname).show().siblings().hide();
+    }
+    //红线
+    $(".ll").click(function() {
+        $(this).addClass("state").siblings().removeClass("state");
+    });
+    //白背景
+    $(".my").click(function(){
+        $(this).addClass("me").siblings().removeClass("me");
+    });
+    //layer
+    $('.recall').on('click', function(){
+	    layer.open({
+	        type: 1,
+	        area: ['600px', '320px'],
+	        shadeClose: true, //点击遮罩关闭
+	        title:"请填写重新认证原因",
+	        offset: '200px',
+	        content: '<div style="text-align:center;margin-top:20px" ><textarea class="la_input" placeholder="请简短说明重新认证原因。" maxlength="500"/></div><div style="text-align:center"><input type="button" value="确认提交"/ class="save"></div>' //这里content是一个普通的String
+	    });
+	});
+	$(".page a").click(function(){
+		$(this).addClass("pagechecked").siblings().removeClass("pagechecked");
+	});
+</script>
+</body>
+</html>

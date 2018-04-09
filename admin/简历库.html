@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/common.css">
+		<link rel="stylesheet" type="text/css" href="css/manage.css">
+		<link rel="stylesheet" type="text/css" href="css/resume.css" />
+		<link rel="stylesheet" href="css/ion.calendar.css" />
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../js/report.js" ></script>
+		<title>简历库</title>
+	</head>
+
+	<body>
+		<div class="container">
+			<div id="content" class="mg_l_140">
+				<p class="fz_30 mg_t_20 mg_l_10">简历库</p>
+				<div class="resume mg_t_20">
+					<table class="table_resume">
+						<tbody class="tb_resume">
+							<tr>
+								<td colspan="2">
+									<label>编号</label><input type="text" />
+									<label>姓名</label><input type="text" />
+									<label>公司</label><input type="text" />
+									<label>职位</label><input type="text" />
+								</td>
+							</tr>
+							<tr class="edu_age">
+								<td>
+									<dl>
+										<dt>学历：</dt>
+										<dd class="selected mg_l_10">不限</dd>
+										<dd>高中</dd>
+										<dd>大专</dd>
+										<dd>本科</dd>
+										<dd>硕士</dd>
+										<dd>博士</dd>
+									</dl>
+								</td>
+								<td>
+									<dl>
+										<dt>性别：</dt>
+										<dd class="selected mg_l_10">不限</dd>
+										<dd>男</dd>
+										<dd>女</dd>
+									</dl>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label>年龄</label><input type="text" />&nbsp;&nbsp;至<input type="text" />
+								</td>
+								<td>
+									<label>工作年限</label><input type="text" />&nbsp;&nbsp;至<input type="text" />
+								</td>
+
+							</tr>
+
+							<tr>
+								<td colspan="2">
+									<dl>
+										<dt>所在地：</dt>
+										<dd class="selected limit">不限</dd>
+										<dd class="lc"></dd>
+										<input type="button" id="cityChoice" onfocus="csSelect(this);" value="请选择城市" class="cityChoice"/>
+									</dl>
+								</td>
+							</tr>
+
+							<tr>
+								<td>
+									<label>更新时间</label><input type="text" class="date" />&nbsp;&nbsp;至<input type="text" class="date" />
+								</td>
+								<td>
+									<label>授权时间</label><input type="text" class="date" />&nbsp;&nbsp;至<input type="text" class="date" />
+								</td>
+							</tr>
+
+							<tr>
+								<td colspan="2">
+									<label>报告时间</label><input type="text" class="date" />&nbsp;&nbsp;至<input type="text" class="date" />
+
+								</td>
+							</tr>
+
+						</tbody>
+					</table>
+
+					<div class="center mg_t_20">
+						<input type="button" value="搜索" class="search_btn" />
+						<input type="checkbox" class="mg_l_10 checkbox" /><span>只搜索含征信报告简历</span>
+					</div>
+
+					<div class="mg_t_20">
+						<div class="record">
+							<div class="fz_16 mg_t_20">所有简历&nbsp;&nbsp;<span>(123)</span></div>
+							<table class="tb_record mg_t_20">
+								<thead>
+									<td>序号</td>
+									<td>简历编号</td>
+									<td>更新时间</td>
+									<td>所在地</td>
+									<td>工作年限</td>
+									<td>当月月薪</td>
+									<td>在职公司</td>
+									<td>在职职位</td>
+									<td>简历报告</td>
+									<td>授权时间</td>
+
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td><a href="#0">254140251</a></td>
+										<td>2015-10-20&nbsp;12:20</td>
+										<td>北京市</td>
+										<td>12</td>
+										<td>3225</td>
+										<td>华为公司</td>
+										<td>轮机工程师</td>
+										<td><a href="征信报告.html" target="_blank"><img src="img/images/verify.png" /></a></td>
+										<td>2015-10-20</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td><a href="#0">254140251</a></td>
+										<td>2015-10-20&nbsp;12:20</td>
+										<td>北京市</td>
+										<td>12</td>
+										<td>3225</td>
+										<td>华为公司</td>
+										<td>轮机工程师</td>
+										<td>无</td>
+										<td>2015-10-20</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+								</tbody>
+
+							</table>
+							<div class=page>
+								<a class="pagea" href="#0">上一页</a>
+								<a class="pagea" href="#0">1</a>
+								<a class="pagea" href="#0">2</a>
+								<a class="pagea" href="#0">3</a>
+								<a class="pagea" href="#0">4</a>
+								<a class="pagea" href="#0">5</a>
+								<a class="pagea" href="#0">6</a>
+								<a class="pagea" href="#0">7</a>
+								<a class="pagea" href="#0">8</a>
+								<a class="pagea" href="#0">...10</a>
+								<a class="pagea" href="#0">下一页</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div id="footer">
+			<div class="min-w1k">
+				2015 © All rights reserver. www.cheqiren.com</br>琼ICP备13002531号-4ICP证123434号
+			</div>
+		</div>
+		<!-- alpha div -->
+		<div id="maskLayer" style="display:none">
+			<iframe id="maskLayer_iframe" frameBorder=0 scrolling=no style="filter:alpha(opacity=10)"></iframe>
+			<div id="alphadiv" style="filter:alpha(opacity=10);-moz-opacity:0.1;opacity:0.1"></div>
+			<div id="drag">
+				<h2 id="drag_h"></h2>
+				<div id="drag_con"></div>
+				<!-- drag_con end -->
+			</div>
+		</div>
+		<!-- maskLayer end -->
+		<!-- alpha div end -->
+        <div id="sublist" style="display:none"></div>
+		<script type="text/javascript" src="js/date/moment.min.js"></script>
+		<script type="text/javascript" src="js/date/moment.zh-cn.js"></script>
+		<script type="text/javascript" src="js/date/ion.calendar.min.js"></script>
+		<script type="text/javascript" src="js/citypicker/drag.js"></script>
+		<script type="text/javascript" src="js/citypicker/city_arr.js"></script>
+		<script type="text/javascript" src="js/citypicker/city_func.js"></script>
+		<script type="text/javascript">
+			
+			$(function() {
+				$(".record tbody>tr:odd").addClass("odd");
+				$(".record tbody>tr:even").addClass("even");
+				$(".record tbody tr td>a").addClass("number");
+				
+					/*时间控件*/
+				$('.date').each(function() {
+					$(this).ionDatePicker({
+						lang: 'zh-cn',
+						format: 'YYYY-MM-DD'
+					});
+				});
+			});
+			$(function() {
+				var $div_li = $(".resume .edu_age dd");
+				$div_li.click(function() {
+					$(this).addClass("selected").siblings().removeClass("selected");
+				});
+			});
+		</script>
+		
+	</body>
+
+</html>

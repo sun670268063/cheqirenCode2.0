@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>征信报告</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/manage.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/report.css">
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+	<div class="title">
+        <img src="img/images/logos.png" class="logo">
+        <div class="title_list">
+            <ul>
+                <li><a href="个人管理.html">kehu</a></li>
+                <li><a href="#" class="c" onclick="tab('iframe_f','iframe_s')">修改密码</a></li>
+                <li><a href="#" class="logout" style="color:rgb(174,174,174)">退出登录</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="list">
+        <ul>
+            <li onclick="srcc('征信订单.html')">征信订单</li>
+            <li onclick="srcc('简历库.html')">简历库</li>
+            <li onclick="srcc('员工管理.html')">员工管理</li>
+            <li onclick="srcc('日志.html')">日志</li>
+        </ul>
+    </div>
+    <div class="container">
+    	<div class="out">
+    		<a href=""><img src="img/images/icon_11.png">导出</a>
+    	</div>
+    	<div class="report_con">
+    		<div class="report_back">
+	    		<div class="h1">征信报告</div>
+	    		<div class="number">
+	    			<p class="diaochabianhao">调查报告编号</p>
+	    			<p class="bianhao">52455874</p>
+	    		</div>
+	    		<table class="basic_im" border="0" cellspacing="0">
+	    			<tr class="title1">
+	    				<td colspan="5" class="titlecolor padding">基本信息</td>
+	    			</tr>
+	    			<tr class="bgc">
+	    				<td class="im padding">候选人姓名</td>
+	    				<td colspan="3" class="bgcpadding">张三三</td>
+	    				<td rowspan="5" class="picture"><div></div></td>
+	    			</tr>
+	    			<tr class="bgc">
+	    				<td class="im padding">证件号</td>
+	    				<td colspan="3" class="bgcpadding">保密</td>
+	    			</tr>
+	    			<tr class="bgc">
+	    				<td class="im padding">性别</td>
+	    				<td colspan="3" class="bgcpadding">男</td>
+	    			</tr>
+	    			<tr class="bgc">
+	    				<td class="im padding">出生日期</td>
+	    				<td colspan="3" class="bgcpadding">1222年00月00日</td>
+	    			</tr>
+	    			<tr class="bgc last">
+	    				<td class="im padding">报告等级</td>
+	    				<td class="bgcpadding">初级认证</td>
+	    				<td class="im date">报告提交日期</td>
+	    				<td class="date" style="border:none">2016年04月25日</td>
+	    			</tr>
+	    		</table>
+	    		<div class="div">
+	    			<div class="title1"><p class="titlecolor">征信调查报告</p></div>
+	    			<table width="100%" cellspacing="0">
+	    				<tr>
+	    					<td class="padding" >概述</td>
+	    				</tr>
+	    			</table>
+	    		</div>
+	    		<div class="div">
+	    			<div class="title1"><p class="titlecolor">个人基本信息</p></div>
+	    			<table width="100%" cellspacing="0">
+	    				<tr>
+	    					<td class="color padding sbs" >身份证号</td>
+	    					<td class="border" align="center">已验证</td>
+	    					<td class="padding">属实</td>
+	    				</tr>
+	    			</table>
+	    			<div class="title2 color"><p>教育背景</p></div>
+	    			<table width="100%" cellspacing="0">
+	    				<tr class="zhengshu">
+	    					<td class="padding sbs">上海财经大学</td>
+	    					<td class="border" align="center">已验证</td>
+	    					<td class="padding">属实</td>
+	    				</tr>
+	    				<tr class="zhengshu">
+	    					<td class="padding sbs">上海财经大学</td>
+	    					<td class="border" align="center"></td>
+	    					<td class="padding">无法认证，时间太久</td>
+	    				</tr>
+	    			</table>
+	    			<div class="title2 color"><p>工作经历</p></div>
+	    			<table width="100%" cellspacing="0">
+	    				<tr class="zhengshu">
+	    					<td class="padding sbs">上海航天科技技术有限公司</td>
+	    					<td class="border" align="center">已验证</td>
+	    					<td class="padding">属实</td>
+	    				</tr>
+	    			</table>
+	    			<div class="title2 color"><p>项目经历</p></div>
+	    			<table width="100%" cellspacing="0">
+	    				<tr class="zhengshus">
+	    					<td class="padding sbs">未提供</td>
+	    					<td class="border" align="center">已验证</td>
+	    					<td class=""></td>
+	    				</tr>
+	    				<tr class="zhengshus">
+	    					<td class="padding sbs">未提供</td>
+	    					<td class="border" align="center">已验证</td>
+	    					<td class=""></td>
+	    				</tr>
+	    			</table>
+	    			<div class="title2 color"><p>证书资质</p></div>
+	    			<table width="100%" cellspacing="0">
+	    				<tr class="zhengshuss">
+	    					<td class="padding sbs">未提供</td>
+	    					<td class="border" align="center">已验证</td>
+	    					<td class=""></td>
+	    				</tr>
+	    				<tr class="zhengshuss">
+	    					<td class="padding sbs">未提供</td>
+	    					<td class="border" align="center">已验证</td>
+	    					<td class=""></td>
+	    				</tr>
+	    			</table>
+	    		</div>
+	    		<div class="div">
+	    			<div class="title1"><p class="titlecolor">候选人提供信息</p></div>
+	    			<table cellspacing="0" width="100%">
+	    				<tr class="top">
+		    				<td align="center">信息</td>
+		    				<td align="center">真实性</td>
+		    				<td align="center">说明</td>
+	    				</tr>
+	    				<tr>
+	    					<td class="padding sbs">身份证号（保密）</td>
+	    					<td class="border" align="center">已验证</td>
+	    					<td class=""></td>
+	    				</tr>
+	    			</table>
+	    		</div>
+	    		<div class="div">
+	    			<div class="title1"><p class="titlecolor">教育背景核实</p></div>
+	    			<table cellspacing="0" width="100%">
+	    				<tr class="top">
+		    				<td align="center" colspan="2" class="sbs">信息</td>
+		    				<td align="center">真实性</td>
+		    				<td align="center">说明</td>
+	    				</tr>
+	    				<tr class="edubj">
+	    					<td class="color padding ye">学校名称</td>
+	    					<td class="borders ee" align="center">东北财经大学</td>
+	    					<td class="border" align="center">-</td>
+	    					<td class=""></td>
+	    				</tr>
+	    				<tr class="edubj">
+	    					<td class="color padding ye">入学时间</td>
+	    					<td class="borders ee" align="center">未提供</td>
+	    					<td class="border" align="center"></td>
+	    					<td class=""></td>
+	    				</tr>
+	    				<tr class="edubj">
+	    					<td class="color padding ye">毕业时间</td>
+	    					<td class="borders ee" align="center">东北财经大学</td>
+	    					<td class="border" align="center"></td>
+	    					<td class=""></td>
+	    				</tr>
+	    				<tr class="edubj">
+	    					<td class="color padding ye">学历性质</td>
+	    					<td class="borders ee" align="center">东北财经大学</td>
+	    					<td class="border" align="center"></td>
+	    					<td class=""></td>
+	    				</tr>
+	    				<tr class="edubj">
+	    					<td class="color padding ye">专业</td>
+	    					<td class="borders ee" align="center">东北财经大学</td>
+	    					<td class="border" align="center"></td>
+	    					<td class=""></td>
+	    				</tr>
+	    			</table>
+	    		</div>
+	    		<table class="basic_im nones" border="0" cellspacing="0">
+	    			<tr>
+	    				<td colspan="6" class="padding titlecolor title1">供职公司：广州乐图网科技股份有限公司</td>
+	    			</tr>
+	    			<tr>
+	    				<td colspan="6" class="title2">工作履历</td>
+	    			</tr>
+	    			<tr class="top">
+		    				<td align="center" colspan="2" class="sbs">信息</td>
+		    				<td align="center">真实性</td>
+		    				<td align="center">说明</td>
+	    			</tr>
+	    			<tr class="jobbj">
+	    				<td class="ye color padding">公司名称</td>
+	    				<td class="ee borders padding">东北财经大学</td>
+	    				<td class="border" align="center">是</td>
+	    				<td></td>
+	    			</tr>
+	    			<tr class="jobbj">
+	    				<td class="ye color padding">雇用时间</td>
+	    				<td class="ee borders padding">2016.03-2016.01</td>
+	    				<td class="border" align="center">是</td>
+	    				<td></td>
+	    			</tr>
+	    			<tr class="jobbj">
+	    				<td class="ye color padding">职位名称</td>
+	    				<td class="ee borders padding">产品经理产品经理产品经理</td>
+	    				<td class="border" align="center">-</td>
+	    				<td></td>
+	    			</tr>
+	    			<tr class="jobbj">
+	    				<td class="ye color padding">直接上级</td>
+	    				<td class="ee borders padding">未提供</td>
+	    				<td class="border" align="center">是</td>
+	    				<td></td>
+	    			</tr>
+	    			<tr class="jobbj">
+	    				<td class="ye color padding">最后薪金</td>
+	    				<td class="ee borders padding">00000</td>
+	    				<td class="border" align="center">是</td>
+	    				<td></td>
+	    			</tr>
+	    			<tr class="jobbj">
+	    				<td class="ye color padding">离职原因</td>
+	    				<td class="ee borders padding">未提供</td>
+	    				<td class="border" align="center">是</td>
+	    				<td></td>
+	    			</tr>
+	    			<tr class="jobbj">
+	    				<td colspan="2" class="color sbs padding">候选人是否与贵公司有劳动争议</td>
+	    				<td class="border" align="center">否</td>
+	    				<td></td>
+	    			</tr>
+	    			<tr class="jobbj">
+	    				<td colspan="2" class="color sbs padding">候选人是否与贵公司有违纪违规行为</td>
+	    				<td class="border" align="center">否</td>
+	    				<td></td>
+	    			</tr>
+	    			<tr class="jobbj">
+	    				<td colspan="2" class="color sbs padding">候选人是否与贵公司签订培训协议</td>
+	    				<td class="border" align="center">否</td>
+	    				<td></td>
+	    			</tr>
+	    			<tr class="jobbj">
+	    				<td colspan="2" class="color sbs padding">候选人是否与贵公司签订竞业禁止协议</td>
+	    				<td class="border" align="center">否</td>
+	    				<td></td>
+	    			</tr>
+	    			<tr class="jobbj">
+	    				<td colspan="2" class="color sbs padding">候选人是否适合再次雇佣</td>
+	    				<td class="border" align="center">否</td>
+	    				<td></td>
+	    			</tr>
+	    			<tr class="green">
+	    				<td colspan="2" style="border-right:1px solid #c7c191;">
+	    				<span class="color paddings">证明人</span>
+	    				<span class="borderss">李莎莎 女士</span>
+	    				<span class="color bordersss" >证明人职位</span>
+	    				</td>
+	    				<td colspan="2">
+	    				<span class="">证明人职位证明人职位</span>
+	    				<span class="color borderss" >调查时间</span>
+	    				<span>2016年03月29日</span>
+	    				</td>
+	    			</tr>
+	    			<table class="basic_im none" cellspacing="0">
+	    			<tr>
+	    				<td colspan="6" class="title2 margin">工作表现鉴定</td>
+	    			</tr>
+	    			<tr class="top">
+	    				<td class="lbb" " align="center" colspan="2">信息</td>
+	    				<td align="center" colspan="2" colspan="2">说明</td>
+	    			</tr>
+	    			<tr class="bmx">
+	    				<td colspan="2"  class="color padding">和候选人关系</td>
+	    				<td class="borders padding" colspan="2" >同事</td>
+	    			</tr>
+	    			<tr class="bmx">
+	    				<td colspan="2" class="color padding">共事时间</td>
+	    				<td class="borders padding" colspan="2">候选人入职至离职。</td>
+	    			</tr>
+	    			<tr class="bmx">
+	    				<td colspan="2" class="color padding">候选人工作积极性如何</td>
+	    				<td class="borders padding" colspan="2">乐于承担责任乐于承担责任乐于承担责任乐于承担责任乐于承担责任乐于承担责任乐于承担责任乐于承担责任</td>
+	    			</tr>
+	    			<tr class="bmx">
+	    				<td colspan="2" class="color padding">候选人最突出的职业优点是什么</td>
+	    				<td class="borders padding" colspan="2">乐于承担责任乐于承担责任乐于承担责任乐于承担责任乐于承担责任乐于承担责任乐于承担责任乐于承担责任</td>
+	    			</tr>
+	    			<tr class="bmx">
+	    				<td colspan="2" class="color padding">候选人的不足或可以改进的地方有哪些</td>
+	    				<td class="borders padding" colspan="2">候选人入职至离职。</td>
+	    			</tr>
+	    			<tr class="bmx">
+	    				<td colspan="2" class="color padding">如何评价候选人的抗压能力</td>
+	    				<td class="borders padding" colspan="2">候选人入职至离职。</td>
+	    			</tr>
+	    			<tr class="bmx">
+	    				<td colspan="2" class="color padding">候选人和同事相处是否融洽</td>
+	    				<td class="borders padding" colspan="2">候选人和同事相处是否融洽</td>
+	    			</tr>
+	    			<tr class="bmx">
+	    				<td colspan="2" class="color padding">候选人的职业操守或道德品质有无问题</td>
+	    				<td class="borders padding" colspan="2">候选人入职至离职。</td>
+	    			</tr>
+	    			<tr class="bmx">
+	    				<td colspan="2" class="color padding">候选人的工作表现可以打几分，满分十分</td>
+	    				<td class="borders padding" colspan="2"><span>0</span>&nbsp;分</td>
+	    			</tr>
+	    			<tr class="green">
+	    				<td colspan="2" style="border-right:1px solid #c7c191;">
+	    				<span class="color paddings">证明人</span>
+	    				<span class="borderss">李莎莎 女士</span>
+	    				<span class="color bordersss" >证明人职位</span>
+	    				</td>
+	    				<td colspan="2">
+	    				<span class="">证明人职位证明人职位</span>
+	    				<span class="color borderss" >调查时间</span>
+	    				<span>2016年03月29日</span>
+	    				</td>
+	    			</tr>
+	    			</table>
+	    		</table>
+	    		<table class="basic_im" border="0" cellspacing="0">
+	    			<tr class="title1">
+	    				<td colspan="4" class="padding titlecolor">参与项目：微信公众号开发</td>
+	    			</tr>
+	    			<tr class="zhengshu top">
+	    				<td colspan="2" align="center" align="center">信息</td>
+	    				<td align="center">真实性</td>
+	    				<td align="center">说明</td>
+	    			</tr>
+	    			<tr class="zhengshu">
+	    				<td class="imlast a padding color" >项目名称</td>
+	    				<td class="imlast b padding" >微信公众号开发</td>
+	    				<td class="imlast c" align="center">是</td>
+	    				<td></td>
+	    			</tr>
+	    			<tr class="zhengshu">
+	    				<td class="imlast a padding color">雇用时间</td>
+	    				<td class="imlast b padding">2014.06-2014.11</td>
+	    				<td class="imlast c" align="center">是</td>
+	    				<td></td>
+	    			</tr>
+	    			<tr class="zhengshu">
+	    				<td class="imlast a padding color" colspan="3">候选人在项目中表现如何</td>
+	    				<td></td>
+	    			</tr>
+	    			<tr class="zhengshu">
+	    				<td class="imlast a padding color" colspan="3">候选人在项目中担任的角色</td>
+	    				<td></td>
+	    			</tr>
+	    			<tr class="green">
+	    				<td colspan="2" style="border-right:1px solid #c7c191;">
+	    				<span class="color paddings">证明人</span>
+	    				<span class="borderss">李莎莎 女士</span>
+	    				<span class="color bordersss" >证明人职位</span>
+	    				</td>
+	    				<td colspan="2">
+	    				<span class="">证明人职位证明人职位</span>
+	    				<span class="color borderss" >调查时间</span>
+	    				<span>2016年03月29日</span>
+	    				</td>
+	    			</tr>
+	    		</table>
+	    		<div class="div">
+	    			<div class="title1"><p class="titlecolor">证书资质核实</p></div>
+	    			<table  width="100%" cellspacing="0">
+		    			<tr class="top">
+		    				<td colspan="2" align="center" align="center">信息</td>
+		    				<td align="center">真实性</td>
+		    				<td align="center">说明</td>
+		    			</tr>
+	    			<tr>
+	    				<td class="imlast a color padding">证书名称</td>
+	    				<td class="imlast b padding" style="padding-left:15px;">计算机职业六级证</td>
+	    				<td class="imlast c" align="center">是</td>
+	    				<td></td>
+	    			</tr>
+	    			</table>
+	    		</div>
+	    		<div class="shengming">
+    				<div class="img"><img src="img/images/icon_12.png"></div>
+    					<p>以上是对于车企人用户&nbsp;&nbsp;<span>张三三</span>&nbsp;&nbsp;背景信息征信的结果，所有信息均通过符合法律法规的途径获得，并由车企人网记录整理而成，且不代表车企人网或太车企人网任何员工的主观意见。此报告内容仅用于车企人网用户&nbsp;&nbsp;<span>张三三</span>&nbsp;&nbsp;的背景信息核实用途，仅作为用人单位员工入职参考，不得用于其他用途。</p>
+    					<div class="luokuan">
+    						<p>车企人网</p>
+    						<br />
+    						<p>2016-04-25</p>
+    					</div>
+    			</div>
+    	</div>
+    </div>
+    <script type="text/javascript" src="js/report.js"></script>
+</body>
+</html>

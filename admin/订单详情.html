@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>个人管理-个人资料</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/manage.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/detail.css">
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/layer-v2.3/layer/layer.js"></script>
+    <script type="text/javascript" src="js/detail.js"></script>
+</head>
+
+<body>
+    <div class="title">
+        <img src="img/images/logos.png" class="logo">
+        <div class="title_list">
+            <ul>
+                <li><a href="个人管理.html">kehu</a></li>
+                <li class="title_list2"><a href="#" onclick="tab('iframe_f','iframe_s')">修改密码</a></li>
+                <li class="title_list3"><a href="#" class="logout" style="color:rgb(174,174,174)">退出登录</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="list">
+        <ul>
+            <li class="list1" onclick="srcc('征信订单.html')">征信订单</li>
+            <li onclick="srcc('简历库.html')">简历库</li>
+            <li onclick="srcc('员工管理.html')">员工管理</li>
+            <li onclick="srcc('日志.html')">日志</li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="con">
+            <div class="detail_title">
+                <a href="#" class="back">返回上一页</a>
+                <h1>编号：45262221</h1>
+                <a class="trans" onclick="ShowHide('fuceng')">转移订单</a>
+                <div class="fuceng">
+                    <p>请选择要转交的人</p>
+                    <div class="fu_con">
+                        <div class="select">
+                            <input type="text" name="" class="selectcheck" value="请选择" readonly unselectable="on" onclick="se()">
+                            <ul>
+                                <li onclick="checked(this)" value="认证员1">认证员1</li>
+                                <li onclick="checked(this)" value="认证员2">认证员2</li>
+                                <li onclick="checked(this)" value="认证员3">认证员3</li>
+                                <li onclick="checked(this)" value="认证员4">认证员4</li>
+                            </ul>
+                        </div>
+                        <input type="button" name="" class="sub" value="转交">
+                    </div>
+                </div>
+            </div>
+            <div class="detail_middle">
+                <div class="basic">
+                    <ul>
+                        <li>姓名：<span class="name">张三三</span></li>
+                        <li>性别：<span>男</span></li>
+                    </ul>
+                </div>
+                <div class="time">
+                    <ul>
+                        <li>提交时间：</li>
+                        <li><span>2015-11-02</span></li>
+                    </ul>
+                </div>
+                <div class="detail_state">
+                    <ul>
+                        <li>状态：</li>
+                        <li id="states">编辑中</li>
+                    </ul>
+                </div>
+                <div class="details">
+                    <ul>
+                        <li>&nbsp;&nbsp;&nbsp;认证人：<span>李丽</span></li>
+                        <li>认证时间：<span>2016-05-20</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="detail_project">
+                <p class="shouquan">授权认证：</p>
+                <p class="project">基础信息</p>
+                <p class="project">教育信息</p>
+                <p class="project">工作经历</p>
+                <p class="project">项目经历</p>
+                <p class="project six">证书</p>
+            </div>
+            <div class="detail_de">
+                <div class="detail_con">
+                    <ul>
+                        <li class="detail_li checked" onclick="tab('a')">基础信息</li>
+                        <li class="detail_li" onclick="tab('b')">教育信息</li>
+                        <li class="detail_li" onclick="tab('c')">工作经历</li>
+                        <li class="detail_li" onclick="tab('d')">项目经历</li>
+                        <li class="detail_li" onclick="tab('e')">证书</li>
+                    </ul>
+                    <input type="button" name="" value="提交审核" class="save1">
+                    <input type="button" name="" value="提交审核" class="save1 bling">
+                </div>
+                <div class="imfor">
+                    <div class="imformation a">
+                        <div class="indenty">
+                            <p class="number">身份证号：<span>460032199999999999</span></p>
+                        </div>
+                        <form>
+                            <div class="varify">
+                                <p>身份证件核实</p>
+                                <input name="yes" type="radio" value="" />属实
+                                <input name="yes" type="radio" value="" />不属实
+                                <input name="yes" type="radio" value="" />无法认证
+                                <input type="text" name="ps" maxlength="80" class="save3" placeholder="说明">
+                                <div class="realy">
+                                    <p>身份证号码真实性：</p>
+                                    <div class="selectmin">
+                                        <input type="text" name="" class="selectcheck1" value="请选择" readonly unselectable="on" onclick="selectd('shenfenz')">
+                                        <ul class="shenfenz">
+                                            <li class="ttt" onclick="check(this,'selectcheck1')" value="">是</li>
+                                            <li class="ttt" onclick="check(this,'selectcheck1')" value="">否</li>
+                                            <li class="ttt" onclick="check(this,'selectcheck1')" value="">——</li>
+                                        </ul>
+                                    </div>
+                                    <input type="text" name="ps" maxlength="80" class="save3" placeholder="说明">
+                                </div>
+                            </div>
+                            <input type="button" name="" value="保存" class="save2">
+                            <input type="button" name="" value="修改" class="save4">
+                        </form>
+                    </div>
+                    <div class="imformation b">
+                        <div class="indenty">
+                            <p class="number">认证学历：<span>南昌大学&nbsp;&nbsp;本科</span>&nbsp;&nbsp;
+                                <a href="img/images/test.jpg" target="view_window"><img src="img/images/icon_10.png"></a>
+                            </p>
+                        </div>
+                        <form>
+                            <div class="varify">
+                                <div class="varify_title">认证结果</div>
+                                <div class="varify_titles">
+                                    <p>教育背景：</p>
+                                    <input name="yes" type="radio" value="" />属实
+                                    <input name="yes" type="radio" value="" />不属实
+                                    <input name="yes" type="radio" value="" />无法认证
+                                    <input type="text" name="edu_ps" maxlength="80" class="titles save3" placeholder="说明">
+                                </div>
+                                <table cellspacing="10px">
+                                    <tr>
+                                        <td align="right">学校：</td>
+                                        <td>
+                                            <input type="text" name="school" class="text">
+                                        </td>
+                                        <td>
+                                            <div class="selectmin">
+                                                <input type="text" name="" class="selectcheck2" value="请选择" readonly unselectable="on" onclick="selectd('shenfenz2')">
+                                                <ul class="shenfenz2">
+                                                    <li class="ttt" onclick="check(this,'selectcheck2')" value="">是</li>
+                                                    <li class="ttt" onclick="check(this,'selectcheck2')" value="">否</li>
+                                                    <li class="ttt" onclick="check(this,'selectcheck2')" value="">——</li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <input type="text" name="school_ps" maxlength="80" class="save3" placeholder="说明">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>入学时间：</td>
+                                        <td>
+                                            <input type="text" name="school" class="text">
+                                        </td>
+                                        <td>
+                                            <div class="selectmin">
+                                                <input type="text" name="" class="selectcheck3" value="请选择" readonly unselectable="on" onclick="selectd('shenfenz3')">
+                                                <ul class="shenfenz3">
+                                                    <li class="ttt" onclick="check(this,'selectcheck3')" value="">是</li>
+                                                    <li class="ttt" onclick="check(this,'selectcheck3')" value="">否</li>
+                                                    <li class="ttt" onclick="check(this,'selectcheck3')" value="">——</li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <input type="text" name="school_ps" maxlength="80" class="save3" placeholder="说明">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>毕业时间：</td>
+                                        <td>
+                                            <input type="text" name="school" class="text">
+                                        </td>
+                                        <td>
+                                            <div class="selectmin">
+                                                <input type="text" name="" class="selectcheck4" value="请选择" readonly unselectable="on" onclick="selectd('shenfenz4')">
+                                                <ul class="shenfenz4">
+                                                    <li class="ttt" onclick="check(this,'selectcheck4')" value="">是</li>
+                                                    <li class="ttt" onclick="check(this,'selectcheck4')" value="">否</li>
+                                                    <li class="ttt" onclick="check(this,'selectcheck4')" value="">——</li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <input type="text" name="school_ps" maxlength="80" class="save3" placeholder="说明">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>学历性质：</td>
+                                        <td>
+                                            <input type="text" name="school" class="text">
+                                        </td>
+                                        <td>
+                                            <div class="selectmin">
+                                                <input type="text" name="" class="selectcheck5" value="请选择" readonly unselectable="on" onclick="selectd('shenfenz5')">
+                                                <ul class="shenfenz5">
+                                                    <li class="ttt" onclick="check(this,'selectcheck5')" value="">是</li>
+                                                    <li class="ttt" onclick="check(this,'selectcheck5')" value="">否</li>
+                                                    <li class="ttt" onclick="check(this,'selectcheck5')" value="">——</li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <input type="text" name="school_ps" maxlength="80" class="save3" placeholder="说明">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="right">专业：</td>
+                                        <td>
+                                            <input type="text" name="school" class="text">
+                                        </td>
+                                        <td>
+                                            <div class="selectmin">
+                                                <input type="text" name="" class="selectcheck6" value="请选择" readonly unselectable="on" onclick="selectd('shenfenz6')">
+                                                <ul class="shenfenz6">
+                                                    <li class="ttt" onclick="check(this,'selectcheck6')" value="">是</li>
+                                                    <li class="ttt" onclick="check(this,'selectcheck6')" value="">否</li>
+                                                    <li class="ttt" onclick="check(this,'selectcheck6')" value="">——</li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <input type="text" name="school_ps" maxlength="80" class="save3" placeholder="说明">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <input type="button" name="" value="保存" class="save2">
+                            <input type="button" name="" value="修改" class="save4">
+                        </form>
+                    </div>
+                    <div class="imformation e">
+                        <div class="indenty">
+                            <p class="number">认证证书：<span>微信公众号开发证书</span>&nbsp;&nbsp;
+                                <a href="img/images/test.jpg" target="view_window"><img src="img/images/icon_10.png"></a>
+                            </p>
+                            <!-- <div class="imgContainer">
+                            <img id="imageFullScreen" class="tong" src="img/images/test.jpg" onmousewheel="return bbimg(this)"/>
+                        </div> -->
+                        </div>
+                        <form>
+                            <div class="varify">
+                                <p>证书核实：</p>
+                                <input name="yes" type="radio" value="" />属实
+                                <input name="yes" type="radio" value="" />不属实
+                                <input name="yes" type="radio" value="" />无法认证
+                                <input type="text" name="ps" maxlength="80" class="save3" placeholder="说明">
+                                <div class="realy">
+                                    <p>该证书真实性：</p>
+                                    <div class="selectmin">
+                                                <input type="text" name="" class="selectcheck6" value="请选择" readonly unselectable="on" onclick="selectd('shenfenz6')">
+                                                <ul class="shenfenz6">
+                                                    <li class="ttt" onclick="check(this,'selectcheck6')" value="">是</li>
+                                                    <li class="ttt" onclick="check(this,'selectcheck6')" value="">否</li>
+                                                    <li class="ttt" onclick="check(this,'selectcheck6')" value="">——</li>
+                                                </ul>
+                                    </div>
+                                    <input type="text" name="ps" maxlength="80" class="save3" placeholder="说明">
+                                </div>
+                            </div>
+                            <input type="button" name="" value="保存" class="save2">
+                            <input type="button" name="" value="修改" class="save4">
+                        </form>
+                    </div>
+                    <div class="imformation d">
+                        <div class="indenty">
+                            <p class="number">项目经历：
+                                <span>微信公众号开发</span>
+                                <div class="collage">
+                                    <p>同事一：<span>李一 138000000</span></p>
+                                    <p>同事二：<span>李一 138000000</span></p>
+                                    <p>同事三：<span>李一 138000000</span></p>
+                                </div>
+                            </p>
+                        </div>
+                        <form>
+                            <div class="varify pro">
+                                <div class="varify_title">认证结果</div>
+                                <div class="varify_titles">
+                                    <p>教育背景：</p>
+                                    <input name="yes" type="radio" value="" />属实
+                                    <input name="yes" type="radio" value="" />不属实
+                                    <input name="yes" type="radio" value="" />无法认证
+                                    <input type="text" name="edu_ps" maxlength="80" class="titles save3" placeholder="说明">
+                                </div>
+                                <table cellspacing="10px">
+                                    <tr>
+                                        <td align="right">项目名称：</td>
+                                        <td>
+                                            <input type="text" name="school" class="text">
+                                        </td>
+                                        <td>
+                                            <div class="selectmin">
+                                                <input type="text" name="" class="selectcheck7" value="请选择" readonly unselectable="on" onclick="selectd('shenfenz7')">
+                                                <ul class="shenfenz7">
+                                                    <li class="ttt" onclick="check(this,'selectcheck7')" value="">是</li>
+                                                    <li class="ttt" onclick="check(this,'selectcheck7')" value="">否</li>
+                                                    <li class="ttt" onclick="check(this,'selectcheck7')" value="">——</li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <input type="text" name="school_ps" maxlength="80" class="save3" placeholder="说明">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>参与时间：</td>
+                                        <td>
+                                            <input type="text" name="school" class="text">
+                                        </td>
+                                        <td>
+                                            <div class="selectmin">
+                                                <input type="text" name="" class="selectcheck8" value="请选择" readonly unselectable="on" onclick="selectd('shenfenz8')">
+                                                <ul class="shenfenz8">
+                                                    <li class="ttt" onclick="check(this,'selectcheck8')" value="">是</li>
+                                                    <li class="ttt" onclick="check(this,'selectcheck8')" value="">否</li>
+                                                    <li class="ttt" onclick="check(this,'selectcheck8')" value="">——</li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <input type="text" name="school_ps" maxlength="80" class="save3" placeholder="说明">
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table cellspacing="10px" class="candidate">
+                                    <tr>
+                                        <td>候选人在项目中表现如何：</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="100%">
+                                            <input type="text" name="school_ps" maxlength="300" class="save3" placeholder="最多输入字数为300字">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>候选人在项目中担任的角色：</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="100%">
+                                            <input type="text" name="school_ps" maxlength="300" class="save3" placeholder="最多输入字数为300字">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="varify pro">
+                                <table cellspacing="10px">
+                                    <tr>
+                                        <td align="right">证明人：</td>
+                                        <td>
+                                            <input style="width:100%" type="text" name="school_ps" maxlength="80" class="save3" placeholder="请填写证明人真实姓名">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>证明人职位：</td>
+                                        <td>
+                                            <input style="width:100%" type="text" name="school_ps" maxlength="80" class="save3" placeholder="请填写证明人职位">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="varify">
+                                <p>项目核实：</p>
+                                <input name="yes" type="radio" value="" />属实
+                                <input name="yes" type="radio" value="" />不属实
+                                <input name="yes" type="radio" value="" />无法认证
+                                <input type="text" name="edu_ps" maxlength="80" class="titles save3" placeholder="说明">
+                            </div>
+                            <input type="button" name="" value="保存" class="save2">
+                            <input type="button" name="" value="修改" class="save4">
+                        </form>
+                    </div>
+                    <div class="imformation c">
+                        <div class="indenty">
+                            <p class="number">工作经历：
+                                <span>南昌大学有限公司</span>
+                                <div class="collage">
+                                    <p>同事一：<span>李一 138000000</span></p>
+                                    <p>同事二：<span>李一 138000000</span></p>
+                                    <p>同事三：<span>李一 138000000</span></p>
+                                </div>
+                            </p>
+                        </div>
+                        <div class="varify">
+                            <div class="varify_title">认证结果</div>
+                            <div class="varify_color">
+                                <p>工作履历</p>
+                            </div>
+                            <form>
+                                <div class="pro">
+                                    <table cellspacing="10px" class="candidate" width="100%">
+                                        <tr>
+                                            <td>公司名称</td>
+                                            <td>
+                                                <input type="text" name="school" class="text cs">
+                                            </td>
+                                            <td width="10%">
+                                                <div class="selectmin">
+                                                    <input type="text" name="" class="selectchecko" value="请选择" readonly unselectable="on" onclick="selectd('shenfenzo')">
+                                                    <ul class="shenfenzo">
+                                                        <li class="ttt" onclick="check(this,'selectchecko')" value="">是</li>
+                                                        <li class="ttt" onclick="check(this,'selectchecko')" value="">否</li>
+                                                        <li class="ttt" onclick="check(this,'selectchecko')" value="">——</li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <input type="text" name="school_ps" maxlength="80" class="save3" placeholder="说明">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>雇用时间</td>
+                                            <td>
+                                                <input type="text" name="school" class="text cs">
+                                            </td>
+                                            <td>
+                                                <div class="selectmin">
+                                                    <input type="text" name="" class="selectcheck10" value="请选择" readonly unselectable="on" onclick="selectd('shenfenz10')">
+                                                    <ul class="shenfenz10">
+                                                        <li class="ttt" onclick="check(this,'selectcheck10')" value="">是</li>
+                                                        <li class="ttt" onclick="check(this,'selectcheck10')" value="">否</li>
+                                                        <li class="ttt" onclick="check(this,'selectcheck10')" value="">——</li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <input type="text" name="school_ps" maxlength="80" class="save3" placeholder="说明">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>职位名称</td>
+                                            <td>
+                                                <input type="text" name="school" class="text cs">
+                                            </td>
+                                            <td>
+                                                <div class="selectmin">
+                                                    <input type="text" name="" class="selectcheck11" value="请选择" readonly unselectable="on" onclick="selectd('shenfenz11')">
+                                                    <ul class="shenfenz11">
+                                                        <li class="ttt" onclick="check(this,'selectcheck11')" value="">是</li>
+                                                        <li class="ttt" onclick="check(this,'selectcheck11')" value="">否</li>
+                                                        <li class="ttt" onclick="check(this,'selectcheck11')" value="">——</li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <input type="text" name="school_ps" maxlength="80" class="save3" placeholder="说明">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>直接上级</td>
+                                            <td>
+                                                <input type="text" name="school" class="text cs">
+                                            </td>
+                                            <td>
+                                                <div class="selectmin">
+                                                    <input type="text" name="" class="selectcheck12" value="请选择" readonly unselectable="on" onclick="selectd('shenfenz12')">
+                                                    <ul class="shenfenz12">
+                                                        <li class="ttt" onclick="check(this,'selectcheck12')" value="">是</li>
+                                                        <li class="ttt" onclick="check(this,'selectcheck12')" value="">否</li>
+                                                        <li class="ttt" onclick="check(this,'selectcheck12')" value="">——</li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <input type="text" name="school_ps" maxlength="80" class="save3" placeholder="说明">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>最后薪金</td>
+                                            <td>
+                                                <input type="text" name="school" class="text cs">
+                                            </td>
+                                            <td>
+                                                <div class="selectmin">
+                                                    <input type="text" name="" class="selectcheck13" value="请选择" readonly unselectable="on" onclick="selectd('shenfenz13')">
+                                                    <ul class="shenfenz13">
+                                                        <li class="ttt" onclick="check(this,'selectcheck13')" value="">是</li>
+                                                        <li class="ttt" onclick="check(this,'selectcheck13')" value="">否</li>
+                                                        <li class="ttt" onclick="check(this,'selectcheck13')" value="">——</li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <input type="text" name="school_ps" maxlength="80" class="save3" placeholder="说明">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>离职原因</td>
+                                            <td>
+                                                <input type="text" name="school" class="text cs">
+                                            </td>
+                                            <td>
+                                                <div class="selectmin">
+                                                    <input type="text" name="" class="selectcheck14" value="请选择" readonly unselectable="on" onclick="selectd('shenfenz14')">
+                                                    <ul class="shenfenz14">
+                                                        <li class="ttt" onclick="check(this,'selectcheck14')" value="">是</li>
+                                                        <li class="ttt" onclick="check(this,'selectcheck14')" value="">否</li>
+                                                        <li class="ttt" onclick="check(this,'selectcheck14')" value="">——</li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <input type="text" name="school_ps" maxlength="80" class="save3" placeholder="说明">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">候选人是否与贵公司有劳动争议</td>
+                                            <td>
+                                                <div class="selectmin">
+                                                    <input type="text" name="" class="selectcheck15" value="请选择" readonly unselectable="on" onclick="selectd('shenfenz15')">
+                                                    <ul class="shenfenz15">
+                                                        <li class="ttt" onclick="check(this,'selectcheck15')" value="">是</li>
+                                                        <li class="ttt" onclick="check(this,'selectcheck15')" value="">否</li>
+                                                        <li class="ttt" onclick="check(this,'selectcheck15')" value="">——</li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <input type="text" name="school_ps" maxlength="80" class="save3" placeholder="说明">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">候选人是否有违纪违规行为</td>
+                                            <td>
+                                                <div class="selectmin">
+                                                    <input type="text" name="" class="selectcheck16" value="请选择" readonly unselectable="on" onclick="selectd('shenfenz16')">
+                                                    <ul class="shenfenz16">
+                                                        <li class="ttt" onclick="check(this,'selectcheck16')" value="">是</li>
+                                                        <li class="ttt" onclick="check(this,'selectcheck16')" value="">否</li>
+                                                        <li class="ttt" onclick="check(this,'selectcheck16')" value="">——</li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <input type="text" name="school_ps" maxlength="80" class="save3" placeholder="说明">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">候选人是否与贵公司签订培训协议</td>
+                                            <td>
+                                                <div class="selectmin">
+                                                    <input type="text" name="" class="selectcheck17" value="请选择" readonly unselectable="on" onclick="selectd('shenfenz17')">
+                                                    <ul class="shenfenz17">
+                                                        <li class="ttt" onclick="check(this,'selectcheck17')" value="">是</li>
+                                                        <li class="ttt" onclick="check(this,'selectcheck17')" value="">否</li>
+                                                        <li class="ttt" onclick="check(this,'selectcheck17')" value="">——</li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <input type="text" name="school_ps" maxlength="80" class="save3" placeholder="说明">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">候选人是否与贵公司签订竞业禁止协议</td>
+                                            <td>
+                                                <div class="selectmin">
+                                                    <input type="text" name="" class="selectcheck18" value="请选择" readonly unselectable="on" onclick="selectd('shenfenz18')">
+                                                    <ul class="shenfenz18">
+                                                        <li class="ttt" onclick="check(this,'selectcheck18')" value="">是</li>
+                                                        <li class="ttt" onclick="check(this,'selectcheck18')" value="">否</li>
+                                                        <li class="ttt" onclick="check(this,'selectcheck18')" value="">——</li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <input type="text" name="school_ps" maxlength="80" class="save3" placeholder="说明">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">候选人是否适合再次雇佣</td>
+                                            <td>
+                                                <div class="selectmin">
+                                                    <input type="text" name="" class="selectcheck19" value="请选择" readonly unselectable="on" onclick="selectd('shenfenz19')">
+                                                    <ul class="shenfenz19">
+                                                        <li class="ttt" onclick="check(this,'selectcheck19')" value="">是</li>
+                                                        <li class="ttt" onclick="check(this,'selectcheck19')" value="">否</li>
+                                                        <li class="ttt" onclick="check(this,'selectcheck19')" value="">——</li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <input type="text" name="school_ps" maxlength="80" class="save3" placeholder="说明">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div>
+                                    <table cellspacing="10px">
+                                        <tr>
+                                            <td align="right">证明人：</td>
+                                            <td>
+                                                <input style="width:100%" type="text" name="school_ps" maxlength="80" class="save3" placeholder="请填写证明人真实姓名">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>证明人职位：</td>
+                                            <td>
+                                                <input style="width:100%" type="text" name="school_ps" maxlength="80" class="save3" placeholder="请填写证明人职位">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <input type="button" name="" value="保存" class="save2">
+                            </form>
+                            <form>
+                                <div class="varify_color">
+                                    <p>工作表现鉴定</p>
+                                </div>
+                                <table class="candidate pro" cellspacing="10px">
+                                    <tr>
+                                        <td width="25%" valign="top">候选人工作积极性如何</td>
+                                        <td width="75%" valign="top">
+                                            <textarea placeholder="请输入认证结果，最多300字" maxlength="300"></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top">候选人最突出的职业优点是什么</td>
+                                        <td>
+                                            <textarea placeholder="请输入认证结果，最多300字" maxlength="300"></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top">候选人的不足或可以改进的地方有哪些</td>
+                                        <td>
+                                            <textarea placeholder="请输入认证结果，最多300字" maxlength="300"></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top">如何评价候选人的抗压能力</td>
+                                        <td>
+                                            <textarea placeholder="请输入认证结果，最多300字" maxlength="300"></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top">候选人的职业操守或道德品质有无问题</td>
+                                        <td>
+                                            <textarea placeholder="请输入认证结果，最多300字" maxlength="300"></textarea>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <p class="pro score">
+                                    <span>给候选人的工作表现打分：</span>
+                                    <select>
+                                        <option>&nbsp;&nbsp;10</option>
+                                        <option>&nbsp;&nbsp;9</option>
+                                        <option>&nbsp;&nbsp;8</option>
+                                        <option>&nbsp;&nbsp;7</option>
+                                        <option>&nbsp;&nbsp;6</option>
+                                        <option>&nbsp;&nbsp;5</option>
+                                        <option>&nbsp;&nbsp;4</option>
+                                        <option>&nbsp;&nbsp;3</option>
+                                        <option>&nbsp;&nbsp;2</option>
+                                        <option>&nbsp;&nbsp;1</option>
+                                    </select>
+                                </p>
+                                <div class="pro">
+                                    <table cellspacing="10px">
+                                        <tr>
+                                            <td align="right">证明人：</td>
+                                            <td>
+                                                <input type="text" name="school_ps" maxlength="80" class="save3" placeholder="请填写证明人真实姓名">
+                                                <input type="radio" name="sex" class="sex">女士
+                                                <input type="radio" name="sex" class="sex">先生
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="right">证明人职位：</td>
+                                            <td>
+                                                <input type="text" name="school_ps" maxlength="80" class="save3" placeholder="请填写证明人职位">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>与候选人关系：</td>
+                                            <td>
+                                                <input type="radio" name="relation" class="relation">同事
+                                                <input type="radio" name="relation" class="relation">领导
+                                                <input type="radio" name="relation" class="relation"> 下属
+                                                <input type="radio" name="relation" class="relation"> 其他
+                                                <input type="text" name="" class="save3" placeholder="说明">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="right">共事时间：</td>
+                                            <td>
+                                                <input type="text" name="" class="save3">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="job_check">
+                                    <p>工作经历核实：</p>
+                                    <input name="yes" type="radio" value="" />属实
+                                    <input name="yes" type="radio" value="" />不属实
+                                    <input name="yes" type="radio" value="" />无法认证
+                                    <input type="text" name="edu_ps" maxlength="80" class="titles save3" placeholder="说明">
+                                </div>
+                                <input type="button" name="" value="保存" class="save2">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+        $(".detail_li").click(function() {
+            $(this).addClass("checked").siblings().removeClass("checked");
+        });
+        $(function() {
+            change();
+        });
+        </script>
+</body>
+
+</html>
+
+

@@ -1,0 +1,135 @@
+#content{background: #f6f6f6;width: 100%;margin-right: 300px;}
+.resume{position: relative;padding: 0px 20px; background: #FFFFFF;min-width: 1000px;}
+.container{background: #f6f6f6;padding-right: 300px;}
+.resume dl dt,dl dd{float: left;}
+.resume dt{color:#333333 ;margin-left: 20px;margin-top: 5px;}
+.resume dd{margin-right: 20px; padding: 5px 8px;}
+.resume .edu_age dd:hover{background: #e4b08c;color: #FFFFFF;border-radius: 5px !important;}
+.lc span{margin: 0 10px;padding: 3px;background:#e4b08c ;color: #FFFFFF;border-radius: 5px !important;}
+.selected{background: #e4b08c; color: #FFFFFF;border-radius: 5px !important;}
+.resume label{width: 60px;color: #333333;margin-left: 20px;}
+.cityChoice{position:absolute;left:785px;padding: 6px 15px;background: #FFFFFF;color: #333333;border: 1px solid #d4d4d4;border-radius:5px !important;}
+.resume input[type="text"],input[type="password"],input[type="date"]{width: 130px;height: 25px;margin-left: 10px;background: #FFFFFF;border: 1px solid #d4d4d4;text-indent: 10px;}
+table{border-collapse: collapse;}
+.search_btn{width: 65px;height: 30px; background: #C53F3D; border: 0; border-radius: 5px;color: #FFFFFF;}
+.location{height: 40px;position: relative;}
+.center{text-align: center;}
+.mg_t_50{margin-top: 50px;}
+.mg_t_20{margin-top: 20px;}
+.mg_l_60{margin-left: 60px;}
+.mg_l_85{margin-left: 85px;}
+.mg_l_140{margin-left: 140px;}
+.mg_l_28{margin-left: 28px;}
+.mg_l_35{margin-left: 35px;}
+.mg_l_48{margin-left: 48px;}
+.mg_l_10{margin-left: 10px;}
+.bd_b{border-bottom: 1px dashed #dcdcdc;}
+.pd{padding: 12px 0 12px 0;}
+.gray{#999999;}
+.border_bottom{border-bottom: 4px solid #ede0d6;width: 940px;}
+.fz_16{font-size: 16px;}
+.fz_30{font-size: 30px;}
+.min-w1k{min-width: 1000px;}
+
+
+
+.table_resume{min-width: 890px;padding: 30px 50px 65px ; min-height: 450px;margin: 20px 40px 20px 40px;}
+.tb_resume{width: 100%;}
+.resume .tb_resume tr{height: 50px; border-bottom: dashed #999999 1px;}
+.checkbox{width: 16px;height: 16px;position: relative;top: 3px;}
+
+
+
+#footer{background: #f6f6f6;text-align: center;color: #999999;padding: 40px 0;}
+
+
+
+/*记录*/
+.record{position: relative;border-top: #f6ede7 4px solid; padding-bottom: 50px;}
+.record table{border: 1px #D4D4D4 solid;}
+.record table tbody tr td{border-right: 1px solid #dddddd;}
+.tb_record{width: 100%;min-width: 1000px;margin-right: 50px;text-align: center;}
+.tb_record td{height: 50px;}
+.even{background: #ffffff;}
+.odd{background: #f7f7f7;}
+thead{background: #f6ede7;color: #766560;}
+.title{background: #FFFFFF;}
+.number{color: #cd3a37;}
+
+
+.log{position: relative; padding-bottom: 50px;}
+ul li{float: left;}
+.allrecord li{margin-right: 35px;padding-bottom: 11px;}
+.allrecord  li:hover{border-bottom: 4px solid #e73936;}
+.allrecord{padding-bottom: 15px;}
+.tb_log{width: 810px; text-align: center;border: 1px solid #dcdcdc;margin:40px 40px 10px}
+.tb_log td{height: 50px;}
+.calendar{width: 300px;}
+.log_content{width: 100%;width:890px;background: #FFFFFF;}
+.Visible_user{ margin-left: 550px;}
+.Visible_user li{margin-left: 35px;padding: 2px;}
+.Visible_user li:hover{background: #e1d9d0;border: 1px #ada59f solid;}
+.float_left{float: left;}
+.float_right{float: right}
+.clearfix:before, .clearfix:after { display: table; line-height: 0; content: "";clear: both; } 
+/*分页*/
+.page{
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	color: #999;
+ 	margin-top: 20px;
+}
+.pagea{
+	vertical-align: middle;
+	padding: 5px 10px;
+	border:1px solid #999;
+	color: #999;
+}
+//选中的颜色
+.pagechecked{
+	background-color: #3699ff;
+	color: white;
+	border:1px solid #3699ff;
+}
+
+/**城市职业选择框css */
+/* 遮罩层alpha */
+#maskLayer{position: absolute;left:0px;top:0px}
+#alphadiv{position:absolute;background:#000;z-index: 2000}
+#drag{position:absolute;background:#fff;z-index: 2001;width:580px;border:5px solid #7c7c7c; border-radius: 5px;}
+#drag_h{line-height:28px;height:42px;cursor:move;color:#fff;background:#e73532;padding:10px  10px 0; margin: 0; font-size: 14px;width: 530px;}
+#drag h2 b{float:left}
+#drag h2 span{font-weight:normal;float:right;cursor:pointer}
+#sublist{position:absolute;z-index:2100;background:#fff}
+
+#cityAlpha{padding:10px 4px}
+#cityAlpha h4{color:#999999;font-size:14px;margin: 3px 15px 0; float: left;}
+#cityAlpha dl{zoom:1;overflow:hidden;line-height:25px}
+#cityAlpha dt{float:left;width:80px;font-weight:bold}
+#cityAlpha dd{float:left;width:492px}
+#cityAlpha dd li{float:left;width:75px;cursor:pointer;text-indent:4px;height:25px;overflow:Hidden;text-align: center;list-style-type: none; }
+#cityAlpha dd li.over{background:#f9c071;color:#fff}
+#allProv{border-top:1px dashed #ccc;margin-top:6px;padding-top:10px}
+#funAlpha{padding:10px 4px}
+#funAlpha h4{color:#987349;font-size:14px;margin: 3px 15px 5px; cursor: default;}
+#funAlpha dl{zoom:1;overflow:hidden;line-height:25px}
+#funAlpha dt{float:left;width:80px;font-weight:bold}
+#funAlpha dd{float:left;width:492px}
+#funAlpha dd li{font-size:12px;list-style-type: none; float:left;width:90px;cursor:pointer;text-indent:4px;height:25px;overflow:Hidden;text-align: left;margin-left: 10px;padding-top: 5px;}
+#funAlpha dd li.over{background:#f9c071;color:#fff}
+/*悬浮子菜单 */
+#sub_city{border:1px solid #c7c7c7;line-height:25px;text-align:left;top:15px; position: absolute; background-color: #ffffff;}
+#sub_city ul{overflow:hidden;zoom:1; margin: 0;padding: 0;}
+#sub_city ul h4{margin: 0; padding-top: 2px;}
+#sub_city ul li{list-style-type: none; float:left;height:25px; margin-right:30px;}
+#sub_city ul a{font-size:14px;white-space:nowrap;display:block;height:25px;color:#000;text-decoration:none;text-indent:4px;}
+#sub_city ul a:hover{background:#f9c071;color:#fff}
+#sub_fun{border:1px solid #c7c7c7;line-height:25px;text-align:left;top:15px; padding: 5px; position: absolute; background-color: #ffffff;}
+#sub_fun ul{overflow:hidden;zoom:1;padding: 0;}
+#sub_fun ul li{list-style-type: none; float:left;height:25px; margin-right:30px; width: 200px;}
+#sub_fun ul a{white-space:nowrap;display:block;height:25px;color:#000;text-decoration:none;text-indent:4px; padding: 0 5px;}
+#sub_fun ul a:hover{background:#f9c071;color:#fff}
+
+.allProv{border-bottom: 1px dashed #999999; padding: 10px 15px}
+.allProvEnd{ padding: 10px 15px}

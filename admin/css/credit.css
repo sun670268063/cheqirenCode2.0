@@ -1,0 +1,222 @@
+
+.right_con_chil,.right_con_chi,.right_con_ch,.right_con_c{
+	margin: 25px 60px 0 60px;
+	min-width: 920px;
+}
+/*.apply_con{
+	background-color: white;
+	margin-top: 20px;
+}*/
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+select::-ms-expand { 
+	background: url("../img/images/icon_9.gif") no-repeat scroll 90% center transparent;
+	color: #333;
+  /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+  	padding-right: 14px;
+ 	width: 50px;
+ 	margin: 0 5px;
+ 	height: 23px;
+ 	background-color: white;
+}
+.right_con select{
+	border:1px solid rgb(217,207,207);
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	background: url("../img/images/icon_9.gif") no-repeat scroll 90% center transparent;
+	color: #333;
+  /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+  	padding-right: 14px;
+ 	width: 50px;
+ 	margin: 0 5px;
+ 	height: 23px;
+ 	background-color: white;
+}
+select option{
+	text-align: center;
+}
+/*.right_con tr:nth-child(2n-1){
+	background-color: rgb(247,247,247);
+}
+.right_con tr:nth-child(1){
+	background-color: rgb(246,237,231);
+}*/
+.apply_con{
+	background-color: white;
+	padding: 30px 40px 50px;
+	min-height: 610px;
+	height: auto;
+}
+.o{
+	margin-top: 20px;
+}
+.apply_top p{
+	float: right;
+	margin-top: 20px;
+}
+.right_con_chil table,.right_con_chi table{
+	margin:0 auto;
+}
+.table_top{
+	background-color: rgb(246,237,231);
+}
+.apply_con td{
+	padding: 10px 0 10px 10px;
+}
+.apply_con td input{
+	border:1px solid rgb(201,197,197);
+	padding: 5px 10px;
+	background-color: #fff;
+	border-radius: 5px;
+	color: rgb(102,102,102);
+	margin: 5px;
+}
+.apply_con td input:hover{
+	background-color: rgb(197,63,61);
+	border:1px solid rgb(197,63,61);
+	color: white;
+}
+.checked{
+	background-color: rgb(197,63,61);
+	border:1px solid rgb(197,63,61);
+	color: white;
+}
+.time{
+	color: #999999;
+}
+/*2*/
+.right_con_ch p {
+	display: block;
+}
+.ll{
+	padding:10px 20px;
+	cursor: pointer;
+	border-bottom: 3px solid rgb(246, 246, 246);
+	margin: 0 5px;
+}
+.right_con_ch select{
+	width: 80px;
+	margin-left: 10px;
+}
+.ul li{
+	margin-top: 10px;
+	display: inline-block;
+}
+.ul {
+	display: inline-block;
+}
+.chi li{
+	margin-left: 0;
+	width: 130px;
+	text-align: center;
+}
+.chi span{
+	font-size: 14px;
+	color: #999;
+}
+.right_con h1{
+	display: block;
+}
+.wrap{
+	padding: 10px 0;
+}
+.wrap_border{
+	border-bottom: 1px dashed #999;
+}
+.state{
+	background-color: white;
+	font-size: 18px;
+	border-bottom: 3px solid white;
+}
+.page{
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	color: #999;
+ 	margin-top: 20px;
+}
+.pagea{
+	vertical-align: middle;
+	padding: 5px 10px;
+	border:1px solid #999;
+	color: #999;
+}
+.pagechecked{
+	background-color: #3699ff;
+	color: white;
+	border:1px solid #3699ff;
+}
+.chi_time{
+	color: rgb(251,140,0);
+	border:1px solid rgb(251,140,0);
+	border-radius: 5px;
+	padding: 2px 5px;
+	margin-right: 10px;
+	font-size: 12px;
+}
+.me {
+	background-color: white;
+	border-bottom: 3px solid white;
+	font-size: 18px;
+	width: 112px;
+}
+.tr22 td:nth-of-type(2){
+	border-left: 1px solid rgb(220,220,220);
+	border-right: 1px solid rgb(220,220,220);
+}
+.tr22 input:nth-of-type(1){
+	margin-bottom: 5px;
+}
+table tr:nth-of-type(1){
+	color: rgb(118,108,96);
+}
+.save{
+	border:1px solid rgb(231,57,54);
+	padding: 5px 26px;
+	background-color: rgb(231,57,54);
+	border-radius: 5px;
+	color: white;
+	margin-top: 16px;
+}
+.la_input{
+	width: 80%;
+	height: 160px;
+	padding:10px;
+}
+.back{
+	background-color:rgb(197,63,63);
+	color:white;
+	border-color:rgb(197,63,63);
+}
+
+ .select input{
+            width: 80px;
+            height: 26px;
+            border:1px solid rgb(217,207,207);
+            background:url("../img/images/icon_9.gif") no-repeat 95% center ;
+            text-indent: 10px;
+        }
+        .select{
+            display:inline-block;
+            width:80px;
+        }
+        .select ul {
+            display: inline-block;
+            /*display: none;*/
+            border:1px solid rgb(217,207,207);
+            width: 80px;
+            margin-top: 2px;
+            display: none;
+            position: absolute;
+            background-color: white;
+        }
+        .select li{
+            text-indent: 10px;
+            height: 24px;
+            line-height: 24px;
+        }
+        .select li:hover{
+            cursor: pointer;
+        }
+        .tr33{
+        	background-color: rgb(247,247,247);
+        }

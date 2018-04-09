@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/common.css">
+		<link rel="stylesheet" type="text/css" href="css/log.css" />
+		<link rel="stylesheet" type="text/css" href="css/ion.calendar2.css" />
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<title>日志</title>
+	</head>
+
+	<body>	
+		<div class="container" >
+			<div id="content" class="mg_l_140" >
+				<div class="log_content float_left clearfix">
+					<p class="fz_30 mg_t_20 mg_l_10">日志</p>
+					<div class="log clearfix">
+						<div class="float_left clearfix mg_l_28 mg_t_10">
+							<ul class="allrecord">
+								<li class="selected">所有记录</li>
+								<li>本周</li>
+								<li>上月</li>
+							</ul>
+						</div>
+						<div class="float_left clearfix">选择用户:
+							<select>
+								<option>全部</option>
+								<option>张三</option>
+								<option>李四</option>
+								<option>王五</option>
+							</select>
+						</div>
+					</div>
+					<div class="log_tb">
+						<table class="tb_log">
+								<thead>
+									<td>时间</td>
+									<td>IP地址</td>
+									<td>操作者</td>
+									<td>系统角色</td>
+									<td>动作</td>
+									<td>详情</td>
+								</thead>
+								<tbody>
+									<tr>
+										<td >2015-10-20</br>12:20</td>
+										<td>195.125.454.215</td>
+										<td>李四</td>
+										<td>审核员</td>
+										<td>通过</td>
+										<td>审核通过订单号</br>254f52</td>
+									</tr>
+									<tr>
+										<td >2015-10-20</br>12:20</td>
+										<td>195.125.454.215</td>
+										<td>李四</td>
+										<td>审核员</td>
+										<td>通过</td>
+										<td>审核通过订单号</br>254f52</td>
+									</tr>
+									<tr>
+										<td>2015-10-20</br>12:20</td>
+										<td>195.125.454.215</td>
+										<td>李四</td>
+										<td>审核员</td>
+										<td>通过</td>
+										<td>审核通过订单号</br>254f52</td>
+									</tr>
+									<tr>
+										<td>2015-10-20</br>12:20</td>
+										<td>195.125.454.215</td>
+										<td>李四</td>
+										<td>审核员</td>
+										<td>通过</td>
+										<td>审核通过订单号</br>254f52</td>
+									</tr>
+								</tbody>
+
+							</table>
+							<div class=page>
+	                        <a  class="pagea" href="#">上一页</a>
+	                        <a  class="pagea" href="#">1</a>
+	                        <a  class="pagea" href="#">2</a> 
+	                        <a  class="pagea" href="#">3</a> 
+	                        <a  class="pagea" href="#">4</a> 
+	                        <a class="pagea"  href="#">5</a> 
+	                        <a  class="pagea" href="#">6</a> 
+	                        <a  class="pagea" href="#">7</a> 
+	                        <a  class="pagea" href="#">8</a> 
+	                        <a  class="pagea" href="#">...10</a>
+	                        <a  class="pagea" href="#">下一页</a> 
+	                </div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+				<div class="float_left calendar clearfix mg_l_28 mg_t_50">
+					<div id="calendar"></div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/date/moment.min.js"></script>
+		<script type="text/javascript" src="js/date/moment.zh-cn.js"></script>
+		<script type="text/javascript" src="js/date/ion.calendar.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$("#calendar").ionCalendar({
+					lang: 'zh-cn'
+				});
+			});
+			$(".left_con li").click(function() {
+				$(this).addClass("libg").siblings().removeClass("libg");
+			});
+			$(function() {
+				$("tbody>tr:odd").addClass("odd")
+				$("tbody>tr:even").addClass("even")
+				$("tbody tr>td:nth-child(1)").addClass("gray")
+			});
+			$(function() {
+				var $div_li = $(".allrecord li");
+				$div_li.click(function() {
+					$(this).addClass("selected").siblings().removeClass("selected");
+				});
+			});
+		</script>
+	</body>
+
+</html>

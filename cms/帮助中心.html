@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" chrome="1">
+		<title>帮助中心</title>
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/styles.css" />
+		<link rel="stylesheet" href="../css/help.css" />
+		<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+	</head>
+
+	<body>
+		<!--头部-->
+		<header id="header">
+			<div class="header_con">
+				<div class="header_logo">
+					<a href="index.html"><img alt="" class="img-responsive" src="../images/logo.png"></a>
+				</div>
+			</div>
+		</header>
+		<!--帮助中心-->
+		<div id="help" class="clearfix">
+			<div id="help_con">
+				<div class="help_left fl">
+					<p class="mt35">帮助中心</p>
+					<div class="menubox mt10">
+						<ul class="nav">
+							<li class="selected">常见问题</li>
+							<li>账户管理</li>
+							<li>征信认证</li>
+						</ul>
+					</div>
+				</div>
+				<div class="help_right fl clearfix">
+
+					<div class="ml50 mt30 help_logo">
+						<img src="../images/help.png" />
+					</div>
+					<div class="clear"></div>
+					<!--常见问题-->
+					<div class="white question">
+						<div class="helpbox">
+							<ul class="qList">
+								<li><a onclick="srcc('help/q01.html')" href="#">征信有什么好处？</a></li>
+								<li><a onclick="srcc('help/q02.html')" href="#">怎么做征信？</a></li>
+								<li><a onclick="srcc('help/q03.html')" href="#">征信结果有误怎么办？</a></li>
+								<li><a onclick="srcc('help/q04.html')" href="#">我对结果不满意是否能重新授权认证？</a></li>
+								<li><a onclick="srcc('help/q05.html')" href="#">征信认证等级？</a></li>
+								<li><a onclick="srcc('help/q06.html')" href="#">我授权认证后你们会不会泄露我的个人隐私？</a></li>
+								<li><a onclick="srcc('help/q07.html')" href="#">征信认证是否收费？</a></li>
+							</ul>
+						</div>
+						<!--账户管理-->
+						<div class="helpbox hide">
+							<ul class="qList">
+								<li><a onclick="srcc('help/q11.html')" href="#">注册</a></li>
+								<li><a onclick="srcc('help/q12.html')" href="#">登录</a></li>
+								<li><a onclick="srcc('help/q13.html')" href="#">怎么上传头像？</a></li>
+								<li><a onclick="srcc('help/q14.html')" href="#">更换和绑定手机？</a></li>
+								<li><a onclick="srcc('help/q15.html')" href="#">保密邮箱</a></li>
+								<li><a onclick="srcc('help/q16.html')" href="#">修改密码</a></li>
+								<li><a onclick="srcc('help/q17.html')" href="#">找回密码</a></li>
+							</ul>
+						</div>
+						<!--个人征信-->
+						<div class="helpbox hide">
+							<p class="fz16">个人征信</p>
+							<ul class="qList">
+								<li><a onclick="srcc('help/q21.html')" href="#">什么是个人征信？</a></li>
+								<li><a onclick="srcc('help/q22.html')" href="#">征信有什么好处？</a></li>
+								<li><a onclick="srcc('help/q23.html')" href="#">怎么申请征信认证？</a></li>
+								<li><a onclick="srcc('help/q24.html')" href="#">征信认证都有几种？</a></li>
+								<li><a onclick="srcc('help/q25.html')" href="#">征信认证真实性是否保障？</a></li>
+								<li><a onclick="srcc('help/q26.html')" href="#">下载认证报告</a></li>
+							</ul>
+						</div>
+						<iframe src="" class="ifram" id="iframepage" frameborder="0" scrolling="no" style="display:none" width="100%" height="100%" border="0"></iframe>
+					</div>
+					
+				</div>
+
+			</div>
+		</div>
+		<!--底部-->
+		<footer id="footer" class="mt35">
+			<div class="con">
+				<div class="left"> 
+					<img src="../images/footer_logo.png" /> 
+					<a href="关于我们.html" target="_blank">关于我们</a> 
+					<a href="联系我们.html" target="_blank">联系我们</a>
+					<a href="帮助中心.html" target="_blank">帮助中心</a>
+					<p class="p1">2015&ndash;2016&nbsp;&copy;All Rights Reserver.www.cheqiren.com</p>
+					<p class="p2"><a href="http://www.miibeian.gov.cn/state/outPortal/loginPortal.action">琼ICP备13002531号-4</a>&nbsp;琼ICP证1233221号</p>
+				</div>
+				<div class="center">
+					<p class="p3">联系客服<span>9:00-17:30</span></p>
+					<h1 class="h1">0898-32830809</h1>
+				</div>
+				<div class="right"> <img src="../images/app_download.png" alt="APP下载" />
+					<p>APP下载</p>
+				</div>
+			</div>
+		</footer>
+		<script>
+			$(function() {
+				var $div_li = $(".help_left .menubox .nav li");
+				$div_li.click(function() {
+					$(this).addClass("selected").siblings().removeClass("selected");
+					var index = $div_li.index(this);
+					$(".help_right .helpbox").eq(index).show().siblings().hide();
+				});
+			});
+
+			function srcc(src) {
+				$(".ifram").show().siblings().hide();
+				$(".ifram").attr("src", "" + src);
+			}
+		</script>
+
+	</body>
+
+</html>

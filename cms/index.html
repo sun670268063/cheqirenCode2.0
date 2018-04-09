@@ -1,0 +1,581 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		
+		<title>车企业人首页</title>
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+		<link href="../css/global.css" rel="stylesheet">
+		<link rel="stylesheet" href="../css/styles.css" />
+		<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.validate.js"></script>
+		<!--[if lte IE 9]>
+	    <link href="../css/IE.css" rel="stylesheet" />
+	    <script src="../js/respond.js"></script>
+	    <script src="../js/html5shiv-printshiv.js"></script>
+	    <script type="text/javascript" src="http://www.ijquery.cn/js/jquery.placeholder.min.js"></script>
+        <![endif]-->
+	</head>
+
+	<body>
+		<!--头部-->
+		<header >
+			<div class="mainTop clearfix">
+				<div class="container">
+					<div>
+						
+							<div class="logo">
+								<a href="#"><img alt="" class="img-responsive" src="../images/logo.png"></a>
+							</div>
+						
+						
+							<!--<div class="socials">
+								<ul>
+									<li><a href="#">帮助中心</a></li>
+									<li><a href="#"><i class="fa fa-rss soc"></i></a></li>
+									<li><a href="#"><i class="fa fa-dribbble soc"></i></a></li>
+									<li><a href="#"><i class="fa fa-instagram soc"></i></a></li>
+								</ul>
+							</div>-->
+						
+					</div>
+				</div>
+			</div>
+		</header>
+		
+
+		<div id="content" class="clearfix">
+			
+			<!--<div class="slidebox">
+				<ul>
+					<li style="display: block;"><img src="../images/img_1.jpg"/></li>
+					<li style="display: block;"><img src="../images/img_2.png" /></li>
+				</ul>
+			</div>-->
+			<div class="loginbg">
+				<!--banner-->
+				  <div class="banner">
+				  	  <div class="fullSlide">
+						<div class="bdc">
+							<ul >
+								<li style="background:url(../images/toppic-1.jpg) center 0 no-repeat;"><a  href="#"></a></li>
+								<li style="background:url(../images/toppic-2.png) center 0 no-repeat;"><a  href="#"></a></li>
+								<li style="background:url(../images/toppic-1.png) center 0 no-repeat;"><a  href="#"></a></li>
+							</ul>
+						</div>
+                    </div>
+				  </div>
+        
+			    <!--//banner-->
+				
+				<div class="loginbox">
+					<div class="container section_center login_content">
+					<!--登录-->
+					<div class="login-window">
+						<div class="login_section">
+							<h5>登录个人账号</h5>
+							<div class="form-group mt20 ie_userid">
+								<div class="input-group">
+									<input type="text" name="username" class="form-control" placeholder="用户名" required="required" id="signup_username">
+								</div>
+							</div>
+							<div class="form-group mt20 ie_userpwd">
+								<div class="input-group"> 
+									<input type="password" id="signup_password" name="password" class="form-control sign_pwd" placeholder="密码">
+								</div>
+							</div>
+							<div class="form-group mt20">
+								<div class="input-group">
+									<button type="submit" class="btn btn-danger login_btn">登录</button>
+								</div>
+							</div>
+							<div class="form-group mt20 bc">
+								<div class="checkbox">
+									<label class="fs12"><input type="checkbox" checked="checked" class="ckbox">下次自动登录 </label>
+									<span class="pull-right fs10 mt5">
+										<a class="white" href="#">忘记密码？</a>
+									</span> 
+								</div>
+							</div>
+							<div class="form-group mt20"> <span class="fs14 mt5 ml31" style="text-align: center;"><a class="white" href="#" id="toRegister">我没有账号，立即注册</a></span> </div>
+						</div>
+					</div>
+					<!--end 登录-->
+					<!--注册-->
+					<div class="register-window hidden">
+						<div class="login_section">
+							<h5>注册个人账号</h5>
+							<div class="form-group mt20 ie_userid">
+								<div class="input-group"> <input type="text" name="username" class="form-control" placeholder="用户名" required="required" id="signup_username">
+								</div>
+							</div>
+							<div class="form-group mt20 ie_userpwd">
+								<div class="input-group">
+									<input type="password" id="signup_password" name="password" class="form-control sign_pwd" placeholder="密码(6-18位数字与字母)">
+								</div>
+							</div>
+							<div class="form-group mt20 ie_userpwd">
+								<div class="input-group">
+									<input type="password" id="signup_password" name="password" class="form-control sign_pwd" placeholder="再次输入密码">
+								</div>
+							</div>
+							<div class="mt20 ie_userpwd">
+								<div class="input-group">
+									<input type="text" id="security_code" name="" class="security_code" placeholder="验证码">
+									<input type="button" class="security_btn" value="发送验证码" onclick="settime(this)">
+								</div>
+							</div>
+							<div class="mt20">
+								<div class="input-group">
+									<button type="button" class=" btn btn-danger" id="register_btn" style="background: #f73835;">免费注册</button>
+								</div>
+							</div>
+							<div class="form-group mt20 white">
+								<div class="checkbox">
+									<label class="fs12"><input type="checkbox" checked="checked" class="ckbox">接受用户协议 </label>
+									<span class="pull-right fs10 mt5">已有账号,<a  href="#0" id="toLogin" >马上登录</a></span> </div>
+							</div>
+						</div>
+					</div>
+					<!--end 注册-->
+				</div>
+				</div>
+			</div>
+
+			<!--推荐-->
+			<div class="recommend clearfix">
+				<div class="recommend_content">
+					<div class="info-grid">
+						<div class="flagLab-red"><span>已荐</span></div>
+						<div class="numLab">
+							<div class="numLabBack"><span>312345621</span></div>
+						</div>
+						<div class="sex-age bb">
+							<span class="sexIco-man"></span>
+							<span class="ageText">28岁</span>
+						</div>
+						<div class="sex-age bb">
+							<span class="infoLab">身份</span>
+							<span class="infoLab">工作</span>
+							<span class="infoLab">项目</span>
+						</div>
+						<div class="result_lab">
+							<span class="">北京风华汽车销售有限公司</span><br />
+							<span class="time">3分钟前</span>
+							
+
+						</div>
+					</div>
+
+					<div class="info-grid">
+						<div class="flagLab-green"><span>成功</span></div>
+						<div class="numLab">
+							<div class="numLabBack"><span>312312798</span></div>
+						</div>
+						<div class="sex-age bb">
+							<span class="sexIco-man"></span>
+							<span class="ageText">30岁</span>
+						</div>
+						<div class="sex-age bb">
+							<span class="infoLab">身份</span>
+							<span class="infoLab">工作</span>
+							<span class="infoLab">学历</span>
+						</div>
+						<div class="result_lab">
+							<span class="">重庆长安汽车股份有限公司</span><br />
+							<span class="time">5分钟前</span>
+
+						</div>
+					</div>
+
+					<div class="info-grid">
+						<div class="flagLab-red"><span>已荐</span></div>
+						<div class="numLab">
+							<div class="numLabBack"><span>312312245</span></div>
+						</div>
+						<div class="sex-age bb">
+							<span class="sexIco-woman"></span>
+							<span class="ageText">24岁</span>
+						</div>
+						<div class="sex-age bb">
+							<span class="infoLab">工作</span>
+							<span class="infoLab">证书</span>
+							<span class="infoLab">学历</span>
+						</div>
+						<div class="result_lab">
+							<span class="">浙江吉利控股集团有限公司</span><br />
+							<span class="time">2小时前</span>
+
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<!--end 推荐-->
+			
+            <!--职位推荐-->
+           <div class="recommend clearfix">
+           	  <div class="contnet_c">
+           	  	  <div class="_title">职位推荐<span>Recommend</span>
+						<p class="bn">-------------------&nbsp;<img src="../images/security_indicate.png" />&nbsp;-------------------</p>
+				  </div>
+           	  	  <div class="list_item ">
+           	  	  	  <div class="item clearfix">
+           	  	  	  <ul>
+           	  	  	  	<li>
+	           	  	  	  <dl>
+	           	  	  	  	<dt>
+	           	  	  	  		<h3><a href="#">北京瑞友科技股份有限公司</a></h3>
+	           	  	  	  	</dt>
+	           	  	  	  	<dd>
+	           	  	  	  		<a href="#">web前端工程师 </a>
+	           	  	  	  		<a href="#">质量检测员 </a>
+	           	  	  	  		<a href="#">行政助理  </a>
+	           	  	  	  	</dd>
+	           	  	  	  </dl>
+           	  	  	  	</li>
+           	  	  	  	<li>
+	           	  	  	  <dl>
+	           	  	  	  	<dt>
+	           	  	  	  		<h3><a href="#">北京瑞友科技股份有限公司</a></h3>
+	           	  	  	  	</dt>
+	           	  	  	  	<dd>
+	           	  	  	  		<a href="#">web前端工程师 </a>
+	           	  	  	  		<a href="#">质量检测员 </a>
+	           	  	  	  		<a href="#">行政助理  </a>
+	           	  	  	  	</dd>
+	           	  	  	  </dl>
+           	  	  	  	</li>
+           	  	  	  	<li>
+	           	  	  	  <dl>
+	           	  	  	  	<dt>
+	           	  	  	  		<h3><a href="#">北京瑞友科技股份有限公司</a></h3>
+	           	  	  	  	</dt>
+	           	  	  	  	<dd>
+	           	  	  	  		<a href="#">web前端工程师 </a>
+	           	  	  	  		<a href="#">质量检测员 </a>
+	           	  	  	  		<a href="#">行政助理  </a>
+	           	  	  	  	</dd>
+	           	  	  	  </dl>
+           	  	  	  	</li>
+           	  	  	  	<li>
+	           	  	  	  <dl>
+	           	  	  	  	<dt>
+	           	  	  	  		<h3><a href="#">北京瑞友科技股份有限公司</a></h3>
+	           	  	  	  	</dt>
+	           	  	  	  	<dd>
+	           	  	  	  		<a href="#">web前端工程师 </a>
+	           	  	  	  		<a href="#">质量检测员 </a>
+	           	  	  	  		<a href="#">行政助理  </a>
+	           	  	  	  	</dd>
+	           	  	  	  </dl>
+           	  	  	  	</li>
+           	  	  	  	<li>
+	           	  	  	  <dl>
+	           	  	  	  	<dt>
+	           	  	  	  		<h3><a href="#">北京瑞友科技股份有限公司</a></h3>
+	           	  	  	  	</dt>
+	           	  	  	  	<dd>
+	           	  	  	  		<a href="#">web前端工程师 </a>
+	           	  	  	  		<a href="#">质量检测员 </a>
+	           	  	  	  		<a href="#">行政助理  </a>
+	           	  	  	  	</dd>
+	           	  	  	  </dl>
+           	  	  	  	</li>
+           	  	  	  	<li>
+	           	  	  	  <dl>
+	           	  	  	  	<dt>
+	           	  	  	  		<h3><a href="#">北京瑞友科技股份有限公司</a></h3>
+	           	  	  	  	</dt>
+	           	  	  	  	<dd>
+	           	  	  	  		<a href="#">web前端工程师 </a>
+	           	  	  	  		<a href="#">质量检测员 </a>
+	           	  	  	  		<a href="#">行政助理  </a>
+	           	  	  	  	</dd>
+	           	  	  	  </dl>
+           	  	  	  	</li>
+           	  	  	  	<li>
+	           	  	  	  <dl>
+	           	  	  	  	<dt>
+	           	  	  	  		<h3><a href="#">北京瑞友科技股份有限公司</a></h3>
+	           	  	  	  	</dt>
+	           	  	  	  	<dd>
+	           	  	  	  		<a href="#">web前端工程师 </a>
+	           	  	  	  		<a href="#">质量检测员 </a>
+	           	  	  	  		<a href="#">行政助理  </a>
+	           	  	  	  	</dd>
+	           	  	  	  </dl>
+           	  	  	  	</li>
+           	  	  	  	<li>
+	           	  	  	  <dl>
+	           	  	  	  	<dt>
+	           	  	  	  		<h3><a href="#">北京瑞友科技股份有限公司</a></h3>
+	           	  	  	  	</dt>
+	           	  	  	  	<dd>
+	           	  	  	  		<a href="#">web前端工程师 </a>
+	           	  	  	  		<a href="#">质量检测员 </a>
+	           	  	  	  		<a href="#">行政助理  </a>
+	           	  	  	  	</dd>
+	           	  	  	  </dl>
+           	  	  	  	</li>
+           	  	  	  	<li>
+	           	  	  	  <dl>
+	           	  	  	  	<dt>
+	           	  	  	  		<h3><a href="#">北京瑞友科技股份有限公司</a></h3>
+	           	  	  	  	</dt>
+	           	  	  	  	<dd>
+	           	  	  	  		<a href="#">web前端工程师 </a>
+	           	  	  	  		<a href="#">质量检测员 </a>
+	           	  	  	  		<a href="#">行政助理  </a>
+	           	  	  	  	</dd>
+	           	  	  	  </dl>
+           	  	  	  	</li>
+           	  	  	  </ul>
+       
+           	  	  	 
+           	  	      </div>
+           	  	  	  
+           	  	  	  </div>
+           	  </div>
+           </div>
+            <!--//职位推荐-->
+            
+            
+			<!--优势-->
+			<div class="superiority clearfix">
+				<div class="superiority_content">
+					<div class="_title">我们的优势<span>Superiority</span>
+						<p class="bn">-------------------&nbsp;<img src="../images/security_indicate.png" />&nbsp;-------------------</p>
+					</div>
+					<ul>
+						<li class="l1">
+							<img src="../images/superiority_01.png" />
+							<p class="ph">专业诚信报告</p>
+							<p><img src="../images/superiority_bottom.png" /></p>
+							<p class="p9">获得多方维度认证的报告，提升简历价值。</p>
+						</li>
+						<li class="l2">
+							<img src="../images/superiority_02.png" />
+							<p class="ph">免费职业规划</p>
+							<p><img src="../images/superiority_bottom.png" /></p>
+							<p class="p9">不定期举办免费职业培训，著名导师给您提供求职助力。</p>
+						</li>
+						<li class="l2">
+							<img src="../images/superiority_03.png" />
+							<p class="ph">500强企业推荐</p>
+							<p><img src="../images/superiority_bottom.png" /></p>
+							<p class="p9">享受VIP服务，众多知名企业内部直荐，轻松拿到offer。</p>
+						</li>
+						<li class="l2">
+							<img src="../images/superiority_04.png" />
+							<p class="ph">十万职业任选</p>
+							<p><img src="../images/superiority_bottom.png" /></p>
+							<p class="p9">上万企业进驻，十万精品职位向您展开。</p>
+						</li>
+						<li class="l2">
+							<img src="../images/superiority_05.png" />
+							<p class="ph">个人道场</p>
+							<p><img src="../images/superiority_bottom.png" /></p>
+							<p class="p9">优秀人才开发个人道场，多方位展示实力。</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--end 优势-->
+
+			<!--多维度认证-->
+			<div class="dimensionality">
+				<div class="dimensionality_content clearfix">
+					<div class="dc_01">
+						<h2>多维度认证</h2>
+						<p>专业认证团队全方面人才认证分析，做到公平，公正，不偏袒，不做假。保障每一份报告200%真实度。认证级别越高，认证人能力越强，可以作为企业招聘人员的参考</p>
+					</div>
+					<div class="dc_02">
+						<img src="../images/dimensionality.png" />
+					</div>
+				</div>
+			</div>
+			<!--end 多维度认证-->
+
+			<!--安全保证-->
+			<div class="security">
+				<div class="security_content">
+					<div class="_title">5大隐私安全保证<span>Security assurance</span>
+						<p class="bn">-------------------&nbsp;<img src="../images/security_indicate.png" />&nbsp;-------------------</p>
+					</div>
+					<table id="tb_security">
+						<tr>
+							<td class="td1">
+								<p class="p1"><img src="../images/safety_dot.png" />&nbsp;&nbsp;<span>全面确保用户个人隐私，不泄露，不公开;</span></p>
+								<p class="p2"><img src="../images/safety_dot.png" />&nbsp;&nbsp;<span>避免所在公司对用户骚扰;</span></p>
+							</td>
+							<td class="td2"><img src="../images/safety_logo.png" /></td>
+							<td class="td3">
+								<p class="p3"><img src="../images/safety_dot.png" />&nbsp;&nbsp;<span>用户自助授权认证，认不认证自己做主;</span></p>
+								<p class="p4"><img src="../images/safety_dot.png" />&nbsp;&nbsp;<span>多个维度认证,自由选择</span></p>
+								<p class="p8"><img src="../images/safety_dot.png" />&nbsp;&nbsp;<span>认证报告保密,唯有用户有权查看下载</span></p>
+							</td>
+						</tr>
+					</table>
+
+				</div>
+			</div>
+
+			<!--end 安全保证-->
+
+			<!--个人征信服务流程-->
+			<div class="flow">
+				<div class="service_content">
+					<div class="_title">个人征信服务流程<span>Service flow</span>
+						<p class="bn">-------------------&nbsp;<img src="../images/flow_indicate.png" />&nbsp;-------------------</p>
+					</div>
+					<div>
+						<div>
+							<div class="flow_bg1">
+								<p class="flow_p2">填写资料<br><span>个人资料，工作经历</span></p>
+							</div>
+							<div class="flow_bg1">
+								<p class="flow_p2">站方认证<br><span>站方展开工作认证，出具认证报告</span></p>
+							</div>
+						</div>
+						<div class="flow_path"><img src="../images/flow_path.png" /></div>
+						<div class="_bg2">
+							<div class="flow_bg2 b1">
+								<p class="flow_p2">查看报告<br><span>查看，下载，转发给企业HR</span></p>
+							</div>
+							<div class="flow_bg2 b2">
+								<p class="flow_p2">点击申请<br><span>免费认证</span></p>
+							</div>
+							<div class="flow_bg2 b3">
+								<p class="flow_p2">注册账号</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--end 个人征信服务流程-->
+
+			<!--合作伙伴-->
+			<div class="partner">
+				<div class="partner_text">合作伙伴<span>Cooperation partner</span></div>
+				<ul>
+					<li><img src="../images/pt_logo01.gif" /></li>
+					<li><img src="../images/pt_logo02.gif" /></li>
+					<li><img src="../images/pt_logo03.gif" /></li>
+					<li><img src="../images/pt_logo04.gif" /></li>
+				</ul>
+				<ul class="hidden">
+					<li><img src="../images/pt_logo01.gif" /></li>
+					<li><img src="../images/pt_logo01.gif" /></li>
+					<li><img src="../images/pt_logo01.gif" /></li>
+					<li><img src="../images/pt_logo01.gif" /></li>
+				</ul>
+				
+			</div>
+			<!--合作伙伴-->
+		</div>
+
+		<!--底部-->
+		<footer id="footer">
+			<div class="con">
+				<div class="left"> 
+					<img src="../images/footer_logo.png" /> 
+					<a href="关于我们.html" target="_blank">关于我们</a> 
+					<a href="联系我们.html" target="_blank">联系我们</a>
+					<a href="帮助中心.html" target="_blank">帮助中心</a>
+					<p class="p1">2015&ndash;2016&nbsp;&copy;All Rights Reserver.www.cheqiren.com</p>
+					<p class="p2"><a href="http://www.miibeian.gov.cn/state/outPortal/loginPortal.action">琼ICP备13002531号-4</a>&nbsp;琼ICP证1233221号 <span><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1259855273'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1259855273%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script></span></p>
+				</div>
+				<div class="center">
+					<p class="p3">联系客服<span>9:00-17:30</span></p>
+					<h1 class="h1">0898-32830809</h1>
+				</div>
+				<div class="right"> <img src="../images/app_download.png" alt="APP下载" />
+					<p>APP下载</p>
+				</div>
+			</div>
+		</footer>
+
+		<script>
+		
+		
+//		$(function(){
+//      var order = 0;  //order变量用于图片的计数
+//      var change = setInterval(function(){
+//          order++;
+//          if(order == $(".slideBox li").length){
+//              order = 0;}
+//          show(order);
+//      },3000);
+//      function show(order){
+//			$(".slideBox li").eq(order - 1).slideUp(2000);//图片隐藏上去
+//          $(".slideBox li").eq(order - 1).fadeOut(4000); //将上一张图片隐藏
+//          
+//			$(".slideBox li").eq(order).fadeIn(4000); //将这张图片出现
+//			$(".slideBox li").eq(order).slideDown(2000);//图片显示出来
+//      };
+//  })
+		
+		    $("button").focus(function(){this.blur()});
+			/*登录·注册窗口切换*/
+			$(function() {
+				
+				$("#toRegister").click(function() {
+					$(".login-window").addClass("hidden");
+					$(".register-window").removeClass("hidden");
+				});
+				$("#toLogin").click(function() {
+					$(".register-window").addClass("hidden");
+					$(".login-window").removeClass("hidden");
+				});
+			});
+			/*end 登录·注册窗口切换*/
+			/*发送验证码*/
+			var countdown = 60;
+
+			function settime(obj) {
+				if (countdown == 0) {
+					obj.removeAttribute("disabled");
+					obj.value = "发送验证码";
+					countdown = 60;
+					return;
+				} else {
+					obj.setAttribute("disabled", true);
+					obj.value = "重新发送(" + countdown + ")";
+					countdown--;
+				}
+				setTimeout(function() {
+					settime(obj)
+				}, 1000)
+			}
+			/*end 发送验证码*/
+			
+			
+			
+		</script>
+		<!--[if lte IE 9]>
+			<script>
+			$(function(){ $('input,textarea').placeholder().css("color","#C9C9C9"); });
+			$(function(){ $('.sign_pwd').placeholder().css({"color":"#c9c9c9","width":"256px"})});
+			$(function(){ $('.security_btn').css("color","#333333"); });
+			$(function(){ $('.register-window >input').placeholder().css("color","#C9C9C9"); });
+			</script>
+        <![endif]-->
+        <script type="text/javascript" src="../js/SuperSlide.js"></script>
+        <script type="text/javascript">
+		jQuery(".fullSlide").slide({ 
+			titCell:".hd li", 
+			mainCell:".bdc ul", 
+			effect:"fold",  
+			autoPlay:true, 
+			delayTime:700 
+		});
+	    </script>
+ 
+        
+	</body>
+
+</html>

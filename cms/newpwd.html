@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>找回密码</title>
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/global.css" />
+		<link href="../css/styles.css" rel="stylesheet">
+		<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.validate.js"></script>
+		<script type="text/javascript" src="../layer/layer.js"></script>
+        <!--[if lte IE 9]>
+	    <link href="../css/IE.css" rel="stylesheet" />
+	    <script src="../js/respond.js"></script>
+	    <script src="../js/html5shiv-printshiv.js"></script>
+	    <script type="text/javascript" src="http://www.ijquery.cn/js/jquery.placeholder.min.js"></script>
+        <![endif]-->
+	</head>
+
+	<body>
+		<!--头部-->
+		<header>
+			<div class="clear"></div>
+			<div class="mainTop">
+				<div class="container section_center">
+					<div class="row">
+
+						<div class="col-md-6">
+							<div class="logo">
+								<a href="#"><img alt="" class="img-responsive" src="../images/logo.png"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div id="content" class="clearfix">
+			<div class="reset">
+				<div class="location">您的位置:首页><span>找回密码</span></div>
+				<div class="repwd">找回密码</div>
+				<ul class="nav">
+					<li><img src="../images/reset_01.png" />邮箱验证</li>
+					<li><img src="../images/reset_next.png" /></li>
+					<li><img src="../images/reset_02.png" />重置密码</li>
+					<li><img src="../images/reset_next.png" /></li>
+					<li><img src="../images/reset_03.png" />重置成功</li>
+				</ul>
+				<form class="re_pwd" id="signupForm">
+					<div class="p7">请设置新的密码</div>
+					<div>
+						<label class="l1">新密码</label>
+						<input type="password" placeholder="6-18位字符与数字" name="newpwd" id="newpwd" style="text-indent: 15px;width: 235px;" />
+						<!--<label class="error"><img src="../images/error.png"/></label>
+							<label class="correct"><img src="../images/right.png"/></label>-->
+					</div>
+					<div>
+						<label class="l1">确认密码</label>
+						<input type="password" placeholder="请再次输入密码" name="renewpwd" id="renewpwd" style="text-indent: 15px;" />
+						<!--<label class="error"><img src="../images/error.png"/></label>
+							<label class="right"><img src="../images/right.png"/></label>-->
+
+					</div>
+					<div class="pwd_reset pd_l_10">
+						<input type="button" name="submit" class="pwd_btn" value="确定" id="pwd_btn" style="height: 35px;" />
+					</div>
+				</form>
+
+			</div>
+
+		</div>
+		<div class="clear"></div>
+
+		<!--底部-->
+		<footer id="footer" class="mt35">
+			<div class="con">
+				<div class="left"> 
+					<img src="../images/footer_logo.png" /> 
+					<a href="关于我们.html" target="_blank">关于我们</a> 
+					<a href="联系我们.html" target="_blank">联系我们</a>
+					<a href="帮助中心.html" target="_blank">帮助中心</a>
+					<p class="p1">2015&ndash;2016&nbsp;&copy;All Rights Reserver.www.cheqiren.com</p>
+					<p class="p2"><a href="http://www.miibeian.gov.cn/state/outPortal/loginPortal.action">琼ICP备13002531号-4</a>&nbsp;琼ICP证1233221号</p>
+				</div>
+				<div class="center">
+					<p class="p3">联系客服<span>9:00-17:30</span></p>
+					<h1 class="h1">0898-32830809</h1>
+				</div>
+				<div class="right"> <img src="../images/app_download.png" alt="APP下载" />
+					<p>APP下载</p>
+				</div>
+			</div>
+		</footer>
+		<script>
+			$("#pwd_btn").on('click', function() {
+				setTimeout(function() {
+					window.location.href = "个人中心.html"
+				}, 2000);
+				layer.open({
+					type: 1,
+					title: false,
+					shadeClose: true,
+					area: ['510px'],
+					closeBtn: 0,
+					time: 2000,
+					content: '<div id="dialog-message" style="z-index: 99999;">' +
+						'<div class="tooltip_title">密码重置成功</div>' +
+						'<div class="tooltip_content"><p class="tc_p1">密码重置成功系统将在2秒后进入会员页面，如页面未跳转，请点击这里跳转!</p></div></div>'
+				});
+			});
+		</script>
+
+		<!--<script>
+			$(function() {
+				jQuery.validator.setDefaults({
+					debug: true,
+					success: "valid"
+				});
+				$("#signupForm").validate({
+					onfocusout: function(element) {
+						$(element).valid();
+					},
+					rules: {
+						newpwd: {
+							required: true,
+							minlength: 6,
+							maxlength: 18
+						},
+						renewpwd: {
+							required: true,
+							equalTo: "#newpwd"
+						}
+					},
+					messages: {
+						newpwd: {
+							required: "请输入新的密码",
+							minlength: "6-18位字符与数字",
+							maxlength: "6-18位字符与数字"
+						},
+						newpwd: {
+							required: "请输入新的密码",
+							minlength: "6-18位字符与数字",
+							maxlength: "6-18位字符与数字",
+							equalTo: "新密码不能与原密码一致"
+						},
+						renewpwd: {
+							required: "请输入确认密码",
+							equalTo: "两次输入密码不一致"
+						}
+					}
+				});
+			});
+		</script>-->
+	</body>
+
+</html>

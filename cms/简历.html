@@ -1,0 +1,1200 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>简历</title>
+
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/global.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css" />
+<link href="../css/resume.css" rel="stylesheet">
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery.validate.js"></script>
+<script src="../js/localization/messages_zh.js"></script>
+<script src="../js/Popt.js"></script>
+<script src="../js/dateSet.js"></script>
+
+<script type="text/javascript" src="../js/drag.js"></script>
+<script type="text/javascript" src="../js/city_arr.js"></script>
+<script type="text/javascript" src="../js/city_func.js"></script>
+
+<!--[if lte IE 9]>
+	<script src="../js/respond.js"></script>
+	<script src="../js/html5shiv-printshiv.js"></script>
+<![endif]-->
+</head>
+	
+<body>
+	<!--头部-->
+	<header>
+    	<div class="mainTop">
+        	<div class="container section_center">
+            	<div class="row">
+                
+                	 <div class="col-md-6">
+              			<div class="logo">
+                    	<a href="#"><img alt="" class="img-responsive" src="../images/logo.png"></a>
+                        </div>
+                    </div>
+                    <!--<div class="col-sm-13 col-md-6">
+                    	<div class="socials">
+                        	
+                            <ul>
+                              <li><a href="#"  class="br">APP下载</a></li>
+                              <li><a href="#">帮助中心</a></li>
+                            </ul>
+                        </div>
+                    </div>-->
+                    <div class="col-sm-13 col-md-6">
+                    	<div class="socials">
+                        	
+                            <ul>
+                              <li><a href="#" class="br">iheski拓</a></li>
+                              <li><a href="#" class="br">我的征信</a></li>
+                              <li><a href="#">我的简历</a></li>
+                              <li><a href="#" class="br"><span class="settingIco"></span>
+                       		 	<span class="">个人设置</span></a></li>
+                              <li><a href="#"><span class="logoutIco"></span>
+                        		<span class="">退出登录</span></a></li>
+                            </ul>
+                        </div>
+                    	
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+	</header>
+    <!-- 主体 section-->
+   	<div class="index_section">
+    	<div class="container section_center">
+            <div class="breadCrumb mt10">
+            	<span>您的位置：<a href="">首页</a> &gt;<a href="">个人后台</a> &gt;<a href="">填写简历</a></span>
+            </div>
+            <div class="left">
+	            <!--左边菜单-->
+	            <div class="res_left">
+	            	<span class="fs30">填写简历</span>
+	            	<div class="res_leftmenu">
+	            		<div class="res_leftmenu_list">
+	            			<ul>
+	            				<li><a href="#">基本信息</a></li>
+	            				<li><a href="#">教育经历</a></li>
+	            				<li><a href="#">工作经历</a></li>
+	            				<li><a href="#">项目经历</a></li>
+	            				<li><a href="#">求职单身</a></li>
+	            				<li><a href="#">培训经历</a></li>
+	            				<li><a href="#">学生信息</a></li>
+	            				<li><a href="#">语言能力</a></li>
+
+	            			</ul>
+	            		</div>
+	            		<div class="res_leftmenu_fun">
+	            			<span class="addIco" id="addModelMenu" ></span><span class="ml15">添加新模块</span> 
+	            			<br><br>
+							<button type="button" class="btn btn-warning ml30">授权认证</button>
+	            		</div>
+
+						<div class="dialog"></div>
+
+	            	</div>
+					
+					<div class="res_left_bottom_menu">
+						<div class="res_leftmenu_view">
+	            			<span class="viewIco"></span><span class="ml15">预览简历</span> 
+	            		</div>
+					</div>
+
+	            </div>
+	            <!--主显示-->
+	            <div class="rightView">
+	             <!--基本信息-->
+	             <div class="addInfoView">
+	            	<div class="left">
+						<div class="myResume left bt" style="width: 738px;">
+							<div class="mt5 myRpading_t32">
+								<span class="fs18 mt20">基本信息</span>	
+								<div class="right"></div>
+							</div>
+							<form class="form-horizontal" role="form">
+								<div class="basic_info myRpading_t32 left">
+									<div style="width: 441px;" class="left">
+								   		<div class="row">
+								      		<label class="col-sm-3 control-label"><span class="red_star">*</span>姓名</label>
+									      	<div class="col-xs-5">
+									         <input class="form-control1" name="name" id="focusedInput" type="text" 
+									            placeholder="真实姓名" required>
+									      	</div>
+									      	<label class="checkbox-inline inline">
+										      <input type="radio" name="sex" id="optionsRadios3" 
+										         value="option1" checked>男 
+										    </label>
+										    <label class="checkbox-inline inline">    
+										      <input type="radio" name="sex" id="optionsRadios3" 
+										         value="option1" checked>女
+										   </label>
+								   		</div>
+								   		<div class="row mt10 right_placeholder">
+								      		<label class="col-sm-3 control-label"><span class="red_star">*</span>出生日期</label>
+									      	<div class="col-xs-4">
+									         <input class="form-control1 inputYearB" name="year" type="text" 
+									             onfocus='this.blur()' required>
+									      	</div>
+									      	<div class="col-xs-3">
+									         <input class="form-control1 inputMonthB" name="month" id="focusedInput" type="text" 
+									            onfocus='this.blur()' required>
+									      	</div>
+									      	<div class="col-xs-2">
+									         <input class="form-control1 inputDayB" name="day" id="focusedInput" type="text" 
+									            onfocus='this.blur()' required>
+									      	</div>
+								   		</div>
+										<div class="row mt10">
+								      		<label class="col-sm-3 control-label">籍贯</label>
+									      	<div class="col-xs-9">
+									         <input class="form-control1" name="" id="focusedInput" type="text" 
+									           >
+									      	</div>
+								   		</div>
+
+								   		<div class="row mt10">
+								      		<label class="col-sm-3 control-label"><span class="red_star">*</span>现居住地</label>
+									      	<div class="col-xs-9">
+									         <input class="form-control1" name="" id="nowPlace" type="text" 
+									           placeholder="请选择城市" onfocus="csSelect(this);" required>
+									      	</div>
+								   		</div>
+
+										<div class="row mt10">
+								      		<label class="col-sm-3 control-label"><span class="red_star">*</span>手机号</label>
+									      	<div class="col-xs-9">
+									         <input required class="form-control1" name="" id="" type="text" 
+									           onkeyup="this.value=this.value.replace(/\D/g,'')"  onafterpaste="this.value=this.value.replace(/\D/g,'')"  >
+									      	</div>
+								   		</div>
+
+								   		<div class="row mt10">
+								      		<label class="col-sm-3 control-label"><span class="red_star">*</span>邮箱</label>
+									      	<div class="col-xs-9">
+									         <input class="form-control1" name="" id="" type="email" required>
+									      	</div>
+								   		</div>
+
+								   		<div class="row mt10">
+								      		<label class="col-sm-3 control-label">身份证号</label>
+									      	<div class="col-xs-9">
+									         <input class="form-control1" name="" id="" type="text" required
+									           >
+									      	</div>
+								   		</div>
+								   	</div>
+
+								   	<div class="left" style="width:214px;height: 268px;">
+								   		<div class="head_pho">
+									   		<div class="short"></div>
+									   		<div class="long"></div>
+								   			<span class="gray">上传头像</span>
+								   			
+								   		</div>
+								   		<span class="gray" style="width: 112px;position: absolute;margin:225px 0 0 25px;">只供认证需要，不会泄露您的信息</span>
+								   	</div>
+								
+									<div class="dashed_line left mt20 mb20"></div>
+									
+									<div class="left" style="width: 655px;">
+										<div class="row">
+								      		<label class="col-sm-2 control-label">婚姻状况</label>
+									      	<div class="col-xs-4">
+										      	<select class="form-control1">
+											        <option>未婚</option>
+											        <option>已婚</option>
+											    </select>
+									        </div>
+									      	<label class="col-sm-2 control-label">政治面貌</label>
+									      	<div class="col-xs-4">
+									      		<select class="form-control1 ">
+											        <option>中共党员</option>
+											        <option>中共预备党员</option>
+											        <option>共青团员</option>
+											        <option>民革党员</option>
+											        <option>民盟盟员</option>
+											        <option>民建会员</option>
+											        <option>民进会员</option>
+											        <option>农工党党员</option>
+											        <option>致公党党员</option>
+											        <option>九三学社社员</option>
+											        <option>台盟盟员</option>
+											        <option>无党派人士</option>
+											        <option>群众</option>
+											    </select>
+									        </div>
+								   		</div>
+
+								   		<div class="row mt5">
+								      		<label class="col-sm-2 control-label">身高</label>
+									      	<div class="col-xs-4">
+									         <input class="form-control1 inputCM" name="" id="" type="text">
+									      	</div>
+									      	<label class="col-sm-2 control-label">体重</label>
+									      	<div class="col-xs-4">
+									         <input class="form-control1 inputKG" name="" id="" type="text">
+									      	</div>
+								   		</div>
+
+								   		<div class="row mt5">
+								      		<label class="col-sm-2 control-label">国家或地区</label>
+									      	<div class="col-xs-4">
+									         <input class="form-control1" name="areaCountry" id="" type="text">
+									      	</div>
+									      	<label class="col-sm-2 control-label">邮政</label>
+									      	<div class="col-xs-4">
+									         <input class="form-control1" name="" id="focusedInput" type="text">
+									      	</div>
+								   		</div>
+
+								   		<div class="row mt5">
+								      		<label class="col-sm-2 control-label">家庭住址</label>
+									      	<div class="col-xs-10">
+									         <input class="form-control1" name="" id="focusedInput" type="text">
+									      	</div> 	
+								   		</div>
+
+								   		<div class="mt35 text-center mb40">
+											<button type="button" class="btn btn-danger">
+												&nbsp;&nbsp;&nbsp;&nbsp;保存&nbsp;&nbsp;&nbsp;&nbsp;
+											</button>
+										</div>
+
+
+									</div>
+								</div>
+							</form>
+						</div>
+	            	</div>
+	            </div>
+	            <!--基本信息 end-->
+	            <!--教育经历-->
+				<div class="addInfoView">
+	            	<div class="left">
+						<div class="myResume left" style="width: 738px;">
+							<div class="mt5 myRpading_t32">
+								<span class="fs18 mt20">教育经历</span>	
+								<div class="right"></div>
+							</div>
+							<div class="mt5 eduList left">
+								<ul>
+									<li>
+										<span class="w110">2013/9-2016/7</span>
+										<span class="w180">南开大学</span>
+										<span class="w200">汽车工程专业</span>
+										<span class="w70">本科</span>
+										<span class="modifyIco mr15"></span>
+										<span class="deleIco"></span>
+									</li>
+									<li>
+										<span class="w110">2013/9-2016/7</span>
+										<span class="w180">南开大学</span>
+										<span class="w200">汽车工程专业</span>
+										<span class="w70">本科</span>
+										<span class="modifyIco mr15"></span>
+										<span class="deleIco"></span>
+									</li>
+									<li>
+										<span class="w110">2013/9-2016/7</span>
+										<span class="w180">南开大学</span>
+										<span class="w200">汽车工程专业</span>
+										<span class="w70">本科</span>
+										<span class="modifyIco mr15"></span>
+										<span class="deleIco"></span>
+									</li>
+								</ul>
+							</div>
+
+							<form class="form-horizontal" role="form">
+								<div class="basic_info myRpading_t32 left">
+									<div style="width: 550px;" class="left">
+								   		<div class="row">
+								      		<label class="col-sm-3 control-label"><span class="red_star">*</span>时间</label>
+									      	<div class="col-xs-2 dr0">
+									         <input class="form-control1 inputYearB" name="fullyear" id="" type="text">
+									      	</div>
+									      	<div class="col-xs-2 dr0">
+									         <input class="form-control1 inputMonthB" name="month" id="" type="text">
+									      	</div>
+									      	<div class="col-xs-1 dr0 mt5">至</div>
+									      	<div class="col-xs-2 dlr0">
+									         <input class="form-control1 inputYearB" name="fullyear" id="" type="text">
+									      	</div>
+									      	<div class="col-xs-2 dr0">
+									         <input class="form-control1 inputMonthB" name="month" id="" type="text">
+									      	</div>
+								   		</div>
+								   		<div class="row mt5">
+								      		<label class="col-sm-3 control-label"><span class="red_star">*</span>学校</label>
+								      		<div class="col-xs-9 dr0">
+									      	<input class="form-control1" name="" id="focusedInput" type="text" placeholder="请填写学校名称">
+									      	</div>
+								   		</div>
+								   		<div class="row mt5">
+								      		<label class="col-sm-3 control-label"><span class="red_star">*</span>专业</label>
+								      		<div class="col-xs-9 dr0">
+									      	<input class="form-control1" name="" id="focusedInput" type="text" placeholder="请填写专业名称">
+									      	</div>
+								   		</div>
+
+								   		<div class="row mt5">
+								      		<label class="col-sm-3 control-label"><span class="red_star">*</span>获得学历</label>
+									      	<div class="col-xs-5 dr0">
+									         	<select class="form-control1">
+											        <option>小学</option>
+											        <option>初中</option>
+											        <option>高中</option>
+											        <option>中专</option>
+											        <option>大专</option>
+											        <option>本科</option>
+											        <option>硕士</option>
+											        <option>博士</option>
+											    </select>
+									      	</div>
+									      	<div class="col-xs-4 dr0">
+										        <select class="form-control1">
+											       <option>全日制</option>
+											       <option>成人</option>
+											       <option>函授</option>
+											       <option>远程</option>
+											    </select>
+									      	</div>
+								   		</div>
+										<div class="row mt5">
+											<label class="col-sm-3 control-label"></label>
+									      	<div class="col-xs-5 dr0 h58">
+									         	<div class="graduate_pho">
+											   		<div class="short"></div>
+											   		<div class="long"></div>
+										   			<span ><a href="#" class="brown"> 上传毕业证书</a></span>
+										   		</div>
+									      	</div>
+										</div>
+										
+								   	</div>
+
+								   	<div class="left" style="width:100px;height:215px;">
+								   		<span class="gray" style="width: 150px;position: absolute;margin:10px 0 0 25px;">后两项不填表示至今</span>
+								   	</div>
+								   	<div style="width: 655px;" class="left">
+								   		<div class="row mt5">
+								      		<label class="col-sm-2 control-label">专业描述</label>
+									      	<div class="col-xs-10">
+									         <textarea class="form-control1" rows="5"></textarea>
+									         <span style="width: 500px" class="gray">请填写所学专业包括什么课程，毕业设计等相关信息</span>
+									         <span class="right">/200字</span><span class="red right">0</span>
+									      	</div> 	
+								   		</div>
+								   		<div class="mt35 text-center mb40">
+											<button type="button" class="btn btn-danger">
+												&nbsp;&nbsp;&nbsp;&nbsp;继续添加&nbsp;&nbsp;&nbsp;&nbsp;
+											</button>
+											<a href="#" class="right">删除</a>
+										</div>
+								   	</div>
+								</div>
+							</form>
+						</div>
+	            	</div>
+	            </div>
+				<!--教育经历 end-->
+				<!--工作经历-->
+				<div class="addInfoView">
+	             	<div class="left">
+						<div class="myResume left" style="width: 738px;">
+							<div class="mt5 myRpading_t32">
+								<span class="fs18 mt20">工作经历</span>	
+								<div class="right"></div>
+							</div>
+							<div class="mt5 eduList left">
+								<ul>
+									<li>
+									   <div class="li_first">
+										<span class="w110">2013/9-2016/7</span>
+										<span class="w460" style="text-align:left;">海南管事科技有限公司</span>
+										
+										<span class="modifyIco mr15"></span>
+										<span class="deleIco"></span>
+										</div>
+										<div class="left mt20">
+											<label class="col-sm-2 control-label gray fs14_500">项目描述</label>
+									      	<div class="col-xs-10">
+									         <span class=" fs14_500">工作10年具备一定的管理工作经验。本人适应强，性格开朗，善于与人沟通，乐于助人。工作认真负责，具有很强的责任心和进取心，并具有较强的团队合作意识，服从管理。希望在不断的学习和工作中充实和完善自己，更好的把握发展的契机希望在不断的学习和工作中充实和完善自己，更好的把握发展的契机.</span>
+									      	</div> 	
+										</div>
+										<div class="left mt20">
+											<label class="col-sm-2 control-label gray fs14_500">责任描述</label>
+									      	<div class="col-xs-10">
+									         <span class=" fs14_500">工作10年具备一定的管理工作经验。本人适应强，性格开朗，善于与人沟通，乐于助人。工作认真负责，具有很强的责任心和进取心，并具有较强的团队合作意识，服从管理。希望在不断的学习和工作中充实和完善自己，更好的把握发展的契机希望在不断的学习和工作中充实和完善自己，更好的把握发展的契机.</span>
+									      	</div> 	
+										</div>
+									</li>
+									
+								</ul>
+							</div>
+
+							<form class="form-horizontal" role="form">
+								<div class="basic_info myRpading_t32 left">
+									<div style="width: 450px;" class="left">
+								   		<div class="row">
+								      		<label style="margin-left: -5px;" class="col-sm-3 control-label"><span class="red_star">*</span>时间</label>
+									      	<div class="col-xs-2 dr0">
+									         <input class="form-control1" name="" id="focusedInput" type="text" 
+									            placeholder="年" >
+									      	</div>
+									      	<div class="col-xs-2 dr0">
+									         <input class="form-control1" name="" id="focusedInput" type="text" 
+									            placeholder="月" >
+									      	</div>
+									      	<div class="col-xs-1 dr0 mt5">至</div>
+									      	<div class="col-xs-2 dlr0">
+									         <input class="form-control1" name="" id="focusedInput" type="text" 
+									            placeholder="年" >
+									      	</div>
+									      	<div class="col-xs-2 dr0">
+									         <input class="form-control1" name="" id="focusedInput" type="text" 
+									            placeholder="月" >
+									      	</div>
+								   		</div>
+								   		
+								   	</div>
+								   	<div class="left" style="width:200px;height:35px;">
+								   		<span class="gray" style="width: 150px;position: absolute;margin:10px 0 0 25px;">后两项不填表示至今</span>
+								   	</div>
+								   	<div style="width: 655px;" class="left">
+
+								   		<div class="row mt5">
+								      		<label class="col-sm-2 control-label"><span class="red_star">*</span>项目</label>
+								      		<div class="col-xs-10 dr0">
+									      	<input class="form-control1" name="" id="focusedInput" type="text" placeholder="请填写项目名称">
+									      	</div>
+								   		</div>
+								   		<div class="row mt5">
+								      		<label class="col-sm-2 control-label">专业描述</label>
+									      	<div class="col-xs-10 dr0">
+									         <textarea class="form-control1" rows="5"></textarea>
+									         <span style="width: 500px" class="gray">请填写所学专业包括什么课程，毕业设计等相关信息</span>
+									         <span class="right">/200字</span><span class="red right">0</span>
+									      	</div> 	
+								   		</div>
+								   		<div class="mt35 text-center mb40">
+											<button type="button" class="btn btn-danger">
+												&nbsp;&nbsp;&nbsp;&nbsp;继续添加&nbsp;&nbsp;&nbsp;&nbsp;
+											</button>
+											<a href="#" class="right">删除</a>
+										</div>
+								   	</div>
+								</div>
+							</form>
+						</div>
+	            	</div>
+	            </div>
+				<!--工作经历 end-->
+				
+				<!--项目经验-->
+				<div class="addInfoView">
+	             	<!-- 进度条 -->
+					<div class="project_barlinePanl">
+						<div class="project_barline" id="project_probar">
+							<div id="project_percent"></div>
+							<div id="project_line" w="40" style="width:0px;"></div>
+						</div>
+					</div>
+	            	<div class="left">
+						<div class="myResume left" style="width: 738px;">
+							<div class="mt5 myRpading_t32">
+								<span class="fs18 mt20">项目经验</span>	
+								<div class="right"></div>
+							</div>
+							<div class="mt5 eduList left">
+								<ul>
+									<li>
+									   <div class="li_first">
+										<span class="w110">2013/9-2016/7</span>
+										<span class="w460" style="text-align:left;">海南管事科技有限公司</span>
+										
+										<span class="modifyIco mr15"></span>
+										<span class="deleIco"></span>
+										</div>
+										<div class="left mt20">
+											<label class="col-sm-2 control-label gray fs14_500">项目描述</label>
+									      	<div class="col-xs-10">
+									         <span class=" fs14_500">工作10年具备一定的管理工作经验。本人适应强，性格开朗，善于与人沟通，乐于助人。工作认真负责，具有很强的责任心和进取心，并具有较强的团队合作意识，服从管理。希望在不断的学习和工作中充实和完善自己，更好的把握发展的契机希望在不断的学习和工作中充实和完善自己，更好的把握发展的契机.</span>
+									      	</div> 	
+										</div>
+										<div class="left mt20">
+											<label class="col-sm-2 control-label gray fs14_500">责任描述</label>
+									      	<div class="col-xs-10">
+									         <span class=" fs14_500">工作10年具备一定的管理工作经验。本人适应强，性格开朗，善于与人沟通，乐于助人。工作认真负责，具有很强的责任心和进取心，并具有较强的团队合作意识，服从管理。希望在不断的学习和工作中充实和完善自己，更好的把握发展的契机希望在不断的学习和工作中充实和完善自己，更好的把握发展的契机.</span>
+									      	</div> 	
+										</div>
+									</li>
+									
+								</ul>
+							</div>
+
+							<form class="form-horizontal" role="form">
+								<div class="basic_info myRpading_t32 left">
+									<div style="width: 450px;" class="left">
+								   		<div class="row">
+								      		<label style="margin-left: -5px;" class="col-sm-3 control-label"><span class="red_star">*</span>时间</label>
+									      	<div class="col-xs-2 dr0">
+									         <input class="form-control1" name="" id="focusedInput" type="text" 
+									            placeholder="年" >
+									      	</div>
+									      	<div class="col-xs-2 dr0">
+									         <input class="form-control1" name="" id="focusedInput" type="text" 
+									            placeholder="月" >
+									      	</div>
+									      	<div class="col-xs-1 dr0 mt5">至</div>
+									      	<div class="col-xs-2 dlr0">
+									         <input class="form-control1" name="" id="focusedInput" type="text" 
+									            placeholder="年" >
+									      	</div>
+									      	<div class="col-xs-2 dr0">
+									         <input class="form-control1" name="" id="focusedInput" type="text" 
+									            placeholder="月" >
+									      	</div>
+								   		</div>
+								   		
+								   	</div>
+								   	<div class="left" style="width:200px;height:35px;">
+								   		<span class="gray" style="width: 150px;position: absolute;margin:10px 0 0 25px;">后两项不填表示至今</span>
+								   	</div>
+								   	<div style="width: 655px;" class="left">
+
+								   		<div class="row mt5">
+								      		<label class="col-sm-2 control-label"><span class="red_star">*</span>项目</label>
+								      		<div class="col-xs-10 dr0">
+									      	<input class="form-control1" name="" id="focusedInput" type="text" placeholder="请填写项目名称">
+									      	</div>
+								   		</div>
+								   		<div class="row mt5">
+								      		<label class="col-sm-2 control-label">专业描述</label>
+									      	<div class="col-xs-10 dr0">
+									         <textarea class="form-control1" rows="5"></textarea>
+									         <span style="width: 500px" class="gray">请填写所学专业包括什么课程，毕业设计等相关信息</span>
+									         <span class="right">/200字</span><span class="red right">0</span>
+									      	</div> 	
+								   		</div>
+								   		<div class="mt35 text-center mb40">
+											<button type="button" class="btn btn-danger">
+												&nbsp;&nbsp;&nbsp;&nbsp;继续添加&nbsp;&nbsp;&nbsp;&nbsp;
+											</button>
+											<a href="#" class="right">删除</a>
+										</div>
+								   	</div>
+								</div>
+							</form>
+						</div>
+	            	</div>
+	            </div>
+	            <!--项目经验-->
+	            <!--求职意向-->
+				<div class="addInfoView">
+	             	<!-- 进度条 -->
+					<div class="jobWanted_barlinePanl">
+						<div class="jobWanted_barline" id="jobWanted_probar">
+							<div id="jobWanted_percent"></div>
+							<div id="jobWanted_line" w="100" style="width:0px;"></div>
+						</div>
+					</div>
+	            	<div class="left">
+						<div class="myResume left" style="width: 738px;">
+							<div class="mt5 myRpading_t32">
+								<span class="fs18 mt20">求职意向</span>	
+								<div class="right"></div>
+							</div>
+							<form class="form-horizontal" role="form">
+								<div class="basic_info myRpading_t32 left">
+									<div style="width: 450px;" class="left">
+								   		<div class="row">
+								      		<label class="col-sm-3 control-label"><span class="red_star">*</span>地点</label>
+									      	<div class="col-xs-6">
+									         <input class="form-control1" name="name" id="focusedInput" type="text" 
+									            placeholder="请选择" >
+									      	</div>
+								   		</div>
+								   		<div class="row mt5">
+								      		<label class="col-sm-3 control-label"><span class="red_star">*</span>职能</label>
+									      	<div class="col-xs-6">
+									         <input class="form-control1" name="name" id="focusedInput" type="text" 
+									            placeholder="请选择" >
+									      	</div>
+								   		</div>
+								   		<div class="row mt5">
+								      		<label class="col-sm-3 control-label"><span class="red_star">*</span>工作类型</label>
+									      	<div class="col-xs-6">
+									         	<label class="checkbox-inline">
+													<input type="radio" name="jobType" id="optionsRadios3" 
+													     value="option1" checked>&nbsp;全职&nbsp;&nbsp;&nbsp;
+													<input type="radio" name="jobType" id="optionsRadios3" 
+													     value="option1" checked>&nbsp;兼职&nbsp;&nbsp;&nbsp;
+													<input type="radio" name="jobType" id="optionsRadios3" 
+													     value="option1" checked>&nbsp;实习
+												</label>
+								   			</div>
+								   		</div>
+
+								   		<div class="row mt5">
+								      		<label class="col-sm-3 control-label"><span class="red_star">*</span>期望薪资</label>
+									      	<div class="col-xs-6">
+									         <input class="form-control1" name="name" id="focusedInput" type="text" 
+									            placeholder="请选择" >
+									      	</div>
+									      	<div class="col-xs-2 mt10 dlr0">/月</div>
+								   		</div>
+
+								   		<div class="row mt5">
+								      		<label class="col-sm-3 control-label"><span class="red_star">*</span>求职状态</label>
+									      	<div class="col-xs-6">
+									         <input class="form-control1" name="name" id="focusedInput" type="text" 
+									            placeholder="请选择" >
+									      	</div>
+								   		</div>
+
+								   		<div class="row mt5">
+								      		<label class="col-sm-3 control-label"><span class="red_star">*</span>到岗时间</label>
+									      	<div class="col-xs-2 dr0">
+									         <input class="form-control1" name="" id="focusedInput" type="text" 
+									            placeholder="年" >
+									      	</div>
+									      	<div class="col-xs-2 dr0">
+									         <input class="form-control1" name="" id="focusedInput" type="text" 
+									            placeholder="月" >
+									      	</div>
+								   		</div>
+
+
+									   	<div class="left" style="width:200px;height:35px;">
+									   	</div>
+									   	<div style="width: 655px;" class="left">
+									   		<div class="mt35 text-center mb40">
+												<button type="button" class="btn btn-danger">
+													&nbsp;&nbsp;&nbsp;&nbsp;保存&nbsp;&nbsp;&nbsp;&nbsp;
+												</button>
+											</div>
+									   	</div>
+								</div>
+							</form>
+						</div>
+	            	</div>
+	            </div>
+	        </div>
+	        <!--求职意向 end-->
+	        <!--培训经历-->
+	            	<div class="addInfoView">
+	             	<!-- 进度条 -->
+					<div class="train_barlinePanl">
+						<div class="train_barline" id="train_probar">
+							<div id="train_percent"></div>
+							<div id="train_line" w="55" style="width:0px;"></div>
+						</div>
+					</div>
+	            	<div class="left">
+						<div class="myResume left" style="width: 738px;">
+							<div class="mt5 myRpading_t32">
+								<span class="fs18 mt20">培训经历</span>	
+								<div class="right"></div>
+							</div>
+							<div class="mt5 eduList left">
+								<ul>
+									<li>
+										<span class="w110">2013/9-2016/7</span>
+										<span class="w260" style="text-align:left;">中国高级汽车工程师资格培训</span>
+										<span class="w200">高级汽车工程师证书</span>
+										<span class="modifyIco mr15"></span>
+										<span class="deleIco"></span>
+									</li>
+								</ul>
+							</div>
+
+							<form class="form-horizontal" role="form">
+								<div class="basic_info myRpading_t32 left">
+									<div style="width: 450px;" class="left">
+								   		<div class="row">
+								      		<label class="col-sm-3 control-label"><span class="red_star">*</span>时间</label>
+									      	<div class="col-xs-2 dr0">
+									         <input class="form-control1" name="" id="focusedInput" type="text" 
+									            placeholder="年" >
+									      	</div>
+									      	<div class="col-xs-2 dr0">
+									         <input class="form-control1" name="" id="focusedInput" type="text" 
+									            placeholder="月" >
+									      	</div>
+									      	<div class="col-xs-1 dr0 mt5">至</div>
+									      	<div class="col-xs-2 dlr0">
+									         <input class="form-control1" name="" id="focusedInput" type="text" 
+									            placeholder="年" >
+									      	</div>
+									      	<div class="col-xs-2 dr0">
+									         <input class="form-control1" name="" id="focusedInput" type="text" 
+									            placeholder="月" >
+									      	</div>
+								   		</div>
+								   		<div class="row mt5">
+								      		<label class="col-sm-3 control-label"><span class="red_star">*</span>培训课程</label>
+								      		<div class="col-xs-9 dr0">
+									      	<input class="form-control1" name="" id="focusedInput" type="text" placeholder="请填写培训课程名称">
+									      	</div>
+								   		</div>
+								   		<div class="row mt5">
+								      		<label class="col-sm-3 control-label">获得证书</label>
+								      		<div class="col-xs-9 dr0">
+									      	<input class="form-control1" name="" id="focusedInput" type="text" placeholder="请填写证书名称">
+									      	</div>
+								   		</div>
+										<div class="row mt5">
+											<label class="col-sm-3 control-label"></label>
+									      	<div class="col-xs-5 dr0 h58">
+									         	<div class="graduate_pho">
+											   		<div class="short"></div>
+											   		<div class="long"></div>
+										   			<span ><a href="#" class="brown"> 上传培训证书</a></span>
+										   		</div>
+									      	</div>
+										</div>
+										
+								   	</div>
+
+								   	<div class="left" style="width:200px;height:175px;">
+								   		<span class="gray" style="width: 150px;position: absolute;margin:10px 0 0 25px;">后两项不填表示至今</span>
+								   	</div>
+								   	<div style="width: 655px;" class="left">
+								   		<div class="row mt5">
+								      		<label class="col-sm-2 control-label">详细描述</label>
+									      	<div class="col-xs-10">
+									         <textarea class="form-control1" rows="5"></textarea>
+									         <span style="width: 500px" class="gray">请填写所学专业包括什么课程，毕业设计等相关信息</span>
+									         <span class="right">/200字</span><span class="red right">0</span>
+									      	</div> 	
+								   		</div>
+								   		<div class="mt35 text-center mb40">
+											<button type="button" class="btn btn-danger">
+												&nbsp;&nbsp;&nbsp;&nbsp;继续添加&nbsp;&nbsp;&nbsp;&nbsp;
+											</button>
+											<a href="#" class="right">删除</a>
+										</div>
+								   	</div>
+								</div>
+							</form>
+						</div>
+	            	</div>
+	            </div>
+	            <!--培训经历 end-->
+	            <!--校内职务-->
+	            <div class="addInfoView">
+	             	<!-- 进度条 -->
+					<div class="xiaoneiJob_barlinePanl">
+						<div class="xiaoneiJob_barline" id="xiaoneiJob_probar">
+							<div id="xiaoneiJob_percent"></div>
+							<div id="xiaoneiJob_line" w="100" style="width:0px;"></div>
+						</div>
+					</div>
+	            	<div class="left">
+						<div class="myResume left" style="width: 738px;">
+							<div class="mt5 myRpading_t32">
+								<span class="fs18 mt20">校内职务</span>	
+								<div class="right"></div>
+							</div>
+							<div class="mt5 eduList left">
+								<ul>
+									<li>
+									   <div class="li_first">
+										<span class="w110">2013/9-2016/7</span>
+										<span class="w460" style="text-align:left;">学生会长</span>
+										
+										<span class="modifyIco mr15"></span>
+										<span class="deleIco"></span>
+										</div>
+										<div class="left mt20">
+											<label class="col-sm-2 control-label gray fs14_500">详细描述</label>
+									      	<div class="col-xs-10">
+									         <span class=" fs14_500">工作10年具备一定的管理工作经验。本人适应强，性格开朗，善于与人沟通，乐于助人。工作认真负责，具有很强的责任心和进取心，并具有较强的团队合作意识，服从管理。希望在不断的学习和工作中充实和完善自己，更好的把握发展的契机希望在不断的学习和工作中充实和完善自己，更好的把握发展的契机.</span>
+									      	</div> 	
+										</div>
+									</li>
+									
+								</ul>
+							</div>
+
+							<form class="form-horizontal" role="form">
+								<div class="basic_info myRpading_t32 left">
+									<div style="width: 450px;" class="left">
+								   		<div class="row">
+								      		<label style="margin-left: -5px;" class="col-sm-3 control-label"><span class="red_star">*</span>时间</label>
+									      	<div class="col-xs-2 dr0">
+									         <input class="form-control1" name="" id="focusedInput" type="text" 
+									            placeholder="年" >
+									      	</div>
+									      	<div class="col-xs-2 dr0">
+									         <input class="form-control1" name="" id="focusedInput" type="text" 
+									            placeholder="月" >
+									      	</div>
+									      	<div class="col-xs-1 dr0 mt5">至</div>
+									      	<div class="col-xs-2 dlr0">
+									         <input class="form-control1" name="" id="focusedInput" type="text" 
+									            placeholder="年" >
+									      	</div>
+									      	<div class="col-xs-2 dr0">
+									         <input class="form-control11" name="" id="focusedInput" type="text" 
+									            placeholder="月" >
+									      	</div>
+								   		</div>
+								   		
+								   	</div>
+								   	<div class="left" style="width:200px;height:35px;">
+								   		<span class="gray" style="width: 150px;position: absolute;margin:10px 0 0 25px;">后两项不填表示至今</span>
+								   	</div>
+								   	<div style="width: 655px;" class="left">
+
+								   		<div class="row mt5">
+								      		<label class="col-sm-2 control-label"><span class="red_star">*</span>职务</label>
+								      		<div class="col-xs-10 dr0">
+									      	<input class="form-control1" name="" id="focusedInput" type="text" placeholder="请填写职务名称">
+									      	</div>
+								   		</div>
+								   		<div class="row mt5">
+								      		<label class="col-sm-2 control-label">详细描述</label>
+									      	<div class="col-xs-10 dr0">
+									         <textarea class="form-control1" rows="5"></textarea>
+									         <span style="width: 500px" class="gray">请介绍您校务职务的职责与活动内容</span>
+									         <span class="right">/200字</span><span class="red right">0</span>
+									      	</div> 	
+								   		</div>
+								   		<div class="mt35 text-center mb40">
+											<button type="button" class="btn btn-danger">
+												&nbsp;&nbsp;&nbsp;&nbsp;继续添加&nbsp;&nbsp;&nbsp;&nbsp;
+											</button>
+											<a href="#" class="right">删除</a>
+										</div>
+								   	</div>
+								</div>
+							</form>
+						</div>
+	            	</div>
+	            </div>
+	            <!--校内职务 end-->
+	            <!--实践经验-->
+	            <div class="addInfoView">
+	             	<!-- 进度条 -->
+					<div class="handsOn_barlinePanl">
+						<div class="handsOn_barline" id="handsOn_probar">
+							<div id="handsOn_percent"></div>
+							<div id="handsOn_line" w="100" style="width:0px;"></div>
+						</div>
+					</div>
+	            	<div class="left">
+						<div class="myResume left" style="width: 738px;">
+							<div class="mt5 myRpading_t32">
+								<span class="fs18 mt20">实践经验</span>	
+								<div class="right"></div>
+							</div>
+							<div class="mt5 eduList left">
+								<ul>
+									<li>
+									   <div class="li_first">
+										<span class="w110">2013/9-2016/7</span>
+										<span class="w460" style="text-align:left;">学生会长</span>
+										
+										<span class="modifyIco mr15"></span>
+										<span class="deleIco"></span>
+										</div>
+										<div class="left mt20">
+											<label class="col-sm-2 control-label gray fs14_500">详细描述</label>
+									      	<div class="col-xs-10">
+									         <span class=" fs14_500">工作10年具备一定的管理工作经验。本人适应强，性格开朗，善于与人沟通，乐于助人。工作认真负责，具有很强的责任心和进取心，并具有较强的团队合作意识，服从管理。希望在不断的学习和工作中充实和完善自己，更好的把握发展的契机希望在不断的学习和工作中充实和完善自己，更好的把握发展的契机.</span>
+									      	</div> 	
+										</div>
+									</li>
+									
+								</ul>
+							</div>
+
+							<form class="form-horizontal" role="form">
+								<div class="basic_info myRpading_t32 left">
+									<div style="width: 450px;" class="left">
+								   		<div class="row">
+								      		<label style="margin-left: -5px;" class="col-sm-3 control-label"><span class="red_star">*</span>时间</label>
+									      	<div class="col-xs-2 dr0">
+									         <input class="form-control1" name="" id="focusedInput" type="text" 
+									            placeholder="年" >
+									      	</div>
+									      	<div class="col-xs-2 dr0">
+									         <input class="form-control1" name="" id="focusedInput" type="text" 
+									            placeholder="月" >
+									      	</div>
+									      	<div class="col-xs-1 dr0 mt5">至</div>
+									      	<div class="col-xs-2 dlr0">
+									         <input class="form-control1" name="" id="focusedInput" type="text" 
+									            placeholder="年" >
+									      	</div>
+									      	<div class="col-xs-2 dr0">
+									         <input class="form-control1" name="" id="focusedInput" type="text" 
+									            placeholder="月" >
+									      	</div>
+								   		</div>
+								   		
+								   	</div>
+								   	<div class="left" style="width:200px;height:35px;">
+								   		<span class="gray" style="width: 150px;position: absolute;margin:10px 0 0 25px;">后两项不填表示至今</span>
+								   	</div>
+								   	<div style="width: 655px;" class="left">
+
+								   		<div class="row mt5">
+								      		<label class="col-sm-2 control-label"><span class="red_star">*</span>实践名称</label>
+								      		<div class="col-xs-10 dr0">
+									      	<input class="form-control1" name="" id="focusedInput" type="text" placeholder="请填写实践名称">
+									      	</div>
+								   		</div>
+								   		<div class="row mt5">
+								      		<label class="col-sm-2 control-label">详细描述</label>
+									      	<div class="col-xs-10 dr0">
+									         <textarea class="form-control1" rows="5"></textarea>
+									         <span style="width: 500px" class="gray">请介绍您实践职务的职责与活动内容</span>
+									         <span class="right">/200字</span><span class="red right">0</span>
+									      	</div> 	
+								   		</div>
+								   		<div class="mt35 text-center mb40">
+											<button type="button" class="btn btn-danger">
+												&nbsp;&nbsp;&nbsp;&nbsp;继续添加&nbsp;&nbsp;&nbsp;&nbsp;
+											</button>
+											<a href="#" class="right">删除</a>
+										</div>
+								   	</div>
+								</div>
+							</form>
+						</div>
+	            	</div>
+	            </div>
+	            <!--实践经验 end-->
+	            <!--学生奖励-->
+	            <div class="addInfoView">
+	             	<!-- 进度条 -->
+					<div class="reward_barlinePanl">
+						<div class="reward_barline" id="reward_probar">
+							<div id="reward_percent"></div>
+							<div id="reward_line" w="100" style="width:0px;"></div>
+						</div>
+					</div>
+	            	<div class="left">
+						<div class="myResume left" style="width: 738px;">
+							<div class="mt5 myRpading_t32">
+								<span class="fs18 mt20">学生奖励</span>	
+								<div class="right"></div>
+							</div>
+							<div class="mt5 eduList left">
+								<ul>
+									<li>
+										<span class="w110">2013/9</span>
+										<span class="w260" style="text-align:left;">全市十优青少年</span>
+										<span class="w200">甲级</span>
+										<span class="modifyIco mr15"></span>
+										<span class="deleIco"></span>
+									</li>
+								</ul>
+							</div>
+
+							<form class="form-horizontal" role="form">
+								<div class="basic_info myRpading_t32 left">
+									<div style="width: 450px;" class="left">
+								   		<div class="row">
+								      		<label class="col-sm-3 control-label"><span class="red_star">*</span>时间</label>
+									      	<div class="col-xs-4 dr0">
+									         <input class="form-control1" name="" id="focusedInput" type="text" 
+									            placeholder="年" >
+									      	</div>
+									      	<div class="col-xs-3 dr0">
+									         <input class="form-control1" name="" id="focusedInput" type="text" 
+									            placeholder="月" >
+									      	</div>
+								   		</div>
+								   		<div class="row mt5">
+								      		<label class="col-sm-3 control-label">级别</label>
+								      		<div class="col-xs-9 dr0">
+									      	<input class="form-control1" name="" id="focusedInput" type="text">
+									      	</div>
+								   		</div>
+								   		<div class="row mt5">
+								      		<label class="col-sm-3 control-label"><span class="red_star">*</span>获得奖项</label>
+								      		<div class="col-xs-9 dr0">
+									      	<input class="form-control1" name="" id="focusedInput" type="text" placeholder="请填写奖项名称">
+									      	</div>
+								   		</div>
+										<div class="row mt5">
+											<label class="col-sm-3 control-label"></label>
+									      	<div class="col-xs-5 dr0 h58">
+									         	<div class="graduate_pho">
+											   		<div class="short"></div>
+											   		<div class="long"></div>
+										   			<span ><a href="#" class="brown"> 上传奖项证书</a></span>
+										   		</div>
+									      	</div>
+										</div>
+								   	</div>
+								   	<div class="left" style="width:200px;height:175px;"></div>
+								   	<div style="width: 655px;" class="left">
+								   		<div class="mt35 text-center mb40">
+											<button type="button" class="btn btn-danger">
+												&nbsp;&nbsp;&nbsp;&nbsp;继续添加&nbsp;&nbsp;&nbsp;&nbsp;
+											</button>
+											<a href="#" class="right">删除</a>
+										</div>
+								   	</div>
+								</div>
+							</form>
+						</div>
+	            	</div>
+	            </div>
+	            <!--学生奖励 end-->
+	            <!--语言能力-->
+	            <div class="addInfoView">
+	             	<!-- 进度条 -->
+					<div class="language_barlinePanl">
+						<div class="language_barline" id="language_probar">
+							<div id="language_percent"></div>
+							<div id="language_line" w="100" style="width:0px;"></div>
+						</div>
+					</div>
+	            	<div class="left">
+						<div class="myResume left" style="width: 738px;">
+							<div class="mt5 myRpading_t32">
+								<span class="fs18 mt20">语言能力</span>	
+								<div class="right"></div>
+							</div>
+							<div class="mt5 eduList left">
+								<ul>
+									<li>
+										<span class="w150">英语</span>
+										<span class="w50 gray" style="text-align:left;">听说</span>
+										<span class="w110" style="text-align:left;">熟练</span>
+										<span class="w50 gray" style="text-align:left;">读书</span>
+										<span class="w200" style="text-align:left;">熟练</span>
+										<span class="modifyIco mr15"></span>
+										<span class="deleIco"></span>
+									</li>
+								</ul>
+							</div>
+
+							<form class="form-horizontal" role="form">
+								<div class="language_info myRpading_t32 left">
+									<div style="width: 450px;" class="left">
+								   		<div class="row mt5">
+								      		<label class="col-sm-3 control-label"><span class="red_star">*</span>语言</label>
+								      		<div class="col-xs-5 dr0">
+								      			<select class="selectpicker form-control1">
+												    <option>英语</option>
+												    <option>德语</option>
+												    <option>日语</option>
+												    <option>法语</option>
+											    </select>
+									      	</div>
+								   		</div>
+								   		<div class="row mt5">
+								      		<label class="col-sm-3 control-label"><span class="red_star">*</span>听说</label>
+								      		<div class="col-xs-9 dlr0">
+									      		<label class="checkbox-inline">
+													<input type="radio" name="hearTalk" id="" 
+													     value="option1" checked>&nbsp;一般&nbsp;&nbsp;&nbsp;
+													<input type="radio" name="hearTalk" id="" 
+													     value="option1" checked>&nbsp;熟练&nbsp;&nbsp;&nbsp;
+													<input type="radio" name="hearTalk" id="" 
+													     value="option1" checked>&nbsp;精通
+												</label>
+									      	</div>
+								   		</div>
+										<div class="row mt5">
+								      		<label class="col-sm-3 control-label"><span class="red_star">*</span>读书</label>
+								      		<div class="col-xs-9 dlr0">
+								      			<label class="checkbox-inline">
+										      		<input type="radio" name="readBook" id="" 
+													     value="option1" checked>&nbsp;一般&nbsp;&nbsp;&nbsp;
+													<input type="radio" name="readBook" id="" 
+													     value="option1" checked>&nbsp;熟练&nbsp;&nbsp;&nbsp;
+													<input type="radio" name="readBook" id="" 
+													     value="option1" checked>&nbsp;精通
+												</label>
+									      	</div>
+								   		</div>
+								   	</div>
+								   	<div class="left" style="width:200px;height:175px;"></div>
+								   	<div style="width: 655px;" class="left">
+								   		<div class="mt35 text-center mb40">
+											<button type="button" class="btn btn-danger">
+												&nbsp;&nbsp;&nbsp;&nbsp;继续添加&nbsp;&nbsp;&nbsp;&nbsp;
+											</button>
+											<a href="#" class="right">删除</a>
+										</div>
+								   	</div>
+								</div>
+							</form>
+						</div>
+	            	</div>
+	            </div>
+	            <!--语言能力 end-->
+	        </div>
+        </div>
+    </div>	
+    <!--主体 section end-->
+    <!--底部-->
+	<footer id="footer">
+			<div class="con">
+				<div class="left">
+					<img src="../images/footer_logo.png" />
+					<a href="#">关于我们</a>
+					<a href="#">联系我们</a>
+					<a href="#">帮助中心</a>
+					<p class="p1">2015&nbsp;&copy;All Rights Reserver.www.cheqiren.com</p>
+					<p class="p2">琼ICP备13002531号-4&nbsp;琼ICP证1233221号</p>
+				</div>
+				<div class="center">
+					<p class="p3">联系客服<span>9:00-17:30</span></p>
+					<h1 class="h1">0898-32830809</h1>
+				</div>
+				<div class="right">
+					<img src="../images/app_download.png" alt="APP下载" />
+				</div>
+			</div>
+		</footer>
+<!-- alpha div -->
+<div id="maskLayer" style="display:none">
+<iframe id="maskLayer_iframe" frameBorder=0 scrolling=no style="filter:alpha(opacity=10)"></iframe>
+<div id="alphadiv" style="filter:alpha(opacity=10);-moz-opacity:0.1;opacity:0.1"></div>
+	<div id="drag">
+		<h2 id="drag_h"></h2>
+		<div id="drag_con"></div><!-- drag_con end -->
+	</div>
+</div><!-- maskLayer end -->
+<!-- alpha div end -->
+<div id="sublist" style="display:none"></div>
+
+<script language="javascript">
+$('input[name="year"],input[name="month"],input[name="day"],input[name="areaCountry"]').click(function (e) {
+	SelYear(this,e,false);
+});
+$('input[name="fullyear"]').click(function (e) {
+	SelYear(this,e,true);
+});
+$(window).scroll(function(){ 
+	var sTop = $(document).scrollTop();
+	if(sTop>288){
+		$('.res_left').stop().animate({top: sTop-231},500);
+	}else{
+		$('.res_left').css('top',29);
+	}
+});
+
+</script>
+
+</body>
+
+</html>

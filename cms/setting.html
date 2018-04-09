@@ -1,0 +1,482 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<title>个人中心-设置</title>
+
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+		<link href="../css/global.css" rel="stylesheet">
+		<link rel="stylesheet" href="../css/styles.css" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		
+		<script src="../js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../js/H-ui.js"></script>
+		<script type="text/javascript" src="../layer/layer.js"></script>
+
+		<!--<link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+<script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>-->
+
+		<!--[if lte IE 9]>
+		<link href="../css/IE.css" rel="stylesheet"  />
+	    <script src="../js/respond.js"></script>
+	    <script src="../js/html5shiv-printshiv.js"></script>
+        <![endif]-->
+	</head>
+
+	<body class="setbody">
+		<!--头部-->
+		<header>
+			<div class="clear"></div>
+			<div class="mainTop">
+				<div class="container section_center">
+					<div class="row">
+
+						<div class="col-md-6">
+							<div class="logo">
+								<a href="#"><img alt="" class="img-responsive" src="../images/logo.png"></a>
+							</div>
+						</div>
+						<!--<div class="col-sm-13 col-md-6">
+							<div class="socials">
+
+								<ul>
+								<li><a href="#">帮助中心</a></li>
+								</ul>
+							</div>
+						</div>-->
+						<div class="col-sm-13 col-md-6">
+							<div class="socials">
+
+								<ul>
+									<li><a href="#" class="br">iheski拓</a></li>
+									<li><a href="#" class="br">我的征信</a></li>
+									<li><a href="#">我的简历</a></li>
+									<li><a href="#" class="br"><span class="settingIco"></span>
+                       		 	<span class="">个人设置</span></a></li>
+									<li><a href="#"><span class="logoutIco"></span>
+                        		<span class="">退出登录</span></a></li>
+								</ul>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- 主体 section-->
+		<div id="content" class="clearfix">
+			<div class="setting">
+				<div class="content_top"></div>
+				<div class="content_left">
+
+					<div class="msg_photo">
+						<a href="javascript:;" id="upload">
+							<div class="maskWraper" style="width:100px; height:100px; border:solid 1px #ddd;border-radius: 50px;">
+								<img src="../images/person_photo.jpg" width="100" height="100">
+								<div class="maskBar text-c" style="font-size: 13px;text-align: center;">上传头像</div>
+							</div>
+						</a>
+
+					</div>
+
+					<div class="navbox">
+						<div class="person_name">
+							<p>iheski拓</p>
+						</div>
+						<ul class="nav">
+							<li class="selected">昵称设置</li>
+							<li>手机设置</li>
+							<li>邮箱设置</li>
+							<li>修改密码</li>
+							<li>隐私设置</li>
+						</ul>
+					</div>
+				</div>
+				<div class="content_right">
+					<!--昵称设置-->
+					<div class="formbox">
+						<div class="content_right_top">
+							<p id="title">昵称设置</p>
+						</div>
+						<!--昵称设置-->
+						<form class="set_form" id="set_nickname">
+							<p class="h1">请输入您的昵称</p>
+							<input type="text" class="text1 pd_l_10" id="addnickname" />
+							<p class="p1"></p>
+							<input class="save_button" type="button" value="保存" id="save_nickname" />
+						</form>
+						<!--昵称设置后的显示-->
+						<form class="set_form hide" id="nickname">
+							<p class="h1">我是XXX</p>
+							<input class="re_button" type="button" value="修改" id="re_nickname" />
+						</form>
+
+					</div>
+					<!--end 昵称设置-->
+
+					<!--手机号-->
+					<div class="formbox" style="display: none;">
+						<div class="content_right_top">
+							<p id="title">手机设置</p>
+						</div>
+						<!--手机号-->
+						<form class="set_form set_phone hide" id="set_phone">
+							<p class="h1">请输入手机号</p>
+							<p>
+								<label class="l4">手机号</label>
+								<input type="text" class="text1 pd_l_10" id="s_phone" /></p>
+							<p class="p1">
+								<label class="l4">验证码</label>
+								<input type="text" class="text_code pd_l_10" />
+								<input class="send_button" value="发送验证码" onclick="settime(this)" />
+							</p>
+
+							<input class="save_button" type="button" value="保存" id="save_phone" />
+							<p class="p3">
+								<label id="phone">13524585544</label><a href="#">修改</a>
+							</p>
+						</form>
+
+						<!--手机绑定后的显示-->
+						<form class="set_form" id="bind_phone">
+							<p class="h1">已绑定手机号</p>
+							<p class="u_phone" id="u_phone">18889281015<span><a href="#0" id="repwd">修改</a></span></p>
+						</form>
+						<!--解绑手机 -->
+						<form class="set_form hidden pd_b_145" id="relieve_phone">
+							<p class="h1">要更换手机号请先解绑手机</p>
+							<p>
+								<label class="l4">手机号</label>
+								<input type="text" class="text1 pd_l_10" value="18889281015" disabled="disabled" /></p>
+							<p class="p1">
+								<label class="l4">验证码</label>
+								<input type="text" class="text_code pd_l_10" id="text_code" />
+								<input class="send_button" value="发送验证码" onclick="settime(this)" />
+							</p>
+							<input class="save_button" type="button" value="解绑" id="re_phone" />
+						</form>
+						<!--end 解绑手机 -->
+					</div>
+
+					<!--end 手机号-->
+
+					<!--邮箱设置-->
+					<div class="formbox" style="display: none;">
+						<div class="content_right_top">
+							<p id="title">邮箱设置</p>
+						</div>
+						<!--邮箱设置-->
+						<form class="set_form pd_b_138" id="bind_email">
+
+							<P class="h1">密保邮箱</P>
+							<p class="mg_t_10">
+								<label class="l4">邮&nbsp;&nbsp;&nbsp;箱</label>
+								<input type="text" class="text_email pd_l_10" /></p>
+							<p class="p1">
+								<label class="l4">验证码</label>
+								<input type="text" class="text_code pd_l_10" />
+								<label class="yzm">kmhqj</label>
+							</p>
+							<input class="save_button" type="button" value="保存" id="save_email" />
+						</form>
+
+						<form class="set_form hide pd_b_303" id="relieve_email">
+							<P class="h1">保密邮箱</P>
+							<p class="u_email">sunbudao@hotmail.com<span>未验证<a href="#0" id="reemail">修改</a></span></p>
+						</form>
+
+						<!--修改-->
+						<form class="set_form pd_b_145 hide" id="bind_email2">
+
+							<P class="h1">密保邮箱</P>
+							<p>
+								<label class="l4">邮&nbsp;&nbsp;&nbsp;箱</label>
+								<input type="text" class="text_email pd_l_10" value="" /></p>
+							<p class="p1">
+								<label class="l4">验证码</label>
+								<input type="text" class="text_code pd_l_10" />
+								<label class="yzm">kmhqj</label>
+							</p>
+							<input class="save_button" type="button" value="绑定" id="re_email" />
+						</form>
+
+					</div>
+					<!--end 邮箱设置-->
+
+					<!--修改密码-->
+					<div class="formbox" style="display: none;">
+						<div class="content_right_top">
+							<p id="title">修改密码</p>
+						</div>
+						<!--修改密码设置-->
+						<form class="set_form pd_b_110">
+							<p class="h1">重置新密码</p>
+							<p>
+								<label class="l3">旧密码</label>
+								<input type="password" class="text1 pd_l_10" placeholder="输入旧密码" /></p>
+							<p>
+								<label class="l3">新密码</label>
+								<input type="password" class="text1 pd_l_10" placeholder="6-18位数字与字母" /></p>
+							<p>
+								<label class="l3">确认新密码</label>
+								<input type="password" class="text1 pd_l_10" placeholder="再次输入新密码" /></p>
+							<a href="#"><input class="" type="button" value="保存" id="re_pwd" /></a>
+						</form>
+					</div>
+					<!--end 昵称设置-->
+
+					<!--隐私设置-->
+
+					<div class="formbox" style="display: none;">
+						<div class="content_right_top">
+							<p id="title">隐私设置</p>
+						</div>
+						<!--隐私设置-->
+						<form class="set_form pd_b_240">
+							<div class="top">
+								<p class="h1">设置简历公开程度 <label id="privacy">公开</label>
+									<div class="public_btn">
+										<div class="circle"></div>
+										<div class="circle hide"></div>
+										<!--<img src="../images/open.png" />-->
+									</div>
+								</p>
+							</div>
+							<h1 class="h2">设置屏蔽公司</h1>
+							<p class="p1" for="tags">您可以设定屏蔽公司名称，不让该公司查看您的简历，您最多可以屏蔽5家公司</p>
+							<input type="text" class="text3 ui-widget pd_l_10" id="tags" />
+							<input type="button" value="添加" class="add_button" />
+
+							<p class="p1">已屏蔽公司名称</p>
+							<p class="bd"></p>
+							<p class="p2"><label>海南百兴药业公司</label><span><a href="#0"><img src="../images/privacy_del.gif"/></a></span></p>
+							<p class="bd"></p>
+							<p class="p2"><label>海南百兴药业公司</label><span><a href="#0"><img src="../images/privacy_del.gif"/></a></span></p>
+							<p class="bd"></p>
+						</form>
+					</div>
+					<!--end 隐私设置-->
+					<!--提示弹框-->
+					<!--<div id="dialog-message" class="hide tooltip" style="z-index: 99999;">
+					<div class="tooltip_title">
+						发送成功
+						<a >
+						<img src="../images/tooltip_close.gif" /></a>
+					</div>
+					<div class="tooltip_content">
+						<p class="tc_p1">
+						激活邮件已经发送到您新设置的邮箱&nbsp;<span style="color: #f8560e;">sunbudao@hotmai.com</span>&nbsp;，请您登陆邮箱确认激活新的邮箱.</p>
+						<p class="tc_p2">
+							<button id="en_email">马上登录邮箱</button>
+						</p>
+					</div>
+				</div>-->
+					<!--end 提示弹框-->
+
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<!--底部-->
+		<footer id="footer" class="mt35">
+			<div class="con">
+				<div class="left"> 
+					<img src="../images/footer_logo.png" /> 
+					<a href="关于我们.html" target="_blank">关于我们</a> 
+					<a href="联系我们.html" target="_blank">联系我们</a>
+					<a href="帮助中心.html" target="_blank">帮助中心</a>
+					<p class="p1">2015&ndash;2016&nbsp;&copy;All Rights Reserver.www.cheqiren.com</p>
+					<p class="p2"><a href="http://www.miibeian.gov.cn/state/outPortal/loginPortal.action">琼ICP备13002531号-4</a>&nbsp;琼ICP证1233221号</p>
+				</div>
+				<div class="center">
+					<p class="p3">联系客服<span>9:00-17:30</span></p>
+					<h1 class="h1">0898-32830809</h1>
+				</div>
+				<div class="right"> <img src="../images/app_download.png" alt="APP下载" />
+					<p>APP下载</p>
+				</div>
+			</div>
+		</footer>
+		<script language="javascript">
+			
+			$(function() {
+				$("#save_nickname").click(function() {
+					/*var obj_nickname=$("#addnickname");
+					$("#u_name").html(obj_nickname.val()+"<span>不可更改</span>");*/
+					$("#set_nickname").addClass("hide");
+					$("#nickname").removeClass("hide");
+				});
+				$("#re_nickname").click(function() {
+					/*var obj_nickname=$("#addnickname");
+					$("#u_name").html(obj_nickname.val()+"<span>不可更改</span>");*/
+					$("#nickname").addClass("hide");
+					$("#set_nickname").removeClass("hide");
+				});
+				$("#save_phone").click(function() {
+					/*var obj_phone=$("#s_phone");
+					$("#u_phone").html(obj_phone.val()+"<span><a href='#0' id='repwd'>修改</a></span>");*/
+					$("#set_phone").addClass("hide");
+					$("#bind_phone").show().removeClass("hide");
+				});
+				$("#re_phone").click(function() {
+					$("#relieve_phone").addClass("hide");
+					$("#set_phone").removeClass("hide");
+				});
+				$("#save_email").click(function() {
+					$("#bind_email").addClass("hide");
+					$("#relieve_email").removeClass("hide");
+				});
+				$(".public_btn").click(function() {
+					var pri = $("#privacy").html();
+					if (pri == "公开") {
+						$(this).css("background-image", "url(../images/close.png)");
+						$("#privacy").html('保密').css("color", "#e73936");
+						$(".circle").addClass("hide");
+					} else {
+						$(this).css("background-image", "url(../images/open.png)");
+						$("#privacy").html('公开').css("color", "#7bc142");
+					}
+				});
+				$("#repwd").click(function() {
+					$("#bind_phone").hide();
+					$("#relieve_phone").show().removeClass("hidden hide");
+				});
+				$("#reemail").click(function() {
+					//$("#bind_email").show().siblings().hide();
+					$("#relieve_email").addClass("hide").removeClass("show");
+					$("#bind_email2").show().removeClass("hide");
+				});
+			});
+			$(function() {
+				var $div_li = $(".content_left .navbox .nav li");
+				$div_li.click(function() {
+					$(this).addClass("selected").siblings().removeClass("selected");
+					var index = $div_li.index(this);
+					$(".content_right .formbox").eq(index).show().siblings().hide();
+				});
+			});
+			/*发送验证码*/
+			var countdown = 60;
+
+			function settime(obj) {
+				if (countdown == 0) {
+					obj.removeAttribute("disabled");
+					obj.value = "获取验证码";
+					countdown = 60;
+					return;
+				} else {
+					obj.setAttribute("disabled", true);
+					obj.value = "重新发送(" + countdown + ")";
+					countdown--;
+				}
+				setTimeout(function() {
+					settime(obj)
+				}, 1000)
+			}
+			/*$(function() {
+						var availableTags = ["海南管事科技有限公司",
+							"海南管晨云技有限公司"
+						];
+						$("#tags").autocomplete({
+			source: availableTags
+			});
+			});*/
+			$("#re_email").on('click', function() {
+				$("#relieve_email").addClass("show");
+				$("#bind_email2").addClass("hide");
+				layer.open({
+					type: 1,
+					title: false,
+					closeBtn: 0,
+					shadeClose: true,
+					area: ['510px'],
+					content: '<div id="dialog-message" style="z-index: 99999;">' +
+						'<div class="tooltip_title">发送成功<span class="fr cltips" onclick="cltips()"><img src="../images/close.gif"/></span></div>' +
+						'<div class="tooltip_content"><p class="tc_p1">激活邮件已经发送到您的邮箱&nbsp;<span style="color: #f8560e;">sunbudao@hotmai.com</span>&nbsp;，请您登陆邮箱确认激活新的邮箱.</p>' +
+						'<p class="tc_p2"><button onclick="enemail()">马上登录邮箱</button></p></div></div>'
+				});
+			});
+			$("#save_email").on('click', function() {
+				$("#relieve_email").addClass("show");
+				$("#bind_email2").addClass("hide");
+				layer.open({
+					type: 1,
+					title: false,
+					closeBtn: 0,
+					shadeClose: true,
+					area: ['510px'],
+					content: '<div id="dialog-message" style="z-index: 99999;" onclick>' +
+						'<div class="tooltip_title">发送成功<span class="fr cltips" onclick="cltips()"><img src="../images/close.gif"/></span></div>' +
+						'<div class="tooltip_content"><p class="tc_p1">激活邮件已经发送到您的邮箱&nbsp;<span style="color: #f8560e;">sunbudao@hotmai.com</span>&nbsp;，请您登陆邮箱确认激活新的邮箱.</p>' +
+						'<p class="tc_p2"><button onclick="enemail()">马上登录邮箱</button></p></div></div>'
+				});
+			});
+			function enemail(){
+				
+				window.open("https://mail.qq.com/cgi-bin/loginpage");
+				layer.closeAll(); 
+			};
+			function cltips(){
+				layer.closeAll();
+			};
+			$("#re_pwd").on('click', function() {
+				setTimeout(function() {
+					window.location.href = "index.html"
+				}, 800);
+				layer.open({
+					type: 1,
+					title: false,
+					closeBtn: 0,
+					area: ['510px'],
+					time: 800,
+					content: '<div id="dialog-message" style="z-index: 99999;">' +
+						'<div class="tooltip_suc"><p class="tc_p1">修改密码成功，请您重新登录！</p></div></div>'
+				});
+			});
+			$("#upload").on('click', function() {
+				layer.open({
+					type: 1,
+					title: false,
+					closeBtn: 0,
+					shadeClose: true,
+					area: ['510px'],
+					content: '<div id="dialog-message" style="z-index: 99999;">' +
+						'<div class="tooltip_title">上传照片<span class="fr cltips" onclick="cltips()"><img src="../images/close.gif"/></span></div>' +
+						'<div class="tooltip_content"><p class="tc_p1"><a href="javascript:;" class="file" onclic="upload()">选择文件<input type="file" /></a><span class="showFileName">未选择文件</span><a href="javascript:;" class="upload_btn">上传</a></p></div>'+
+						'<p class="tc_p3"><span class="fileerrorTip">请上传jpg、jpeg、gif或png格式图片，并保证小于1M</span></p></div>'
+				});
+			});
+			/**遮罩*/
+			$(function() {
+				$.Huihover('.maskWraper');
+			});
+			/*上传*/
+			/*function upload(){
+				var filePath = $(this).val();
+				if (filePath.indexOf("jpg") != -1 || filePath.indexOf("png") != -1) {
+					$(".fileerrorTip").html("").hide();
+					var arr = filePath.split('\\');
+					var fileName = arr[arr.length - 1];
+					$(".showFileName").html(fileName);
+				} else {
+					$(".showFileName").html("");
+					$(".fileerrorTip").html("您未上传文件，或者您上传文件类型有误！").show();
+					return false
+				}
+			};*/
+			
+		</script>
+		<!--<script>
+			$(".en_email").on('click', function() {
+				window.location.href = "个人中心.html"
+			});
+		</script>-->
+	</body>
+
+</html>
